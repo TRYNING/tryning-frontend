@@ -21,5 +21,3 @@
   "telefonoEntrenador":"897213897389",
   "emailEntrenador":"si@gmail.ru"
 }
-
-holA SOY nuci
