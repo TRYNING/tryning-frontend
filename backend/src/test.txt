@@ -1,0 +1,10 @@
+{
+  "idUsuario": "a3",
+  "nombreUsuario": "elpepe",
+  "apellidoUsuario": "eteshech",
+  "edadUsuario": "69",
+  "generoUsuario": "indefinido",
+  "direccionUsuario": "miami",
+  "emailUsuario": "elpepeeteshech@gmail.com",
+  "telefonoUsuario": "2494696969"
+}
