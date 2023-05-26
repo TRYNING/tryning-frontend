@@ -24,8 +24,8 @@ Este proyecto es una página web que actúa como mediador entre usuarios y entre
 2. Configura y prepara el entorno de desarrollo.
 3. Instala las dependencias del proyecto ejecutando el comando `npm install`.
 4. Configura la conexión a la base de datos y otros parámetros de configuración en el archivo correspondiente.
-5. Inicia el servidor ejecutando el comando `npm start` en la carpeta del backend.
-6. Inicia la aplicación frontend ejecutando el comando `npm start` en la carpeta del frontend.
+5. Inicia el servidor ejecutando el comando `npm run dev` en la carpeta del backend.
+6. Inicia la aplicación frontend ejecutando el comando `npm run dev` en la carpeta del frontend.
 7. Accede a la aplicación desde tu navegador ingresando la URL correspondiente.
 
 ## Contribución
@@ -40,6 +40,6 @@ Este proyecto es una página web que actúa como mediador entre usuarios y entre
 
 ## Contacto
 
-Si tienes alguna pregunta, sugerencia o comentario, no dudes en ponerte en contacto con nosotros. Puedes enviar un correo electrónico a nicolaspresapro@gmail.com o visitar nuestra página web https://nicochupamondongos.com.
+Si tienes alguna pregunta, sugerencia o comentario, no dudes en ponerte en contacto con nosotros. Puedes enviar un correo electrónico a proyectoentrenamiento@gmail.com.
 
 ¡Esperamos que disfrutes usando nuestra plataforma!
