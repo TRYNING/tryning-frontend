@@ -1,5 +1,6 @@
 import { pool } from "../db.js";
 
+// Función para obtener todos los usuarios
 export const getUsuarios = async (req, res) => {
   try {
     const [response] = await pool.query("SELECT * FROM usuarios");
@@ -9,6 +10,7 @@ export const getUsuarios = async (req, res) => {
   }
 };
 
+// Función para obtener un usuario específico por su ID
 export const getUsuario = async (req, res) => {
   const { idUsuario } = req.params;
   try {
@@ -17,13 +19,14 @@ export const getUsuario = async (req, res) => {
       [idUsuario]
     );
     if (response.length <= 0)
-      return res.status(404).json({ error: "no se encotro el usuario" });
+      return res.status(404).json({ error: "No se encontró el usuario" });
     res.json(response);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 };
 
+// Función para crear un nuevo usuario
 export const postUsuario = async (req, res) => {
   const {
     idUsuario,
@@ -58,6 +61,7 @@ export const postUsuario = async (req, res) => {
   }
 };
 
+// Función para actualizar un usuario existente
 export const patchUsuario = async (req, res) => {
   const { idUsuario } = req.params;
 

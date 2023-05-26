@@ -1,5 +1,6 @@
 import { pool } from "../db.js";
 
+// Función para obtener todos los entrenadores
 export const getEntrenadores = async (req, res) => {
   try {
     const [response] = await pool.query("SELECT * FROM entrenadores");
@@ -9,6 +10,7 @@ export const getEntrenadores = async (req, res) => {
   }
 };
 
+// Función para obtener un entrenador por su ID
 export const getEntrenador = async (req, res) => {
   const { idEntrenador } = req.params;
   try {
@@ -17,13 +19,14 @@ export const getEntrenador = async (req, res) => {
       [idEntrenador]
     );
     if (response.length <= 0)
-      return res.status(404).json({ error: "no se encotro el entrenador" });
+      return res.status(404).json({ error: "No se encontró el entrenador" });
     res.json(response);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 };
 
+// Función para crear un nuevo entrenador
 export const postEntrenador = async (req, res) => {
   const {
     idEntrenador,
