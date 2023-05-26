@@ -40,6 +40,6 @@ Este proyecto es una página web que actúa como mediador entre usuarios y entre
 
 ## Contacto
 
-Si tienes alguna pregunta, sugerencia o comentario, no dudes en ponerte en contacto con nosotros. Puedes enviar un correo electrónico a nicolaspresapro@gmail.com o visitar nuestra página web https//:nicochupamondongos.com.
+Si tienes alguna pregunta, sugerencia o comentario, no dudes en ponerte en contacto con nosotros. Puedes enviar un correo electrónico a nicolaspresapro@gmail.com o visitar nuestra página web https://nicochupamondongos.com.
 
 ¡Esperamos que disfrutes usando nuestra plataforma!
