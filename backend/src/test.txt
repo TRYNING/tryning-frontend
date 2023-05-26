@@ -8,3 +8,16 @@
   "emailUsuario": "elpepeeteshech@gmail.com",
   "telefonoUsuario": "2494696969"
 }
+
+
+
+{
+  "idEntrenador": "a4",
+  "nombreEntrenador": "elpepdfssde",
+  "apellidoEntrenador": "ete123shech",
+  "edadEntrenador": "692",
+  "especialidadEntrenador":"nose",
+  "experienciaEntrenador":"nula",
+  "telefonoEntrenador":"897213897389",
+  "emailEntrenador":"si@gmail.ru"
+}
