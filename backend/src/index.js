@@ -6,6 +6,12 @@ import entrenadoresRouter from "./routes/entrenadores.routes.js";
 
 const app = express();
 
+// Especificamos que direcciones pueden acceder al servidor
+app.use(
+  cors({
+    origin: "http://127.0.0.1:5173", // aca ponemos los dominios permitidos, en nuestro caso este es el localhost de react
+  })
+);
 app.use(express.json());
 
 // Configurar las rutas para los usuarios y entrenadores
