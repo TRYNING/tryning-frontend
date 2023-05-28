@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 
 // Importamos los enrutadores desde sus respectivos archivos
 import usuariosRouter from "./routes/usuarios.routes.js";
@@ -6,10 +7,10 @@ import entrenadoresRouter from "./routes/entrenadores.routes.js";
 
 const app = express();
 
-// Especificamos que direcciones pueden acceder al servidor
+// Especificamos que dominios pueden acceder al servidor utilizando cors
 app.use(
   cors({
-    origin: "http://127.0.0.1:5173", // aca ponemos los dominios permitidos, en nuestro caso este es el localhost de react
+    origin: "http://127.0.0.1:5173", // aca ponemos los dominios permitidos, por ahora nuestro dominio es el localhost de react
   })
 );
 app.use(express.json());
