@@ -33,7 +33,6 @@
   }
 }
 
-
 .read-the-docs {
   color: #888;
 }
@@ -43,23 +42,49 @@
   padding: 3rem;
   margin: 1rem;
 }
-.usuarios{
+.usuarios {
   background-color: #777;
   text-align: justify;
 }
 
-.usuarios p{
+.usuarios p {
   padding: 0;
   margin: 0;
   font-size: 1.2rem;
 }
 
-.usuarios strong{
+.usuarios strong {
   font-size: 1rem;
   color: #61dafbaa;
 }
 
-h1{
+.entrenador {
+  background-color: #505050;
+  padding: 3rem;
+  margin: 1rem;
+}
+.entrenadores {
+  background-color: #777;
+  text-align: justify;
+}
+
+.entrenador p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.entrenadores strong {
+  font-size: 1rem;
+  color: #61dafbaa;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
   background-color: #ffffff;
   padding: 2rem;
   margin: 0;

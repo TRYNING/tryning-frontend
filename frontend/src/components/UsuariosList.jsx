@@ -19,14 +19,33 @@ function UsuariosList() {
       <div className="usuarios">
         {usuarios.map((usuario) => (
           <div key={usuario.id_usuario} className="usuario">
-            <p>ID: <strong>{usuario.id_usuario}</strong></p>
-            <p>Nombre: <strong>{usuario.nombre_usuario}</strong></p>
-            <p>Apellido: <strong>{usuario.apellido_usuario}</strong></p>
-            <p>Edad: <strong>{usuario.edad_usuario}</strong></p>
-            <p>Genero: <strong>{usuario.genero_usuario}</strong></p>
-            <p>Direccion: <strong>{usuario.direccion_usuario}</strong></p>
-            <p>Email: <strong>{usuario.email_usuario}</strong></p>
-            <p>Telefono: <strong>{usuario.telefono_usuario}</strong></p>
+            <p>
+              ID: <strong>{usuario.id_usuario}</strong>
+            </p>
+            <p>
+              Nombre: <strong>{usuario.nombre_usuario}</strong>
+            </p>
+            <p>
+              Apellido: <strong>{usuario.apellido_usuario}</strong>
+            </p>
+            <p>
+              Edad: <strong>{usuario.edad_usuario}</strong>
+            </p>
+            <p>
+              Genero: <strong>{usuario.genero_usuario}</strong>
+            </p>
+            <p>
+              Direccion: <strong>{usuario.direccion_usuario}</strong>
+            </p>
+            <p>
+              Email: <strong>{usuario.email_usuario}</strong>
+            </p>
+            <p>
+              Telefono: <strong>{usuario.telefono_usuario}</strong>
+            </p>
+            <p>
+              ID Entrenador: <strong>{usuario.id_entrenador}</strong>
+            </p>
           </div>
         ))}
       </div>
