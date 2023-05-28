@@ -10,7 +10,7 @@ const app = express();
 // Especificamos que dominios pueden acceder al servidor utilizando cors
 app.use(
   cors({
-    origin: "http://127.0.0.1:5173", // aca ponemos los dominios permitidos, por ahora nuestro dominio es el localhost de react
+    origin: "http://localhost:5173", // aca ponemos los dominios permitidos, por ahora nuestro dominio es el localhost de react
   })
 );
 app.use(express.json());
