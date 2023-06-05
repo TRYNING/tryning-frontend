@@ -1,13 +1,12 @@
 import "./App.scss";
 import Rutas from "./routes/routes";
-import { Landing } from "./pages/Landing"
-import 
-
+import { Header } from "./components/Header/Header";
 
 function App() {
   return (
     <div>
-      <Landing />
+      <Header />
+            <Rutas />
     </div>
   );
 }
