@@ -5,7 +5,13 @@
     padding: 0;
     justify-content: center;
 
-    .title {
+    .link-container {
+        list-style: none;
+        margin: 0;
+    }
+
+
+    .header-title {
         display: flex;
         height: 200px;
         align-items: center;
