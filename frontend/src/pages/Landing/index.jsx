@@ -1,7 +1,10 @@
-import './Landing.scss'
+import { Link } from "react-router-dom";
+import './Landing.scss';
 
-export function Landing() {
-    return <div className="landing-container">
-        <p>Landing</p>
-    </div>
+export default function Landing() {
+    return  (
+        <div>
+          <h1>Landing</h1>
+        </div>
+      );
 }
