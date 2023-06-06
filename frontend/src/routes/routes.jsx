@@ -5,12 +5,12 @@ import Landing from "../pages/Landing";
 
 export default function Rutas() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/landing" element={<Landing />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/Home" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

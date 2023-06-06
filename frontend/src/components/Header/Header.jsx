@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 export function Header() {
@@ -7,20 +7,16 @@ export function Header() {
       <nav className="nav-container">
         <ul>
           <li>
-            <a href="/">home</a>
-            {/* <Link to="/">Home</Link> */}
+            <Link to="/">landing</Link>
           </li>
           <li>
-          <a href="/login">login</a>
-            {/* <Link to="/login">Login</Link> */}
+            <Link to="/home">home</Link>
           </li>
           <li>
-          <a href="/landing">landing</a>
-            {/* <Link to="/lading">Landing</Link> */}
+            <Link to="/login">login</Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 }
-
