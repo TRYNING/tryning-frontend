@@ -1,36 +1,36 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
-import "./Home.scss";
 import { Header } from "../../components/Header/Header";
+import "../../components/buttons/Buttons.scss";
+import "./Home.scss";
 
 export default function Home() {
+  const { user, googleSignUp, SignOut } = useAuthContext();
+  console.log(user);
+  const handleClick = () => {
+    googleSignUp();
+  };
 
-  const {user, googleSignUp, outSign} = useAuthContext()
-  console.log(user)
-  const handleClick = ()=> {
-    googleSignUp()
-  }
-
-  const cerrarSesion = () => {
-    outSign()
-  }  
   return (
-    <div>
-    <Header />
-
-      <h1>Home</h1>
-      <section className="register">
-      <button onClick={handleClick}>Registrate con google</button>
-      {
-        user && (
-          <div>
-            <h1>el usuario es {user.displayName}</h1>
-            <div>{user.email}</div>
-            <img src={user.photoURL}/>
-            <button onClick={cerrarSesion}>cerrar sesion</button>
-          </div>
-        )
-      }
-      </section>
-    </div>
+    <>
+      <Header />
+      <main>
+        <h1>Home</h1>
+        <button onClick={handleClick}>Registrate con google</button>
+        <section>
+          {user && (
+            <div className="user">
+              <h1>
+                Bienvenido <span>{user.displayName}</span>
+              </h1>
+              <div className="ph-mail">
+                <img src={user.photoURL} />
+                <p>{user.email}</p>
+              </div>
+              <button onClick={SignOut}>Cerrar sesion</button>
+            </div>
+          )}
+        </section>
+      </main>
+    </>
   );
 }

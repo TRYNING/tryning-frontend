@@ -9,6 +9,8 @@ export function Header() {
         <div className="buttons-container">
           <ButtonLink to="/" label="Landing" />
           <ButtonLink to="/home" label="Home" />
+          </div>
+          <div className="reg-log-container">
           <ButtonLink to="/login" label="Login" />
           <ButtonLink to="/register" label="Register"/>
         </div>
