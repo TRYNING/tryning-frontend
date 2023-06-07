@@ -1,4 +1,3 @@
-import { Header } from "../../components/Header/Header";
 import "./Landing.scss";
 
 export default function Landing() {
