@@ -1,7 +1,9 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import "./Home.scss";
+import { Header } from "../../components/Header/Header";
 
 export default function Home() {
+
   const {user, googleSignUp, outSign} = useAuthContext()
   console.log(user)
   const handleClick = ()=> {
@@ -13,7 +15,10 @@ export default function Home() {
   }  
   return (
     <div>
+    <Header />
+
       <h1>Home</h1>
+      <section className="register">
       <button onClick={handleClick}>Registrate con google</button>
       {
         user && (
@@ -25,6 +30,7 @@ export default function Home() {
           </div>
         )
       }
+      </section>
     </div>
   );
 }

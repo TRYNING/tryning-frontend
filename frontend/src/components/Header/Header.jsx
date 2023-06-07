@@ -1,21 +1,17 @@
 import { Link } from "react-router-dom";
 import "./Header.scss";
+import { ButtonLink } from "../buttons/Buttons";
 
 export function Header() {
   return (
     <header className="header-container">
       <nav className="nav-container">
-        <ul>
-          <li>
-            <Link to="/">landing</Link>
-          </li>
-          <li>
-            <Link to="/home">home</Link>
-          </li>
-          <li>
-            <Link to="/login">login</Link>
-          </li>
-        </ul>
+        <div className="buttons-container">
+          <ButtonLink to="/" label="Landing" />
+          <ButtonLink to="/home" label="Home" />
+          <ButtonLink to="/login" label="Login" />
+          <ButtonLink to="/register" label="Register"/>
+        </div>
       </nav>
     </header>
   );

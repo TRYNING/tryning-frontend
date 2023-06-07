@@ -1,0 +1,21 @@
+button {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: row;
+  border: 0;
+  border-radius: 0;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  &:hover {
+    color: #ccc;
+    border-color: #888;
+    outline: 0;
+    text-decoration: none;
+    text-shadow: 0px -1px 6px #fff;
+    transform: scale(1.1);
+    transition: .5s;
+  }
+}
