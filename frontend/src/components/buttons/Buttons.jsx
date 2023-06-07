@@ -5,24 +5,24 @@ import "./Buttons.scss";
 
 export function LinkButton({ to, label }) {
   return (
-    <div>
+    <div className="button">
       <Link to={to}>{label}</Link>
     </div>
   );
 }
 
 export function SearchButton({ label }) {
-  return <button>{label}</button>;
+  return <div className="button">{label}</div>;
 }
 
 export function SignOutButton({ label }) {
   const { SignOut } = useAuthContext();
 
-  return <button onClick={SignOut}>{label}</button>;
+  return <div className="button" onClick={SignOut}>{label}</div>;
 }
 
 export function SignUpButton({ label }) {
   const { googleSignUp } = useAuthContext();
 
-  return <button onClick={googleSignUp}>{label}</button>;
+  return <div className="button" onClick={googleSignUp}>{label}</div>;
 }
