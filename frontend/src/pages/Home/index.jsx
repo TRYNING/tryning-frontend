@@ -1,21 +1,19 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { Header } from "../../components/Header/Header";
+import { SignOutButton, SignUpButton } from "../../components/buttons/Buttons";
 import "../../components/buttons/Buttons.scss";
 import "./Home.scss";
 
 export default function Home() {
-  const { user, googleSignUp, SignOut } = useAuthContext();
+  const { user } = useAuthContext();
   console.log(user);
-  const handleClick = () => {
-    googleSignUp();
-  };
 
   return (
     <>
       <Header />
       <main>
         <h1>Home</h1>
-        <button onClick={handleClick}>Registrate con google</button>
+        <SignUpButton label="Registrarse con google" />
         <section>
           {user && (
             <div className="user">
@@ -26,7 +24,7 @@ export default function Home() {
                 <img src={user.photoURL} />
                 <p>{user.email}</p>
               </div>
-              <button onClick={SignOut}>Cerrar sesion</button>
+              <SignOutButton label="Cerrar Sesion" />
             </div>
           )}
         </section>
