@@ -3,12 +3,20 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 
 import "./Buttons.scss";
 
-export function ButtonLink({ to, label }) {
+export function LinkButton({ to, label }) {
   return (
     <>
-      <button>
+      <button >
         <Link to={to}>{label}</Link>
       </button>
+    </>
+  );
+}
+
+export function SearchButton({label}) {
+  return (
+    <>
+      <button >{label}</button>
     </>
   );
 }
