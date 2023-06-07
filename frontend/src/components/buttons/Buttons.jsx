@@ -5,38 +5,24 @@ import "./Buttons.scss";
 
 export function LinkButton({ to, label }) {
   return (
-    <>
-      <button >
-        <Link to={to}>{label}</Link>
-      </button>
-    </>
+    <div>
+      <Link to={to}>{label}</Link>
+    </div>
   );
 }
 
-export function SearchButton({label}) {
-  return (
-    <>
-      <button >{label}</button>
-    </>
-  );
+export function SearchButton({ label }) {
+  return <button>{label}</button>;
 }
 
 export function SignOutButton({ label }) {
   const { SignOut } = useAuthContext();
 
-  return (
-    <>
-      <button onClick={SignOut}>{label}</button>
-    </>
-  );
+  return <button onClick={SignOut}>{label}</button>;
 }
 
 export function SignUpButton({ label }) {
   const { googleSignUp } = useAuthContext();
 
-  return (
-    <>
-      <button onClick={googleSignUp}>{label}</button>
-    </>
-  );
+  return <button onClick={googleSignUp}>{label}</button>;
 }
