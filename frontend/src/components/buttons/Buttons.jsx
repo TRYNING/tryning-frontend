@@ -18,11 +18,27 @@ export function SearchButton({ label }) {
 export function SignOutButton({ label }) {
   const { SignOut } = useAuthContext();
 
-  return <div className="button" onClick={SignOut}>{label}</div>;
+  return (
+    <div className="button" onClick={SignOut}>
+      {label}
+    </div>
+  );
 }
 
 export function SignUpButton({ label }) {
   const { googleSignUp } = useAuthContext();
 
-  return <div className="button" onClick={googleSignUp}>{label}</div>;
+  return (
+    <div className="button" onClick={googleSignUp}>
+      {label}
+    </div>
+  );
+}
+
+export function AButton({ id_to, label }) {
+  return (
+    <div className="button">
+      <a href={id_to}>{label}</a>
+    </div>
+  );
 }

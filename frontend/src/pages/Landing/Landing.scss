@@ -1,3 +1,33 @@
-.landing-container {
-    background-color: #fc3;
+#root {
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        text-align: justify;
+        font-size: 0.7rem;
+        .container{
+            display: flex;
+            padding: 0 3rem;
+            flex-direction: column;
+            div{
+                display: flex;
+                flex-direction: column;
+                max-width: 30rem;
+            }
+        }
+
+        // .about-us-container{
+        //     display: flex;
+        //     flex-direction: column;
+        //     padding:0 4rem;
+        //     h1{
+        //         font-size: 3rem;
+        //     }
+        //     .about-us-text{
+        //         font-size: 0.5rem;
+        //     }
+        // }
+    }
+
 }
