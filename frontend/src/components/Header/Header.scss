@@ -1,6 +1,8 @@
+@import "../../styles/variables";
+
 .header-container {
   display: flex;
-  background-color: #000;
+  background-color: $primary-color;
   margin: 0;
   padding: 0;
   height: 100px;
