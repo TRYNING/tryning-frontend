@@ -1,7 +1,5 @@
-@import "variables";
-
 // normalize
-@import "./normalize.scss";
+@use "normalize.scss";
 
 * {
   margin: 0;
