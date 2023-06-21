@@ -1,0 +1,16 @@
+// normalize
+@use "normalize.scss";
+
+// componentes
+
+@import url(./components/_button.scss);
+
+// pages
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
