@@ -11,6 +11,11 @@
 @use "../../pages/Login/Login.scss";
 @use "../../pages/Register/Register.scss";
 
+// pages components
+
+@use "../../pages/Login/components/FormLogin/FormLogin.scss";
+@use "../../pages/Register/components/FormRegister/FormRegister.scss";
+
 * {
   margin: 0;
   padding: 0;
