@@ -1,0 +1,25 @@
+// variables
+
+@use "variables";
+
+// normalize
+
+@use "normalize";
+
+// componentes
+
+// pages
+
+@use "../../pages/Landing/Landing.scss";
+@use "../../pages/Home/Home.scss";
+@use "../../pages/Login/Login.scss";
+@use "../../pages/Register/Register.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
