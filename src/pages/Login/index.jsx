@@ -3,7 +3,8 @@ import { FormLogin } from "./components/FormLogin/FormLogin";
 export default function Login() {
   return (
     <div className="Login-container">
-      <h1>Login</h1>
+      <a href="/">volver</a>
+      <h1>Inicia sesion</h1>
       <FormLogin />
     </div>
   );
