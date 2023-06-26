@@ -1,10 +1,10 @@
-import { FormRegisterDetails } from "../RegisterDetails/"
+import { FormDetails } from "./components/FormDetails";
 export default function RegisterDetails() {
-    return (
-      <div className="Register-details-container">
-        <a href="/">volver</a>
-        <h1>Registrarse</h1>
-        <FormRegisterDetails />
-      </div>
-    );
-  }
+  return (
+    <div className="Register-details-container">
+      <a href="/">volver</a>
+      <h1>Registrarse</h1>
+      <FormDetails />
+    </div>
+  );
+}

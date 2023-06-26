@@ -19,6 +19,7 @@ export function AuthContextProvider({ children }) {
   const [user, setUSer] = useState();
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
+  const [registerDetail, setRegisterDetail] = useState(false);
 
   const googleSignUp = async () => {
     const provider = new GoogleAuthProvider();
@@ -76,6 +77,8 @@ export function AuthContextProvider({ children }) {
         SignOut,
         registerWithEmail,
         signWithEmail,
+        setRegisterDetail,
+        registerDetail,
         setErrorAuth: setError,
         loadingAuth: loading,
         errorAuth: error,
