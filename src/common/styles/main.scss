@@ -17,7 +17,8 @@
 
 @use "../../pages/Login/components/FormLogin/FormLogin.scss";
 @use "../../pages/Register/components/FormRegister/FormRegister.scss";
-@use "../../pages/RegisterDetails/components/FormDetails.scss";
+@use "../../pages/RegisterDetails/components/FormDetails/FormDetails.scss";
+@use "../../pages/RegisterDetails/components/FormDetailsExtra/FormDetailsExtra.scss";
 
 * {
   margin: 0;
