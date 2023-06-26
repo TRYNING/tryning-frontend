@@ -34,14 +34,7 @@ export default function Rutas() {
             </CanNotAuth>
           }
         />
-        <Route
-          path="/register-details"
-          element={
-            <CanNotAuth>
-              <RegisterDetails />
-            </CanNotAuth>
-          }
-        />
+        <Route path="/register-details" element={<RegisterDetails />} />
         <Route
           path="/home"
           element={
