@@ -4,8 +4,9 @@
 
 // componentes
 
-// pages
+@use "../../components/Header/Header.scss";
 
+// pages
 @use "../../pages/Landing/Landing.scss";
 @use "../../pages/Home/Home.scss";
 @use "../../pages/Login/Login.scss";

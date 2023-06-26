@@ -3,15 +3,44 @@ import Landing from "../pages/Landing";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import { RequireAuth, CanNotAuth } from "../components/ProtectRoutes";
 
 export default function Rutas() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route
+          path="/"
+          element={
+            <CanNotAuth>
+              <Landing />
+            </CanNotAuth>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <CanNotAuth>
+              <Login />
+            </CanNotAuth>
+          }
+        />
+        <Route
+          path="/register"
+          element={
+            <CanNotAuth>
+              <Register />
+            </CanNotAuth>
+          }
+        />
+        <Route
+          path="/home"
+          element={
+            <RequireAuth>
+              <Home />
+            </RequireAuth>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
