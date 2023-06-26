@@ -1,5 +1,5 @@
 @use "fonts";
-@use "variables";
+@use "variables" as *;
 @use "normalize";
 
 // componentes
@@ -27,4 +27,5 @@
 
 body {
   min-height: 100vh;
+  background: $color-black;
 }
