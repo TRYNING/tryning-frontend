@@ -11,11 +11,13 @@
 @use "../../pages/Home/Home.scss";
 @use "../../pages/Login/Login.scss";
 @use "../../pages/Register/Register.scss";
+@use "../../pages/RegisterDetails/RegisterDetails.scss";
 
 // pages components
 
 @use "../../pages/Login/components/FormLogin/FormLogin.scss";
 @use "../../pages/Register/components/FormRegister/FormRegister.scss";
+@use "../../pages/RegisterDetails/components/FormDetails.scss";
 
 * {
   margin: 0;

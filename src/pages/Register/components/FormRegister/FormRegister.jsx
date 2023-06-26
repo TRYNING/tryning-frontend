@@ -26,10 +26,10 @@ export function FormRegister() {
         placeholder="contraseña123"
         onChange={(e) => setPassword(e.target.value)}
       />
+      <button>Registrarse</button>
       <div className="error-container">
         <p>{errorAuth && errorAuth}</p>
       </div>
-      <button>Registrarse</button>
       <div id="o">o</div>
       <button onClick={() => googleSignUp()}>Registrarse con Google</button>
       <div className="-p">
