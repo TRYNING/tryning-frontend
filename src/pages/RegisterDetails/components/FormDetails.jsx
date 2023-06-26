@@ -1,4 +1,4 @@
-export function FormRegisterDetails() {
+export function FormDetails() {
     return (
        <form className="Form-register-details-container" >
       <label>Usuario</label>
