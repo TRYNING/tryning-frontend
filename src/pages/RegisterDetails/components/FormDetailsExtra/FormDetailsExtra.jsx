@@ -29,9 +29,7 @@ export function FormDetailsExtra() {
         
       />
       <button>Siguiente</button>
-      {/* <div className="error-container">
-        <p>{errorAuth && errorAuth}</p>
-      </div> */}
+     
     </form>
   );
 }
