@@ -1,3 +1,5 @@
+@use "../../common/styles/variables" as *;
+
 .Landing-container {
   font-family: consolas, "Courier New", monospace;
   display: flex;
@@ -9,7 +11,7 @@
   background-color: #0b180e;
 
   img {
-    max-width:200px;
+    max-width: 200px;
     border-radius: 50%;
     background: transparent;
   }
