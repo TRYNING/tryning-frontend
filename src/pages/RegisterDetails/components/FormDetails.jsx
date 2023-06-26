@@ -18,13 +18,10 @@ export function FormDetails() {
         placeholder="Ingresa tu apellido"
         
       />
-      <button>Registrarse</button>
+      <button>Completar</button>
       {/* <div className="error-container">
         <p>{errorAuth && errorAuth}</p>
       </div> */}
-      <div id="o">o</div>
-      {/* <button onClick={() => googleSignUp()}>Registrarse con Google</button> */}
-     
     </form>
     );
   }
