@@ -3,6 +3,7 @@ import Landing from "../pages/Landing";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import RegisterDetails from "../pages/RegisterDetails";
 import { RequireAuth, CanNotAuth } from "../components/ProtectRoutes";
 
 export default function Rutas() {
@@ -30,6 +31,14 @@ export default function Rutas() {
           element={
             <CanNotAuth>
               <Register />
+            </CanNotAuth>
+          }
+        />
+        <Route
+          path="/register-details"
+          element={
+            <CanNotAuth>
+              <RegisterDetails />
             </CanNotAuth>
           }
         />
