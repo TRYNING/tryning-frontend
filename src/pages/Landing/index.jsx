@@ -1,4 +1,8 @@
+import { useAuthContext } from "../../hooks/useAuthContext";
+
 export default function Landing() {
+  const { user } = useAuthContext();
+  console.log(user);
   return (
     <div className="Landing-container">
       <div className="logo">
