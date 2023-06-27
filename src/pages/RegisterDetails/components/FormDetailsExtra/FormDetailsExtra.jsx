@@ -1,35 +1,24 @@
-// import { useAuthContext } from "../../../../hooks/useAuthContext";
-// import { useState } from "react";
-
+import { useAuthContext } from "../../../../hooks/useAuthContext";
+import { useNavigate } from "react-router-dom";
 export function FormDetailsExtra() {
-  // const { registerWithEmail, errorAuth, setErrorAuth, googleSignUp } =
-  //   useAuthContext();
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const { setRegisterDetail } = useAuthContext();
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setErrorAuth(null);
-  //   registerWithEmail(email, password);
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setRegisterDetail(true);
+    navigate("/home");
+  };
+
   return (
-    <form className="FormRegister-container">
+    <form className="FormRegister-container" onSubmit={(e) => handleSubmit(e)}>
       <label>Fecha de nacimiento</label>
-      <input
-        type="date"
-      />
+      <input type="date" required />
       <label>Peso corporal en kg</label>
-      <input
-        type="number"
-        
-      />
+      <input type="number" required />
       <label>Estatura en cm</label>
-      <input
-        type="number"
-        
-      />
+      <input type="number" required />
       <button>Siguiente</button>
-     
     </form>
   );
 }
