@@ -1,0 +1,134 @@
+
+@media only screen and (max-width: 767px) {
+
+  .FormRegister-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    
+    #o {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px;
+    
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+      }
+    
+      &::before {
+        top: 50%;
+        left: 0px;
+      }
+    
+      &::after {
+        top: 50%;
+        right: 0px;
+      }
+    }
+    
+    input{
+      margin: 5px 0;
+      font-size: 1rem;
+      padding: 1rem;
+    }
+    button{
+      background-color: #fff;
+      cursor: pointer;
+      border: 1px solid #000;
+      padding: 1rem;
+      margin:10px 0;
+      font-size: 1rem;
+      font-weight: bold;
+      &:hover{
+        background-color: #000;
+        color:#fff;
+      }
+    }
+    .-p {
+      display: flex;
+      gap: 0.6rem;
+      justify-content: center;
+      a {
+        &:hover {
+          text-decoration: underline;
+          line-height: 1;
+        }
+      }
+    }
+  }
+  
+  }
+@media only screen and (min-width: 768px) {
+  .FormRegister-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    #o {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px;
+    
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+      }
+    
+      &::before {
+        top: 50%;
+        left: 0px;
+      }
+    
+      &::after {
+        top: 50%;
+        right: 0px;
+      }
+    }
+    
+    input{
+      margin: 5px 0;
+      font-size: 1rem;
+      padding: 1rem;
+    }
+    button{
+      background-color: #fff;
+      cursor: pointer;
+      border: 1px solid #000;
+      padding: 1rem;
+      margin:10px 0;
+      font-size: 1rem;
+      font-weight: bold;
+      &:hover{
+        background-color: #000;
+        color:#fff;
+      }
+    }
+    .-p {
+      display: flex;
+      gap: 0.6rem;
+      justify-content: center;
+      a {
+        &:hover {
+          text-decoration: underline;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

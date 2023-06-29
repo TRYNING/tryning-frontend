@@ -1,0 +1,33 @@
+@use "fonts";
+@use "variables" as *;
+@use "normalize";
+
+// componentes
+
+@use "../../components/Header/Header.scss";
+
+// pages
+@use "../../pages/Landing/Landing.scss";
+@use "../../pages/Home/Home.scss";
+@use "../../pages/Login/Login.scss";
+@use "../../pages/Register/Register.scss";
+@use "../../pages/RegisterDetails/RegisterDetails.scss";
+
+// pages components
+
+@use "../../pages/Login/components/FormLogin/FormLogin.scss";
+@use "../../pages/Register/components/FormRegister/FormRegister.scss";
+@use "../../pages/Home/components/Navbar/Navbar.scss";
+@use "../../pages/RegisterDetails/components/FormDetails/FormDetails.scss";
+@use "../../pages/RegisterDetails/components/FormDetailsExtra/FormDetailsExtra.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Helvetica, Sans-Serif;
+}
+
+body {
+  min-height: 100vh;
+  background: $color-black;
+}
