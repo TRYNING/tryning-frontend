@@ -9,8 +9,8 @@ export default function Landing() {
         <img src="src/pages/Landing/logo.png" />
       </div>
       <div className="buttons-container">
-        <a href="/login">Iniciar sesion</a>
-        <a href="/register">Registrarse</a>
+        <a href="/login" id="login">Iniciar sesion</a>
+        <a href="/register" id="register">Registrarse</a>
       </div>
     </div>
   );

@@ -31,7 +31,6 @@ export default function Rutas() {
         <Route
           path="/home"
           element={
-            
               <Home />
           }
         />
