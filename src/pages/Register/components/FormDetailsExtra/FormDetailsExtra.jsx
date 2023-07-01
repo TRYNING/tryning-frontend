@@ -15,7 +15,7 @@ export function FormDetailsExtra() {
       <input type="number" required />
       <label>Estatura en cm</label>
       <input type="number" required />
-      <button>Siguiente</button>
+      <button>Registrate</button>
     </form>
   );
 }
