@@ -1,63 +1,58 @@
 @use "../../common/styles/variables" as *;
 
 .Landing-container {
-  font-family: consolas, "Courier New", monospace;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #0b180e;
-
-  img {
-    max-width: 200px;
-    border-radius: 50%;
-    background: transparent;
-  }
-  a {
-    font-weight: bold;
-    background-color: #222;
-    color: #fff;
-    &:hover {
-      background-color: #fff;
-      color: #000;
+  background-color: $color-white;
+  .logo {
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    img {
+      max-width: 400px;
+      max-height: 400px;
     }
   }
-  @media only screen and (max-width: 767px) {
-    .logo {
-      img {
-        max-width: 200px;
-      }
-    }
 
-    .buttons-container {
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    a {
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      padding: 3rem 0;
-      a {
-        font-size: 1.4rem;
-        padding: 1rem;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $color-black;
+      border-radius: 2px;
+      height: 38px;
+      min-width: 180px;
+    }
+    a#login {
+      border: 1px solid $color-white;
+      background-color: $color-primary;
+      color: #fff;
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.01);
+      }
+    }
+    a#register {
+      border: 1px solid $color-primary;
+      background-color: $color-white;
+      color: $color-primary;
+      &:hover {
+        opacity: 0.98;
+        transform: scale(1.01);
       }
     }
   }
-  @media only screen and (min-width: 768px) {
-    .logo {
-      img {
-        max-width: 300px;
-      }
-    }
 
-    .buttons-container {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      padding: 3rem 0;
-      a {
-        font-size: 1.4rem;
-        padding: 1rem;
-      }
-    }
-  }
+  // @media only screen and (max-width: 767px) {
+  // }
 }

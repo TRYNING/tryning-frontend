@@ -30,7 +30,7 @@ export function FormRegister({ nextStep }) {
         placeholder="contraseña123"
         //onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Registrarse</button>
+      <button type="submit">Crear cuenta</button>
       <div className="error-container">
         <p>{/*errorAuth && errorAuth*/}</p>
       </div>
