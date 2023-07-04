@@ -1,0 +1,405 @@
+{
+  "id": 1,
+  "nombre": "Rutina Juanpa",
+  "meses": [
+    "Julio"
+  ],
+  "microciclos": [
+    {
+      "id": 1,
+      "nombre": "SEMANA 1",
+      "dias": [
+        {
+          "id": 1,
+          "tipo": "espalda - pecho",
+          "ejercicios": [
+            {
+              "id": 1,
+              "nombre": "Press Plano",
+              "tipo": "pecho",
+              "repeticiones": "3x6",
+              "rir": 1,
+              "rpe": 9,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 2,
+              "nombre": "Press Plano (tempo)",
+              "tipo": "pecho",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 3,
+              "nombre": "Jalon (Agarre Prono)",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 4,
+              "nombre": "Remo Gironda",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 5,
+              "nombre": "Extencion Triceps(Polea Alta)",
+              "tipo": "triceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            },
+            {
+              "id": 6,
+              "nombre": "Culr Alternado (Mancuernas)",
+              "tipo": "biceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "tipo": "piernas",
+          "ejercicios": []
+        },
+        {
+          "id": 3,
+          "tipo": "espalda - pecho",
+          "ejercicios": []
+        },
+        {
+          "id": 4,
+          "tipo": "piernas",
+          "ejercicios": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "SEMANA 2",
+      "dias": [
+        {
+          "id": 1,
+          "tipo": "espalda - pecho",
+          "ejercicios": [
+            {
+              "id": 1,
+              "nombre": "Press Plano",
+              "tipo": "pecho",
+              "repeticiones": "3x6",
+              "rir": 1,
+              "rpe": 9,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 2,
+              "nombre": "Press Plano (tempo)",
+              "tipo": "pecho",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 3,
+              "nombre": "Jalon (Agarre Prono)",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 4,
+              "nombre": "Remo Gironda",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 5,
+              "nombre": "Extencion Triceps(Polea Alta)",
+              "tipo": "triceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            },
+            {
+              "id": 6,
+              "nombre": "Culr Alternado (Mancuernas)",
+              "tipo": "biceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "tipo": "piernas",
+          "ejercicios": []
+        },
+        {
+          "id": 3,
+          "tipo": "espalda - pecho",
+          "ejercicios": []
+        },
+        {
+          "id": 4,
+          "tipo": "piernas",
+          "ejercicios": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "SEMANA 3",
+      "dias": [
+        {
+          "id": 1,
+          "tipo": "espalda - pecho",
+          "ejercicios": [
+            {
+              "id": 1,
+              "nombre": "Press Plano",
+              "tipo": "pecho",
+              "repeticiones": "3x6",
+              "rir": 1,
+              "rpe": 9,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 2,
+              "nombre": "Press Plano (tempo)",
+              "tipo": "pecho",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 3,
+              "nombre": "Jalon (Agarre Prono)",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 4,
+              "nombre": "Remo Gironda",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 5,
+              "nombre": "Extencion Triceps(Polea Alta)",
+              "tipo": "triceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            },
+            {
+              "id": 6,
+              "nombre": "Culr Alternado (Mancuernas)",
+              "tipo": "biceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "tipo": "piernas",
+          "ejercicios": []
+        },
+        {
+          "id": 3,
+          "tipo": "espalda - pecho",
+          "ejercicios": []
+        },
+        {
+          "id": 4,
+          "tipo": "piernas",
+          "ejercicios": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "SEMANA 4",
+      "dias": [
+        {
+          "id": 1,
+          "tipo": "espalda - pecho",
+          "ejercicios": [
+            {
+              "id": 1,
+              "nombre": "Press Plano",
+              "tipo": "pecho",
+              "repeticiones": "3x6",
+              "rir": 1,
+              "rpe": 9,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 2,
+              "nombre": "Press Plano (tempo)",
+              "tipo": "pecho",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 3,
+              "nombre": "Jalon (Agarre Prono)",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 4,
+              "nombre": "Remo Gironda",
+              "tipo": "espalda",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                "2 segundo de excentrica"
+              ]
+            },
+            {
+              "id": 5,
+              "nombre": "Extencion Triceps(Polea Alta)",
+              "tipo": "triceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            },
+            {
+              "id": 6,
+              "nombre": "Culr Alternado (Mancuernas)",
+              "tipo": "biceps",
+              "repeticiones": "4x8",
+              "rir": 2,
+              "rpe": 8,
+              "intensidad": 1,
+              "observaciones": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "tipo": "piernas",
+          "ejercicios": []
+        },
+        {
+          "id": 3,
+          "tipo": "espalda - pecho",
+          "ejercicios": []
+        },
+        {
+          "id": 4,
+          "tipo": "piernas",
+          "ejercicios": []
+        }
+      ]
+    }
+  ]
+}
