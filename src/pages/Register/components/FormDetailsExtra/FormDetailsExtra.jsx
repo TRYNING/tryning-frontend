@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-export function FormDetailsExtra() {
+export function FormDetailsExtra({ prevStep }) {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -15,7 +15,8 @@ export function FormDetailsExtra() {
       <input type="number" required />
       <label>Estatura en cm</label>
       <input type="number" required />
-      <button>Siguiente</button>
+      <button>Registrate</button>
+      <button onClick={() => prevStep()}>Anteriori</button>
     </form>
   );
 }

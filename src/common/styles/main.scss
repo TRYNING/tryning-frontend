@@ -11,15 +11,13 @@
 @use "../../pages/Home/Home.scss";
 @use "../../pages/Login/Login.scss";
 @use "../../pages/Register/Register.scss";
-@use "../../pages/RegisterDetails/RegisterDetails.scss";
-
 // pages components
 
 @use "../../pages/Login/components/FormLogin/FormLogin.scss";
-@use "../../pages/Register/components/FormRegister/FormRegister.scss";
 @use "../../pages/Home/components/Navbar/Navbar.scss";
-@use "../../pages/RegisterDetails/components/FormDetails/FormDetails.scss";
-@use "../../pages/RegisterDetails/components/FormDetailsExtra/FormDetailsExtra.scss";
+@use "../../pages/Register/components/FormDetails/FormDetails.scss";
+@use "../../pages/Register/components/FormDetailsExtra/FormDetailsExtra.scss";
+@use "../../pages/Register/components/FormRegister/FormRegister.scss";
 
 * {
   margin: 0;
@@ -29,5 +27,5 @@
 
 body {
   min-height: 100vh;
-  background: $color-white;
+  background: $color-gray;
 }

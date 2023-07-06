@@ -1,4 +1,4 @@
-import { FormRegister } from "./components/FormRegister/FormRegister";
+import { RenderForms } from "./components/RenderForms";
 
 export default function Register() {
   return (
@@ -7,7 +7,7 @@ export default function Register() {
         <img src="src/pages/Landing/logo.png" />
       </div>
       <h1>Registrarse</h1>
-      <FormRegister />
+      <RenderForms />
     </div>
   );
 }
