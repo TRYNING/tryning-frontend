@@ -17,6 +17,7 @@ export const AuthContext = createContext({});
 
 export function AuthContextProvider({ children }) {
   const [user, setUSer] = useState();
+  const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
 
@@ -72,6 +73,8 @@ export function AuthContextProvider({ children }) {
     <AuthContext.Provider
       value={{
         user,
+        userData,
+        setUserData,
         googleSignUp,
         SignOut,
         registerWithEmail,

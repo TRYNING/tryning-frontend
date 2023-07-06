@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom";
+import { useAuthContext } from "../../../../hooks/useAuthContext";
 export function FormDetailsExtra({ prevStep }) {
   const navigate = useNavigate();
-
+  const { userData } = useAuthContext();
+  console.log(userData);
   const handleSubmit = (e) => {
     e.preventDefault();
+
     navigate("/home");
   };
 
