@@ -41,8 +41,8 @@ export function FormRegister({ nextStep }) {
       <div className="error-container">
         <p>{/*errorAuth && errorAuth*/}</p>
       </div>
-      <div id="o">o</div>
-      <button onClick={/*() => googleSignUp()*/ () => {}}>
+      
+      <button onClick={/*() => googleSignUp()*/ () => {}} className="button-google">
         Registrarse con Google
       </button>
       <div className="-p">
