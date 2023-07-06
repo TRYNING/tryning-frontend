@@ -1,9 +1,7 @@
-import React from "react";
-
-export function ButtonIniciarSesion() {
+export function ButtonIniciarSesion({ children}) {
   return (
     <button onClick={handleClick} className="button-tipo1">
-      Iniciar Sesión
+      {children}
     </button>
   );
 
