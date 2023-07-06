@@ -1,6 +1,10 @@
-$color-primary: #5c821a;
-$color-secondary: #c6d166;
-$color-black: #0f1b07;
-$color-white: #fff;
-$color-gray: #f2f0f0;
-$border: 5px;
+:root {
+  --color-primary: #5c821a;
+  --color-secondary: #c6d166;
+  --color-black: #0f1b07;
+  --color-white: #fff;
+  --color-gray: #f2f0f0;
+  --border-button: 50%;
+  --border: 5px;
+  --padding-button: 20px;
+}
