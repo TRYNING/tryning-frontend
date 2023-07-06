@@ -11,7 +11,7 @@ export function FormDetailsExtra({ prevStep }) {
   };
 
   return (
-    <form className="FormRegister-container" onSubmit={(e) => handleSubmit(e)}>
+    <form className="FormDetails-container" onSubmit={(e) => handleSubmit(e)}>
       <label>Fecha de nacimiento</label>
       <input type="date" required />
       <label>Peso corporal en kg</label>
