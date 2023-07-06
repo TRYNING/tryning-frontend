@@ -1,28 +1,27 @@
-export function ButtonIniciarSesion() {
-    return (
-        <div>
+import React from "react";
 
-        </div>
-    )
-}
 export function ButtonIniciarSesion() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <button onClick={handleClick} className="button-tipo1">
+      Iniciar Sesión
+    </button>
+  );
+
+function handleClick() {
+
 }
-export function ButtonIniciarSesion() {
-    return (
-        <div>
-            
-        </div>
-    )
+
 }
-export function ButtonIniciarSesion() {
-    return (
-        <div>
-            
-        </div>
-    )
+
+
+export function ButtonRegistrarse() {
+  return (
+    <button onClick={handleClick} className="button-tipo2">
+      Registrarse
+    </button>
+  );
+
+  function handleClick() {
+
+  }
 }
