@@ -14,18 +14,23 @@ export function FormRegister({ nextStep }) {
   };
   return (
     <form className="FormRegister-container" onSubmit={(e) => handleSubmit(e)}>
+      <div className="input-container">
       <label>Email</label>
       <input
         type="text"
-        placeholder="ejemplo123@gmail.com"
+        placeholder="Ingrese su Mail..."
         onChange={(e) => setEmail(e.target.value)}
       />
+      </div>
+      <div className="input-container">
       <label>Contraseña</label>
       <input
         type="password"
-        placeholder="contraseña123"
+        placeholder="Ingrese su contraseña..."
         onChange={(e) => setPassword(e.target.value)}
       />
+      </div>
+      <div className="buttons-container">
       <button className="button-next">Siguiente</button>
       <div className="error-container">
         <p>{/*errorAuth && errorAuth*/}</p>
@@ -36,12 +41,14 @@ export function FormRegister({ nextStep }) {
           googleSignUp();
         }}
         className="button-google">
-        Registrarse con Google
+        <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png" alt="" />
       </button>
       <div className="-p">
         <p>¿Ya tienes una cuenta?</p>
         <a href="/login">Inicia sesion</a>
       </div>
+      </div>
     </form>
   );
 }
+
