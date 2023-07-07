@@ -1,10 +1,11 @@
 import { FormLogin } from "./components/FormLogin/FormLogin";
-
+import logo from "../../assets/images/logo.png";
 export default function Login() {
   return (
     <div className="Login-container">
-      <a href="/">volver</a>
-      <h1>Inicia sesion</h1>
+      <div className="logo">
+        <img src={logo} alt="logo de tryning" />
+      </div>
       <FormLogin />
     </div>
   );

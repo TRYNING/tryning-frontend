@@ -1,47 +1,54 @@
-/*import { useAuthContext } from "../../../../hooks/useAuthContext";
-import { useNavigate } from "react-router-dom";
+import { useAuthContext } from "../../../../hooks/useAuthContext";
+//import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-*/
+
 export function FormRegister({ nextStep }) {
-  /*const { registerWithEmail, errorAuth, setErrorAuth, googleSignUp } =
-    useAuthContext();
+  const { googleSignUp, setUserData } = useAuthContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-*/
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setUserData({ email, password });
     nextStep();
-    //setErrorAuth(null);
-    //registerWithEmail(email, password);
-    //navigate("/register-details");
   };
   return (
     <form className="FormRegister-container" onSubmit={(e) => handleSubmit(e)}>
+      <div className="input-container">
       <label>Email</label>
       <input
         type="text"
-        placeholder="ejemplo123@gmail.com"
-        //onChange={(e) => setEmail(e.target.value)}
+        placeholder="Ingrese su Mail..."
+        onChange={(e) => setEmail(e.target.value)}
       />
+      </div>
+      <div className="input-container">
       <label>Contraseña</label>
       <input
         type="password"
-        placeholder="contraseña123"
-        //onChange={(e) => setPassword(e.target.value)}
+        placeholder="Ingrese su contraseña..."
+        onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Crear cuenta</button>
+      </div>
+      <div className="buttons-container">
+      <button className="button-next">Siguiente</button>
       <div className="error-container">
         <p>{/*errorAuth && errorAuth*/}</p>
       </div>
-      <div id="o">o</div>
-      <button onClick={/*() => googleSignUp()*/ () => {}}>
-        Registrarse con Google
+
+      <button
+        onClick={() => {
+          googleSignUp();
+        }}
+        className="button-google">
+        <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png" alt="" />
       </button>
       <div className="-p">
         <p>¿Ya tienes una cuenta?</p>
         <a href="/login">Inicia sesion</a>
       </div>
+      </div>
     </form>
   );
 }
+
