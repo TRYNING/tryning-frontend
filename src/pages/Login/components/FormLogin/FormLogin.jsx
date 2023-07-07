@@ -14,29 +14,36 @@ export function FormLogin() {
   };
   return (
     <form className="FormLogin-container" onSubmit={(e) => handleSubmit(e)}>
-      <label>Email</label>
-      <input
-        type="text"
-        placeholder="ingresa tu mail"
-        onChange={(e) => setEmail(e.target)}
-      />
-      <label>Contraseña</label>
-      <input
-        type="text"
-        placeholder="ingresa tu contraseña"
-        onChange={(e) => setPassword(e.target)}
-      />
-      <button id="login">Iniciar sesion</button>
-      <div className="error-container">
-        <p>{errorAuth && errorAuth}</p>
+      <div className="input-container">
+        <label>Email</label>
+        <input
+          type="text"
+          placeholder="Ingrese su email..."
+          onChange={(e) => setEmail(e.target)}
+          className="input"
+        />
       </div>
-      <div id="o">o</div>
-      <button id="google" onClick={() => googleSignUp()}>
-        Google
-      </button>
-      <div className="-p">
-        <p>¿No tienes una cuenta?</p>
-        <a href="/register">Registrate</a>
+      <div className="input-container">
+        <label>Contraseña</label>
+        <input
+          type="text"
+          placeholder="Ingrese su contraseña..."
+          onChange={(e) => setPassword(e.target)}
+          className="input"
+        />
+      </div>
+      <div className="buttons-container">
+        <button className="button-login">Iniciar sesion</button>
+        <div className="error-container">
+          <p>{errorAuth && errorAuth}</p>
+        </div>
+        <button className="button-google" onClick={() => googleSignUp()}>
+          Google
+        </button>
+        <div className="-p">
+          <p>¿No tienes una cuenta?</p>
+          <a href="/register">Registrate</a>
+        </div>
       </div>
     </form>
   );

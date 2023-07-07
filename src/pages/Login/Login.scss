@@ -1,11 +1,21 @@
 @use "../../common/styles/variables" as *;
 
 .Login-container {
-  background-color: var(--color-white);
+  background-color: var(--color-gray);
   color: var(--color-black);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    min-height: 25vh;
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
 }

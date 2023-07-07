@@ -3,25 +3,14 @@ import { useAuthContext } from "../../../../hooks/useAuthContext";
 import { useState } from "react";
 
 export function FormRegister({ nextStep }) {
-  const {
-    /*
-    registerWithEmail,
-    errorAuth,
-    setErrorAuth,
-    googleSignUp,*/
-    setUserData,
-  } = useAuthContext();
+  const { googleSignUp, setUserData } = useAuthContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setUserData({ email, password });
     nextStep();
-    //setErrorAuth(null);
-    //registerWithEmail(email, password);
-    //navigate("/register-details");
   };
   return (
     <form className="FormRegister-container" onSubmit={(e) => handleSubmit(e)}>
@@ -37,12 +26,16 @@ export function FormRegister({ nextStep }) {
         placeholder="contraseña123"
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Crear cuenta</button>
+      <button className="button-next">Siguiente</button>
       <div className="error-container">
         <p>{/*errorAuth && errorAuth*/}</p>
       </div>
-      
-      <button onClick={/*() => googleSignUp()*/ () => {}} className="button-google">
+
+      <button
+        onClick={() => {
+          googleSignUp();
+        }}
+        className="button-google">
         Registrarse con Google
       </button>
       <div className="-p">

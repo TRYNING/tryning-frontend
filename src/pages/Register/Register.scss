@@ -1,4 +1,3 @@
-@use "../../common/styles/variables" as *;
 
 .Register-container {
   color: #fff;
@@ -7,4 +6,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    min-height: 25vh;
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+
 }
