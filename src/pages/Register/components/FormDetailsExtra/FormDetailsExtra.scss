@@ -1,134 +1,92 @@
+.FormDetailsExtra-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
 
-@media only screen and (max-width: 767px) {
+  label {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
+  }
 
-  .FormDetails-container {
+  .input-container {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    
-    #o {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      font-size: 20px;
-      font-weight: bold;
-      margin: 10px;
-    
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 2px;
-        background-color: rgb(255, 255, 255);
-      }
-    
-      &::before {
-        top: 50%;
-        left: 0px;
-      }
-    
-      &::after {
-        top: 50%;
-        right: 0px;
-      }
+    padding: 10px;
+
+    .input {
+      font-size: 14px;
+      border: none;
+      border-radius: var(--border-input);
+      height: 40px;
+      max-width: 280px;
+      padding: 0 10px;
+      margin-top: 10px;
     }
-    
-    input{
-      margin: 5px 0;
-      font-size: 1rem;
-      padding: 1rem;
-    }
-    button{
-      background-color: #fff;
+  }
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  gap: 6px;
+
+  .button-next {
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-gray);
+    border-radius: var(--border-button);
+    height: var(--height-button);
+    width: 240px;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover {
       cursor: pointer;
-      border: 1px solid #000;
-      padding: 1rem;
-      margin:10px 0;
-      font-size: 1rem;
-      font-weight: bold;
-      &:hover{
-        background-color: #000;
-        color:#fff;
-      }
-    }
-    .-p {
-      display: flex;
-      gap: 0.6rem;
-      justify-content: center;
-      a {
-        &:hover {
-          text-decoration: underline;
-          line-height: 1;
-        }
-      }
+      opacity: 0.9;
+      transform: scale(1.01);
     }
   }
-  
+}
+
+.button-google {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-gray);
+  color: var(--color-primary);
+  border-radius: var(--border-button);
+  height: var(--height-button);
+  width: 240px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 25px;
+    height: 25px;
   }
-@media only screen and (min-width: 768px) {
-  .FormDetails-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    #o {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      font-size: 20px;
-      font-weight: bold;
-      margin: 10px;
-    
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 2px;
-        background-color: rgb(255, 255, 255);
-      }
-    
-      &::before {
-        top: 50%;
-        left: 0px;
-      }
-    
-      &::after {
-        top: 50%;
-        right: 0px;
-      }
-    }
-    
-    input{
-      margin: 5px 0;
-      font-size: 1rem;
-      padding: 1rem;
-    }
-    button{
-      background-color: #fff;
-      cursor: pointer;
-      border: 1px solid #000;
-      padding: 1rem;
-      margin:10px 0;
-      font-size: 1rem;
-      font-weight: bold;
-      &:hover{
-        background-color: #000;
-        color:#fff;
-      }
-    }
-    .-p {
-      display: flex;
-      gap: 0.6rem;
-      justify-content: center;
-      a {
-        &:hover {
-          text-decoration: underline;
-          line-height: 1;
-        }
-      }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transform: scale(1.01);
+  }
+}
+
+.-p {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--color-light-gray);
+  a {
+    color: var(--color-black);
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+      line-height: 1;
     }
   }
+}
 }

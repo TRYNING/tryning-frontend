@@ -17,7 +17,7 @@
       border: none;
       border-radius: var(--border-input);
       height: 40px;
-      max-width: 280px;
+      width: 240px;
       padding: 0 10px;
       margin-top: 10px;
     }
@@ -35,7 +35,7 @@
       color: var(--color-gray);
       border-radius: var(--border-button);
       height: var(--height-button);
-      width: 240px;
+      width: 260px;
       font-size: 14px;
       font-weight: 600;
       &:hover {
@@ -52,7 +52,7 @@
   color: var(--color-primary);
   border-radius: var(--border-button);
   height: var(--height-button);
-  width: 240px;
+  width: 260px;
   font-size: 14px;
   display: flex;
   justify-content: center;
