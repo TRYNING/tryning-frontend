@@ -18,8 +18,10 @@ export function FormRegister({ nextStep }) {
       <label>Email</label>
       <input
         type="text"
-        placeholder="Ingrese su Mail..."
+        placeholder="Ingrese su email..."
         onChange={(e) => setEmail(e.target.value)}
+        className="input"
+
       />
       </div>
       <div className="input-container">
@@ -28,6 +30,7 @@ export function FormRegister({ nextStep }) {
         type="password"
         placeholder="Ingrese su contraseña..."
         onChange={(e) => setPassword(e.target.value)}
+        className="input"
       />
       </div>
       <div className="buttons-container">

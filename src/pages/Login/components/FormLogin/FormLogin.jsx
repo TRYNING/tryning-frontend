@@ -38,7 +38,7 @@ export function FormLogin() {
           <p>{errorAuth && errorAuth}</p>
         </div>
         <button className="button-google" onClick={() => googleSignUp()}>
-          Google
+          <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png" />
         </button>
         <div className="-p">
           <p>¿No tienes una cuenta?</p>
