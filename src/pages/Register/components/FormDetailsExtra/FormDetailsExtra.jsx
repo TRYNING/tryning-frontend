@@ -67,25 +67,25 @@ export function FormDetailsExtra({ prevStep }) {
   };
 
   return (
-    <form className="FormDetailsExtra-container"onSubmit={(e) => handleSubmit(e)}>
+    <form className="FormDetailsExtra-container" onSubmit={(e) => handleSubmit(e)}>
       <div className="input-container">
           <label>Telefono</label>
-          <input type="number" required />
+          <input type="tel" pattern="[0-9-4]{3}-[0-9-5]{3}"required className="input" placeholder="2222-4444"></input>
       </div>
       <div className="fecha-nacimiento-conteiner">
         <div className="input-container">
         <label>Fecha de nacimiento</label>
         <div className="date-conteiner">
           <select value={dia} onChange={(e) => setDia(e.target.value)} required>
-           <option value="" disabled> Día </option>
+           <option value="" disabled > Día </option>
             {getDaysOptions()}
           </select>
           <select value={mes} onChange={(e) => setMes(e.target.value)}required>
-           <option value="" disabled> Mes </option>
+           <option value="" disabled > Mes </option>
            {getMonthsOptions()}
          </select>
          <select value={anio} onChange={(e) => setAnio(e.target.value)}required>
-          <option value="" disabled> Año</option>
+          <option value="" disabled > Año</option>
            {getYearsOptions()}
           </select>
         </div>
@@ -94,12 +94,12 @@ export function FormDetailsExtra({ prevStep }) {
       <div className="valorescorporales-container">
         <div className="input-container">
             <label>Peso en Kg</label>
-            <input type="number" required />
+            <input type="number" required  className="input" placeholder="kg"/>
         </div>
       
         <div className="input-container">
           <label>Altura en cm</label>
-          <input type="number" required />
+          <input type="number" required  className="input" placeholder="cm"/>
         </div>
       </div>
       <div className="buttons-container">

@@ -2,36 +2,13 @@
   display: flex;
   flex-direction: column;
   max-width: 300px;
-
-  .fecha-nacimiento-conteiner{
-    display: flex;
-    flex-direction: column;
-
-    .date-conteiner{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      select{
-        margin: 10px;
-        
-      }
-    }
-  }
-
-  label {
+ 
+   label {
     color: var(--color-black);
     font-weight: bold;
     font-size: 14px;
     font-weight: 600;
   }
-
-  .valorescorporales-container{
-    display: flex;
-    flex-direction: row;
-  
-  }
-
 
 
   .input-container {
@@ -44,11 +21,53 @@
       border: none;
       border-radius: var(--border-input);
       height: 40px;
-      max-width: 280px;
+      max-width: 260px;
       padding: 0 10px;
       margin-top: 10px;
     }
   }
+
+
+  .fecha-nacimiento-conteiner{
+    display: flex;
+   
+
+    .date-conteiner{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      select{
+      border: none;
+      border-radius: var(--border-input);
+      height: 40px;
+      max-width: 260px;
+      padding: 0 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+        
+      }
+
+      
+    }
+  }
+
+  
+  .valorescorporales-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .input{
+      width: 70%;
+    }
+  
+  }
+
+
+
+  
 
 .buttons-container {
   display: flex;
