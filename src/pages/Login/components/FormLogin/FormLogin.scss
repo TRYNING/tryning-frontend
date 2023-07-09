@@ -12,6 +12,19 @@
     flex-direction: column;
     padding: 10px;
 
+    .error-container {
+      border-radius: var(--border);
+      margin-bottom: 10px;
+      overflow: hidden;
+      p {
+        background: var(--color-error);
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--color-white);
+      }
+    }
+
     .input {
       font-size: 14px;
       border: none;
@@ -45,29 +58,28 @@
       }
     }
 
-    
-.button-google {
-  border: 1px solid var(--color-primary);
-  background-color: var(--color-gray);
-  color: var(--color-primary);
-  border-radius: var(--border-button);
-  height: var(--height-button);
-  width: 260px;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    width: 25px;
-    height: 25px;
-  }
+    .button-google {
+      border: 1px solid var(--color-primary);
+      background-color: var(--color-gray);
+      color: var(--color-primary);
+      border-radius: var(--border-button);
+      height: var(--height-button);
+      width: 240px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 25px;
+        height: 25px;
+      }
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    transform: scale(1.01);
-  }
-}
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        transform: scale(1.01);
+      }
+    }
   }
 
   .-p {

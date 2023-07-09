@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
-  signInWithRedirect,
+  signInWithPopup,
   signOut,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -23,7 +23,7 @@ export function AuthContextProvider({ children }) {
 
   const googleSignUp = async () => {
     const provider = new GoogleAuthProvider();
-    signInWithRedirect(auth, provider);
+    signInWithPopup(auth, provider);
   };
 
   const registerWithEmail = async (email, password) => {
