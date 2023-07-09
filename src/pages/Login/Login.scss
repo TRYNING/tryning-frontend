@@ -7,32 +7,4 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
-  .container-form {
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 100px;
-      img {
-        width: 148px;
-        height: 104px;
-      }
-    }
-    .container-redirect {
-      margin-top: 20px;
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      font-size: 12px;
-      color: var(--color-light-gray);
-      a {
-        color: var(--color-black);
-        font-weight: bold;
-        &:hover {
-          text-decoration: underline;
-          line-height: 1;
-        }
-      }
-    }
-  }
 }

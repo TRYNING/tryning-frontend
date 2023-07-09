@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
 import { Input } from "../../../../components/Inputs/Input";
 import { Button } from "../../../../components/Button/Button";
 import { Form } from "../../../../components/Form/Form";
 import { useAuthContext } from "../../../../hooks/useAuthContext";
 import { useState } from "react";
+import logo from "../../../../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 export function FormLogin() {
   const { signWithEmail, errorAuth, setErrorAuth, googleSignUp } =
@@ -54,11 +55,20 @@ export function FormLogin() {
   ];
 
   return (
-    <Form
-      handleSubmit={handleSubmit}
-      inputs={inputs}
-      buttons={buttons}
-      error={errorAuth}
-    />
+    <div className="FormLogin-container">
+      <div className="logo-container">
+        <img src={logo} alt="logo de tryning" />
+      </div>
+      <Form
+        handleSubmit={handleSubmit}
+        inputs={inputs}
+        buttons={buttons}
+        error={errorAuth}
+      />
+      <div className="container-redirect">
+        <p>¿No tienes una cuenta?</p>
+        <Link to="/register">Registrate</Link>
+      </div>
+    </div>
   );
 }
