@@ -3,7 +3,10 @@ import { SvgRoutine } from "../../common/icons/svgIcons";
 
 import logo from "../../assets/images/logo.png";
 
+import { useAuthContext } from "../../hooks/useAuthContext";
+
 export function Header() {
+  const { user, SignOut } = useAuthContext();
   return (
     <div className="Header-container">
       <header>
@@ -14,11 +17,8 @@ export function Header() {
       <nav>
         <SvgHome size={25} />
         <SvgRoutine size={25} />
-        <div className="container-img">
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/005/545/335/small/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg"
-            alt="imagen del usuario"
-          />
+        <div className="container-img" onClick={() => SignOut()}>
+          {user && <img src={user.photoURL} alt="imagen del usuario" />}
         </div>
       </nav>
     </div>

@@ -1,5 +1,6 @@
 import { useAuthContext } from "../../hooks/useAuthContext";
 import logo from "../../assets/images/logo.png";
+import { Link } from "react-router-dom";
 export default function Landing() {
   const { user } = useAuthContext();
   console.log(user);
@@ -9,12 +10,12 @@ export default function Landing() {
         <img src={logo} alt="imagen logo Tryning" />
       </div>
       <div className="buttons-container">
-        <a href="/login" className="button-login">
+        <Link to="/login" className="button-login">
           Iniciar sesion
-        </a>
-        <a href="/register" className="button-register">
+        </Link>
+        <Link to="/register" className="button-register">
           Registrarse
-        </a>
+        </Link>
       </div>
     </div>
   );
