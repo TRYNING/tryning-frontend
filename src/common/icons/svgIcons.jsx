@@ -5,16 +5,17 @@ export function SvgHome({ size, color }) {
       height={size}
       viewBox="0 0 27 29"
       fill={color}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill="transparent"
-        d="M9.7605 27H7.17366C4.31633 27 2 24.4154 2 21.2272V12.1461C2 10.1275 2.94498 8.25547 4.49214 7.20921L10.9592 2.83591C12.6074 1.72136 14.6741 1.72136 16.3223 2.83591L22.7893 7.20921C24.3365 8.25547 25.2815 10.1275 25.2815 12.1461V21.2272C25.2815 24.4154 22.9651 27 20.1078 27H17.521M9.7605 27V21.2272C9.7605 18.836 11.4977 16.8977 13.6407 16.8977C15.7838 16.8977 17.521 18.836 17.521 21.2272V27M9.7605 27H17.521"
-        stroke="white"
-        strokeWidth="3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      xmlns="http://www.w3.org/2000/svg">
+      <a href="/home">
+        <path
+          fill="transparent"
+          d="M9.7605 27H7.17366C4.31633 27 2 24.4154 2 21.2272V12.1461C2 10.1275 2.94498 8.25547 4.49214 7.20921L10.9592 2.83591C12.6074 1.72136 14.6741 1.72136 16.3223 2.83591L22.7893 7.20921C24.3365 8.25547 25.2815 10.1275 25.2815 12.1461V21.2272C25.2815 24.4154 22.9651 27 20.1078 27H17.521M9.7605 27V21.2272C9.7605 18.836 11.4977 16.8977 13.6407 16.8977C15.7838 16.8977 17.521 18.836 17.521 21.2272V27M9.7605 27H17.521"
+          stroke="white"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </a>
     </svg>
   );
 }
@@ -26,8 +27,9 @@ export function SvgRoutine({ size, color }) {
       height={size}
       viewBox="0 0 22 28"
       fill={color}
-      xmlns="http://www.w3.org/2000/svg"
-    >
+      xmlns="http://www.w3.org/2000/svg">
+      <a href="/rutine">
+
       <path
         fill="transparent"
         d="M7.14286 5.42859H4.28571C3.02335 5.42859 2 6.45194 2 7.7143V23.7143C2 24.9767 3.02335 26 4.28571 26H18C19.2624 26 20.2857 24.9767 20.2857 23.7143V7.7143C20.2857 6.45194 19.2624 5.42859 18 5.42859H15.1429"
@@ -42,6 +44,7 @@ export function SvgRoutine({ size, color }) {
         strokeWidth="3"
         strokeLinecap="round"
       />
+      </a>
     </svg>
   );
 }

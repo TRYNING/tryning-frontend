@@ -1,14 +1,15 @@
-.FormRegister-container {
+.Step3-container {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-
-  label {
+ 
+   label {
     color: var(--color-black);
     font-weight: bold;
     font-size: 14px;
     font-weight: 600;
   }
+
 
   .input-container {
     display: flex;
@@ -20,11 +21,53 @@
       border: none;
       border-radius: var(--border-input);
       height: 40px;
-      max-width: 280px;
+      max-width: 260px;
       padding: 0 10px;
       margin-top: 10px;
     }
   }
+
+
+  .fecha-nacimiento-conteiner{
+    display: flex;
+   
+
+    .date-conteiner{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      select{
+      border: none;
+      border-radius: var(--border-input);
+      height: 40px;
+      max-width: 260px;
+      padding: 0 10px;
+      margin-top: 10px;
+      margin-right: 10px;
+        
+      }
+
+      
+    }
+  }
+
+  
+  .valorescorporales-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .input{
+      width: 70%;
+    }
+  
+  }
+
+
+
+  
 
 .buttons-container {
   display: flex;
@@ -33,7 +76,7 @@
   padding: 50px 0;
   gap: 6px;
 
-  .button-next {
+  .button-register {
     border: 1px solid var(--color-primary);
     background-color: var(--color-primary);
     color: var(--color-gray);
@@ -51,7 +94,7 @@
   }
 }
 
-.button-google {
+.button-atras {
   border: 1px solid var(--color-primary);
   background-color: var(--color-gray);
   color: var(--color-primary);

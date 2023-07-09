@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../../../hooks/useAuthContext";
 
-export function FormDetailsExtra({ prevStep }) {
+export function Step3({ prevStep }) {
   const navigate = useNavigate();
   const { userData } = useAuthContext();
   const [dia, setDia] = useState("");
@@ -12,7 +12,6 @@ export function FormDetailsExtra({ prevStep }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Realiza cualquier lógica adicional antes de navegar a "/home"
     const fechaNacimiento = new Date(`${anio}-${mes}-${dia}`);
     console.log("Fecha de nacimiento:", fechaNacimiento);
 
@@ -67,7 +66,7 @@ export function FormDetailsExtra({ prevStep }) {
   };
 
   return (
-    <form className="FormDetailsExtra-container" onSubmit={(e) => handleSubmit(e)}>
+    <form className="Step3-container" onSubmit={(e) => handleSubmit(e)}>
       <div className="input-container">
           <label>Telefono</label>
           <input type="tel" pattern="[0-9-4]{3}-[0-9-5]{3}"required className="input" placeholder="2222-4444"></input>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuthContext } from "../../../../hooks/useAuthContext";
 
-export function FormDetails({ nextStep, prevStep }) {
+export function Step2({ nextStep, prevStep }) {
   const { setUserData } = useAuthContext();
   const [usuario, setUsuario] = useState();
   const [name, setName] = useState();
@@ -13,7 +13,7 @@ export function FormDetails({ nextStep, prevStep }) {
     nextStep();
   };
   return (
-    <form className="FormDetails-container" onSubmit={(e) => handleSubmit(e)}>
+    <form className="Step2-container" onSubmit={(e) => handleSubmit(e)}>
       <div className="container">
         <div className="input-container">
           <label>Usuario</label>

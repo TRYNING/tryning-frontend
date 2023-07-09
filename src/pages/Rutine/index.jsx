@@ -1,8 +1,8 @@
 import { Header } from "../../components/Header/Header";
 
-export default function Home() {
+export default function Rutine() {
   return (
-    <div className="Home-container">
+    <div className="Rutine-container">
       <main>
         <Header />
       </main>

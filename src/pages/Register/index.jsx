@@ -1,4 +1,4 @@
-import { RenderForms } from "./components/RenderForms";
+import { RenderSteps } from "./components/RenderSteps";
 import logo from "../../assets/images/logo.png";
 
 export default function Register() {
@@ -7,7 +7,7 @@ export default function Register() {
       <div className="logo">
         <img src={logo} alt="logo de tryning" />
       </div>
-      <RenderForms />
+      <RenderSteps />
     </div>
   );
 }

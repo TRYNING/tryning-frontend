@@ -1,8 +1,7 @@
 import { useAuthContext } from "../../../../hooks/useAuthContext";
-//import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-export function FormRegister({ nextStep }) {
+export function Step1({ nextStep }) {
   const { googleSignUp, setUserData } = useAuthContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -13,7 +12,7 @@ export function FormRegister({ nextStep }) {
     nextStep();
   };
   return (
-    <form className="FormRegister-container" onSubmit={(e) => handleSubmit(e)}>
+    <form className="Step1-container" onSubmit={(e) => handleSubmit(e)}>
       <div className="input-container">
       <label>Email</label>
       <input
