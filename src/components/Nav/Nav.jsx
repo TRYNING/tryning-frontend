@@ -13,7 +13,6 @@ export function Nav() {
           {user && <img src={user.photoURL} alt="imagen del usuario" />}
         </div>
       </nav>
-      ;
     </div>
   );
 }

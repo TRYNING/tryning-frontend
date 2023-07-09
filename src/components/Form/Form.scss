@@ -1,0 +1,23 @@
+.Form-container {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+
+  .error-container {
+    background: red;
+    color: var(--color-white);
+  }
+
+  .inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .buttons-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

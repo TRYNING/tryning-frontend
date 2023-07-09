@@ -1,7 +1,8 @@
 .Step1-container {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  width: 100%;
+  max-width: 270px;
 
   label {
     color: var(--color-black);
@@ -13,15 +14,12 @@
   .input-container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-
+    margin-top: 20px;
     .input {
       font-size: 14px;
       border: none;
       border-radius: var(--border-input);
-      height: 40px;
-      max-width: 280px;
-      padding: 0 10px;
+      padding: var(--padding-input);
       margin-top: 10px;
     }
   }
@@ -39,7 +37,7 @@
       color: var(--color-gray);
       border-radius: var(--border-button);
       height: var(--height-button);
-      width: 240px;
+      width: 100%;
       font-size: 14px;
       font-weight: bold;
 
@@ -57,7 +55,7 @@
     color: var(--color-primary);
     border-radius: var(--border-button);
     height: var(--height-button);
-    width: 240px;
+    width: 100%;
     font-size: 14px;
     display: flex;
     justify-content: center;

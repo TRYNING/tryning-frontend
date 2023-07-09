@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
-import { Input } from "../../../../components/Inputs/Input";
-import { Button } from "../../../../components/Button/Button";
-import { Form } from "../../../../components/Form/Form";
-import { useAuthContext } from "../../../../hooks/useAuthContext";
+import { useAuthContext } from "../../hooks/useAuthContext";
 import { useState } from "react";
+import { Input } from "../Inputs/Input";
+import { Button } from "../Button/Button";
+import { Form } from "../Form/Form";
 
-export function FormLogin() {
+export function FormAuth({ type }) {
   const { signWithEmail, errorAuth, setErrorAuth, googleSignUp } =
     useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
