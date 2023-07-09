@@ -26,5 +26,5 @@ export function RenderForms() {
       content = <FormDetailsExtra prevStep={prevStep} />;
       break;
   }
-  return <div>{content}</div>;
+  return <>{content}</>;
 }
