@@ -6,10 +6,21 @@ export function Step2({ nextStep, prevStep }) {
   const [usuario, setUsuario] = useState();
   const [name, setName] = useState();
   const [lastName, setLastName] = useState();
+  const [man, setMan] = useState();
+  const [woman, setWoman] = useState();
+  const [other, setOther] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setUserData((data) => ({ ...data, usuario, name, lastName }));
+    setUserData((data) => ({
+      ...data,
+      usuario,
+      name,
+      lastName,
+      man,
+      woman,
+      other,
+    }));
     nextStep();
   };
   return (
@@ -51,6 +62,7 @@ export function Step2({ nextStep, prevStep }) {
         <div className="input-container-radio">
           <div className="radio-container">
             <input
+              onChange={(e) => setMan(e.target.value)}
               type="radio"
               required
               className="radio"
@@ -61,6 +73,7 @@ export function Step2({ nextStep, prevStep }) {
           </div>
           <div className="radio-container">
             <input
+              onChange={(e) => setWoman(e.target.value)}
               type="radio"
               required
               className="radio"
@@ -71,6 +84,7 @@ export function Step2({ nextStep, prevStep }) {
           </div>
           <div className="radio-container">
             <input
+              onChange={(e) => setOther(e.target.value)}
               type="radio"
               required
               className="radio"

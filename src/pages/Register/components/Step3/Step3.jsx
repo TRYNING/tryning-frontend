@@ -2,67 +2,66 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../../../hooks/useAuthContext";
 
+const getYearsOptions = () => {
+  const currentYear = new Date().getFullYear();
+  return Array.from({ length: 101 }, (_, index) => {
+    const year = currentYear - index;
+    return (
+      <option key={year} value={year}>
+        {year}
+      </option>
+    );
+  });
+};
+
+const getDaysOptions = () =>
+  Array.from({ length: 31 }, (_, index) => (
+    <option key={index + 1} value={index + 1}>
+      {index + 1}
+    </option>
+  ));
+const getMonthsOptions = () =>
+  [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+  ].map((month, index) => (
+    <option key={index + 1} value={index + 1}>
+      {month}
+    </option>
+  ));
+
 export function Step3({ prevStep }) {
   const navigate = useNavigate();
-  const { userData } = useAuthContext();
+  const { setUserData } = useAuthContext();
   const [dia, setDia] = useState("");
   const [mes, setMes] = useState("");
   const [anio, setAnio] = useState("");
+  const [kg, setKg] = useState("");
+  const [cm, setCm] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const fechaNacimiento = new Date(`${anio}-${mes}-${dia}`);
-    console.log("Fecha de nacimiento:", fechaNacimiento);
+
+    setUserData((data) => ({
+      ...data,
+      fechaNacimiento,
+      kg,
+      cm,
+    }));
 
     navigate("/home");
-  };
-
-  const getYearsOptions = () => {
-    const currentYear = new Date().getFullYear();
-    const years = [];
-    for (let year = currentYear; year >= currentYear - 100; year--) {
-      years.push(
-        <option key={year} value={year}>
-          {year}
-        </option>
-      );
-    }
-    return years;
-  };
-
-  const getDaysOptions = () => {
-    const days = [];
-    for (let day = 1; day <= 31; day++) {
-      days.push(
-        <option key={day} value={day}>
-          {day}
-        </option>
-      );
-    }
-    return days;
-  };
-
-  const getMonthsOptions = () => {
-    const months = [
-      "Enero",
-      "Febrero",
-      "Marzo",
-      "Abril",
-      "Mayo",
-      "Junio",
-      "Julio",
-      "Agosto",
-      "Septiembre",
-      "Octubre",
-      "Noviembre",
-      "Diciembre",
-    ];
-    return months.map((month, index) => (
-      <option key={index + 1} value={index + 1}>
-        {month}
-      </option>
-    ));
   };
 
   return (
@@ -113,11 +112,23 @@ export function Step3({ prevStep }) {
       <div className="valorescorporales-container">
         <div className="input-container">
           <label>Peso en Kg</label>
-          <input type="number" required className="input" placeholder="kg" />
+          <input
+            onChange={(e) => setKg(e.target.value)}
+            type="number"
+            required
+            className="input"
+            placeholder="kg"
+          />
         </div>
         <div className="input-container">
           <label>Altura en cm</label>
-          <input type="number" required className="input" placeholder="cm" />
+          <input
+            onChange={(e) => setCm(e.target.value)}
+            type="number"
+            required
+            className="input"
+            placeholder="cm"
+          />
         </div>
       </div>
       <div className="buttons-container">

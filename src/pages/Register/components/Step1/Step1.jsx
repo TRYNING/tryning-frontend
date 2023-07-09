@@ -1,5 +1,4 @@
 import { useAuthContext } from "../../../../hooks/useAuthContext";
-//import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -8,10 +7,11 @@ export function Step1({ nextStep }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setUserData({ email, password });
     nextStep();
+    
   };
   return (
     <form className="Step1-container" onSubmit={(e) => handleSubmit(e)}>
@@ -43,8 +43,7 @@ export function Step1({ nextStep }) {
           onClick={() => {
             googleSignUp();
           }}
-          className="button-google"
-        >
+          className="button-google">
           <img
             src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png"
             alt=""
