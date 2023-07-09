@@ -5,17 +5,17 @@ export function BarSteps({ step }) {
     return (
       <div className="BarSteps-container">
         <Circle step={1} state={true} />
-        <Circle step={2} state={true} />
-        <Circle step={3} state={true} />
+        <Circle step={2} />
+        <Circle step={3} />
         <div className="bar"></div>
       </div>
     );
   if (step === 2)
     return (
       <div className="BarSteps-container">
-        <div className="circle">1</div>
-        <div className="circle">2</div>
-        <div className="circle">2</div>
+        <Circle step={1} state={true} />
+        <Circle step={2} state={true} />
+        <Circle step={3} />
         <div className="bar"></div>
       </div>
     );
@@ -23,9 +23,9 @@ export function BarSteps({ step }) {
   if (step === 3)
     return (
       <div className="BarSteps-container">
-        <div className="circle">1</div>
-        <div className="circle">2</div>
-        <div className="circle">2</div>
+        <Circle step={1} state={true} />
+        <Circle step={2} />
+        <Circle step={3} />
         <div className="bar"></div>
       </div>
     );

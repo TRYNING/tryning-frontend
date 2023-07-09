@@ -21,7 +21,8 @@ export function Step1({ nextStep }) {
     e.preventDefault();
     const { email, password } = infoUser;
     setErrorAuth(null);
-    registerWithEmail(email, password, nextStep);
+    nextStep();
+    //registerWithEmail(email, password, nextStep);
   };
 
   const handleGoogle = () => {
@@ -47,7 +48,7 @@ export function Step1({ nextStep }) {
   ];
 
   const buttons = [
-    <Button key={1} className="button-login" type="submit">
+    <Button key={1} className="button-type-1" type="submit">
       Crear cuenta
     </Button>,
     <Button key={2} className="button-google" onClick={handleGoogle}>

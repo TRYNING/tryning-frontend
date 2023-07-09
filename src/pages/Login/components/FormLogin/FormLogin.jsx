@@ -46,7 +46,7 @@ export function FormLogin() {
   ];
 
   const buttons = [
-    <Button key={1} className="button-login" type="submit">
+    <Button key={1} className="button-type-1" type="submit">
       Inicia sesion
     </Button>,
     <Button key={2} className="button-google" onClick={handleGoogle}>

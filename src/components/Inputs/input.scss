@@ -1,6 +1,24 @@
 .Input-container {
   display: flex;
+  flex-grow: 2;
   flex-direction: column;
+  label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  input {
+    font-size: 14px;
+    border: none;
+    border-radius: var(--border-input);
+    padding: var(--padding-input);
+    margin-top: 10px;
+  }
+}
+
+.InputLittle-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
   label {
     font-size: 14px;
     font-weight: 600;

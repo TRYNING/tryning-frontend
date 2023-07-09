@@ -5,9 +5,12 @@ export function Input({
   name = "name",
   className,
   label,
+  littleInput = false,
 }) {
   return (
-    <div className="Input-container">
+    <div
+      className={`${littleInput ? "InputLittle-container" : "Input-container"}`}
+    >
       <label>{label}</label>
       <input
         type={type}

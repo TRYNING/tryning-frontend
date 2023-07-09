@@ -1,93 +1,68 @@
 import { useState } from "react";
 import { useAuthContext } from "../../../../hooks/useAuthContext";
+import { Button } from "../../../../components/Button/Button";
+import { Input } from "../../../../components/Inputs/Input";
+import { Form } from "../../../../components/Form/Form";
+import { BarSteps } from "../BarSteps/BarSteps";
+import logo from "../../../../assets/images/logo.png";
 
 export function Step2({ nextStep, prevStep }) {
   const { setUserData } = useAuthContext();
-  const [usuario, setUsuario] = useState();
-  const [name, setName] = useState();
-  const [lastName, setLastName] = useState();
+  const [infoUser, setInfoUSer] = useState({});
+
+  const handleChange = (e) => {
+    setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setUserData((data) => ({ ...data, usuario, name, lastName }));
+    const { usuario, nombre, apellido } = infoUser;
+    setUserData((data) => ({ ...data, usuario, nombre, apellido }));
     nextStep();
   };
+
+  const inputs = [
+    <Input
+      key={1}
+      onChange={handleChange}
+      label="Usuario"
+      placeholder="Ingrese su nombre de usuario..."
+      name="usuario"
+    />,
+    <Input
+      key={2}
+      onChange={handleChange}
+      label="Nombre"
+      placeholder="Nombre..."
+      name="nombre"
+      littleInput={true}
+    />,
+    <Input
+      key={3}
+      onChange={handleChange}
+      label="Apellido"
+      placeholder="Apellido..."
+      name="apellido"
+      littleInput={true}
+    />,
+  ];
+
+  const buttons = [
+    <Button key={1} className="button-type-1" type="submit">
+      Siguiente
+    </Button>,
+    <Button key={2} className="button-type-2" type="button" onClick={prevStep}>
+      Anterior
+    </Button>,
+  ];
+
   return (
-    <form className="Step2-container" onSubmit={(e) => handleSubmit(e)}>
-      <div className="container">
-        <div className="input-container">
-          <label>Usuario</label>
-          <input
-            onChange={(e) => setUsuario(e.target.value)}
-            type="text"
-            placeholder="Nombre de usuario..."
-            required
-            className="input"
-          />
-        </div>
-        <div className="input-container-names">
-          <div className="input-container">
-            <label>Nombre</label>
-
-            <input
-              onChange={(e) => setName(e.target.value)}
-              type="text"
-              placeholder="Nombre..."
-              required
-              className="input name"
-            />
-          </div>
-          <div className="input-container">
-            <label>Apellido</label>
-            <input
-              onChange={(e) => setLastName(e.target.value)}
-              type="text"
-              placeholder="Apellido..."
-              required
-              className="input name"
-            />
-          </div>
-        </div>
-        <div className="input-container-radio">
-          <div className="radio-container">
-            <input
-              type="radio"
-              required
-              className="radio"
-              id="Hombre"
-              name="sexo"
-            />
-            <label htmlFor="Hombre">Hombre</label>
-          </div>
-          <div className="radio-container">
-            <input
-              type="radio"
-              required
-              className="radio"
-              id="Mujer"
-              name="sexo"
-            />
-            <label htmlFor="Mujer">Mujer</label>
-          </div>
-          <div className="radio-container">
-            <input
-              type="radio"
-              required
-              className="radio"
-              id="Otro"
-              name="sexo"
-            />
-            <label htmlFor="Otro">Otro</label>
-          </div>
-        </div>
+    <div className="Step2-container">
+      <div className="logo-container">
+        <img src={logo} alt="logo de tryning" />
+        <BarSteps step={2} />
       </div>
-
-      <div className="buttons-container">
-        <button className="button-next">Siguiente</button>
-        <button className="button-previous" onClick={() => prevStep()}>
-          Anterior
-        </button>
-      </div>
-    </form>
+      <Form handleSubmit={handleSubmit} inputs={inputs} buttons={buttons} />
+    </div>
   );
 }
