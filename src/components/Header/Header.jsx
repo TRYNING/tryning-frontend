@@ -1,26 +1,24 @@
-import { SvgHome } from "../../common/icons/svgIcons";
-import { SvgRoutine } from "../../common/icons/svgIcons";
-
 import logo from "../../assets/images/logo.png";
-
-import { useAuthContext } from "../../hooks/useAuthContext";
+import { Link } from "react-router-dom";
 
 export function Header() {
-  const { user, SignOut } = useAuthContext();
   return (
     <div className="Header-container">
       <header>
         <div className="container-logo">
           <img src={logo} alt="logo de tryning" />
         </div>
-      </header>
-      <nav>
-        <SvgHome size={25} />
-        <SvgRoutine size={25} />
-        <div className="container-img" onClick={() => SignOut()}>
-          {user && <img src={user.photoURL} alt="imagen del usuario" />}
+        <div className="menu">
+          <div className="link">
+            <Link to="/login" className="button-login">
+              Iniciar sesion
+            </Link>
+          </div>
+          <div className="link"></div>
+          <div className="link"></div>
+          <div className="link"></div>
         </div>
-      </nav>
+      </header>
     </div>
   );
 }
