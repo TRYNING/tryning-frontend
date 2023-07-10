@@ -22,6 +22,7 @@ export function Step3({ prevStep }) {
   const inputs = [
     <Input
       key={1}
+      type="tel"
       onChange={handleChange}
       label="Telefono"
       placeholder="Ingrese su telefono..."

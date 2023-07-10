@@ -36,6 +36,7 @@ export function Step1({ nextStep }) {
       label="Mail"
       placeholder="Ingrese su mail..."
       name="email"
+      type="email"
     />,
     <Input
       key={2}
@@ -43,6 +44,7 @@ export function Step1({ nextStep }) {
       label="Contraseña"
       placeholder="Ingrese su contraseña..."
       name="password"
+      type="password"
     />,
   ];
 
