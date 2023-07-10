@@ -29,9 +29,7 @@ export function Header() {
           <li className="link">
             <Link to="/contact">CONTACTO</Link>
           </li>
-          <li className="link">
-            <Link to="/trainers">ENTRENADORES</Link>
-          </li>
+          
           <li className="link trainer">
             <Link to="/become-trainer">VOLVERSE ENTRENADOR</Link>
           </li>
