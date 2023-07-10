@@ -10,14 +10,10 @@ export function RequireAuth({ children }) {
   }
 }
 
-export function CanNotAuth({ children }) {
-  const { user, registerDetail } = useAuthContext();
+export function ExistUser({ children }) {
+  const { user } = useAuthContext();
   if (user) {
-    if (!registerDetail) {
-      return <Navigate to="/register-details" />;
-    } else {
-      return <Navigate to="/home"></Navigate>;
-    }
+    return <Navigate to="/home"></Navigate>;
   } else {
     return children;
   }

@@ -1,0 +1,49 @@
+.BarSteps-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -60px;
+  overflow: hidden;
+
+  .bar {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: var(--color-light-gray);
+    border-radius: var(--border);
+  }
+
+  .bar-step {
+    background: var(--color-secondary);
+  }
+
+  .circle {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    background: var(--color-light-gray);
+    color: var(--color-white);
+    border-radius: 50%;
+    z-index: 50;
+  }
+
+  .circle-step {
+    background: var(--color-secondary);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 20px;
+      height: 5px;
+      width: 80px;
+      background: var(--color-secondary);
+      border-radius: var(--border);
+      z-index: 20;
+    }
+  }
+}

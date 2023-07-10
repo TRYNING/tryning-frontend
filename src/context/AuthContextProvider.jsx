@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
-  signInWithRedirect,
+  signInWithPopup,
   signOut,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -17,15 +17,16 @@ export const AuthContext = createContext({});
 
 export function AuthContextProvider({ children }) {
   const [user, setUSer] = useState();
+  const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
 
   const googleSignUp = async () => {
     const provider = new GoogleAuthProvider();
-    signInWithRedirect(auth, provider);
+    signInWithPopup(auth, provider);
   };
 
-  const registerWithEmail = async (email, password) => {
+  const registerWithEmail = async (email, password, nextStep) => {
     try {
       setLoading(true);
       const response = await createUserWithEmailAndPassword(
@@ -34,6 +35,7 @@ export function AuthContextProvider({ children }) {
         password
       );
       setLoading(false);
+      nextStep();
       console.log(response);
     } catch (err) {
       const errorMessage = errorMessageRegister(err.code);
@@ -72,6 +74,8 @@ export function AuthContextProvider({ children }) {
     <AuthContext.Provider
       value={{
         user,
+        userData,
+        setUserData,
         googleSignUp,
         SignOut,
         registerWithEmail,
