@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  margin-top: 20px;
   .input-radio {
     appearance: none;
     -webkit-appearance: none;
@@ -50,5 +51,9 @@
 
   .input-radio:checked {
     background: var(--color-secondary);
+  }
+
+  .input-date {
+    color: var(--color-secondary);
   }
 }

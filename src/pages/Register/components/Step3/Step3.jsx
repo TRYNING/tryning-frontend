@@ -6,7 +6,7 @@ import { Form } from "../../../../components/Form/Form";
 import { registerRequest } from "../../../../api/auth";
 
 export function Step3({ prevStep }) {
-  const { setUserData, userData } = useAuthContext();
+  const { user, userData } = useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
   const handleChange = (e) => {
     setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
@@ -14,15 +14,14 @@ export function Step3({ prevStep }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { telefono, altura, peso, fechaNacimiento } = infoUser;
-    await setUserData((data) => ({
-      ...data,
-      telefono,
-      altura,
-      peso,
-      fechaNacimiento,
-    }));
-    registerRequest({ ...userData, idUsuario: "aaaaaaaaaaaaaaa" });
+    const newUser = {
+      ...infoUser,
+      ...userData,
+      idUsuario: user.reloadUserInfo.localId,
+    };
+    console.log(newUser);
+
+    registerRequest(newUser);
   };
 
   const inputs = [
@@ -42,6 +41,7 @@ export function Step3({ prevStep }) {
       label="Fecha de nacimiento"
       placeholder="Ingrese su fecha de nacimiento..."
       name="fechaNacimiento"
+      className={"input-date"}
     />,
     <Input
       key={3}

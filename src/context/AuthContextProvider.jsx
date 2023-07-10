@@ -21,9 +21,10 @@ export function AuthContextProvider({ children }) {
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
 
-  const googleSignUp = async () => {
+  const googleSignUp = async (nextStep) => {
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider);
+    await signInWithPopup(auth, provider);
+    nextStep();
   };
 
   const registerWithEmail = async (email, password, nextStep) => {

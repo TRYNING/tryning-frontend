@@ -24,13 +24,12 @@ export function Step1({ nextStep }) {
     const { email, password } = infoUser;
     setUserData((data) => ({ ...data, email, password }));
     setErrorAuth(null);
-    nextStep();
-    //registerWithEmail(email, password, nextStep);
+    registerWithEmail(email, password, nextStep);
   };
 
   const handleGoogle = () => {
     setErrorAuth(null);
-    googleSignUp();
+    googleSignUp(nextStep);
   };
 
   const inputs = [
