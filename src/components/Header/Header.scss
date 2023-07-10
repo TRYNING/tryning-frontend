@@ -6,15 +6,59 @@
   flex-direction: column;
   justify-content: space-between;
   
+  .menu{
+    position: absolute;
+    background-color: var(--color-white);
+    width: 100%;
+    height: fit-content;
+    top: -500px;
+    z-index: -1;
+    padding-top: 70px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .container-link {
+      width: 100%;      
+      margin: 25px 0px ;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      list-style-type: none;
+      align-items: center;
+      .link{
+        color: var(--color-dark-gray);
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .logout{
+        color: var(--color-error);
+      }
+      .trainer{
+        color:var(--color-primary-entrenador);
+      }
+    }
+
+   
+
+  }
+
+  .active{
+    top: 0;
+  }
+
 
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--color-white);
-    .menu{
-display: none;
-    }
     .container-logo {
       
       img {
@@ -22,7 +66,9 @@ display: none;
         height: 70px;
       }
     }
+
   }
+   
 
   nav {
     display: flex;
@@ -43,17 +89,3 @@ display: none;
   }
 }
 
-.active{
-  .menu{
-    display: flex;
-  }
-  display: flex;
-  position: absolute;
-  header{
-    height: 300px;
-    flex-direction: column;
-    align-items: center;
-
-  }
-  
-}
