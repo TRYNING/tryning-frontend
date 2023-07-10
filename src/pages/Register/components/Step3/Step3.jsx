@@ -1,131 +1,73 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../../../hooks/useAuthContext";
+import { Button } from "../../../../components/Button/Button";
+import { Input } from "../../../../components/Inputs/Input";
+import { Form } from "../../../../components/Form/Form";
+import { BarSteps } from "../BarSteps/BarSteps";
+import logo from "../../../../assets/images/logo.png";
 
 export function Step3({ prevStep }) {
-  const navigate = useNavigate();
-  const { userData } = useAuthContext();
-  const [dia, setDia] = useState("");
-  const [mes, setMes] = useState("");
-  const [anio, setAnio] = useState("");
+  const { setUserData } = useAuthContext();
+  const [infoUser, setInfoUSer] = useState({});
+  const handleChange = (e) => {
+    setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const fechaNacimiento = new Date(`${anio}-${mes}-${dia}`);
-    console.log("Fecha de nacimiento:", fechaNacimiento);
-
-    navigate("/home");
+    const { telefono, altura, peso } = infoUser;
+    setUserData((data) => ({ ...data, telefono, altura, peso }));
   };
 
-  const getYearsOptions = () => {
-    const currentYear = new Date().getFullYear();
-    const years = [];
-    for (let year = currentYear; year >= currentYear - 100; year--) {
-      years.push(
-        <option key={year} value={year}>
-          {year}
-        </option>
-      );
-    }
-    return years;
-  };
+  const inputs = [
+    <Input
+      key={1}
+      onChange={handleChange}
+      label="Telefono"
+      placeholder="Ingrese su telefono..."
+      name="telefono"
+    />,
+    <Input
+      key={2}
+      onChange={handleChange}
+      label="Altura"
+      placeholder="Altura..."
+      name="altura"
+      littleInput={true}
+    />,
+    <Input
+      key={3}
+      onChange={handleChange}
+      label="Peso"
+      placeholder="Peso..."
+      name="peso"
+      littleInput={true}
+    />,
+    <Input
+      key={4}
+      onChange={handleChange}
+      label="Telefono"
+      placeholder="Ingrese su telefono..."
+      name="telefono"
+    />,
+  ];
 
-  const getDaysOptions = () => {
-    const days = [];
-    for (let day = 1; day <= 31; day++) {
-      days.push(
-        <option key={day} value={day}>
-          {day}
-        </option>
-      );
-    }
-    return days;
-  };
-
-  const getMonthsOptions = () => {
-    const months = [
-      "Enero",
-      "Febrero",
-      "Marzo",
-      "Abril",
-      "Mayo",
-      "Junio",
-      "Julio",
-      "Agosto",
-      "Septiembre",
-      "Octubre",
-      "Noviembre",
-      "Diciembre",
-    ];
-    return months.map((month, index) => (
-      <option key={index + 1} value={index + 1}>
-        {month}
-      </option>
-    ));
-  };
+  const buttons = [
+    <Button key={1} className="button-type-1" type="submit">
+      Siguiente
+    </Button>,
+    <Button key={2} className="button-type-2" type="button" onClick={prevStep}>
+      Anterior
+    </Button>,
+  ];
 
   return (
-    <form className="Step3-container" onSubmit={(e) => handleSubmit(e)}>
-      <div className="input-container">
-        <label>Telefono</label>
-        <input
-          type="tel"
-          pattern="[0-9-4]{3}-[0-9-5]{3}"
-          required
-          className="input"
-          placeholder="2222-4444"></input>
+    <div className="Step3-container">
+      <div className="logo-container">
+        <img src={logo} alt="logo de tryning" />
+        <BarSteps step={3} />
       </div>
-      <div className="fecha-nacimiento-conteiner">
-        <div className="input-container">
-          <label>Fecha de nacimiento</label>
-          <div className="date-conteiner">
-            <select
-              value={dia}
-              onChange={(e) => setDia(e.target.value)}
-              required>
-              <option value="" disabled>
-                Día
-              </option>
-              {getDaysOptions()}
-            </select>
-            <select
-              value={mes}
-              onChange={(e) => setMes(e.target.value)}
-              required>
-              <option value="" disabled>
-                Mes
-              </option>
-              {getMonthsOptions()}
-            </select>
-            <select
-              value={anio}
-              onChange={(e) => setAnio(e.target.value)}
-              required>
-              <option value="" disabled>
-                Año
-              </option>
-              {getYearsOptions()}
-            </select>
-          </div>
-        </div>
-      </div>
-      <div className="valorescorporales-container">
-        <div className="input-container">
-          <label>Peso en Kg</label>
-          <input type="number" required className="input" placeholder="kg" />
-        </div>
-        <div className="input-container">
-          <label>Altura en cm</label>
-          <input type="number" required className="input" placeholder="cm" />
-        </div>
-      </div>
-      <div className="buttons-container">
-        <button className="button-register">Regístrate</button>
-        <button className="button-atras" onClick={() => prevStep()}>
-          Anterior
-        </button>
-      </div>
-    </form>
+      <Form handleSubmit={handleSubmit} inputs={inputs} buttons={buttons} />
+    </div>
   );
 }

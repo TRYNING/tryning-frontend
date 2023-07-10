@@ -24,9 +24,9 @@ export function BarSteps({ step }) {
     return (
       <div className="BarSteps-container">
         <Circle step={1} state={true} />
-        <Circle step={2} />
-        <Circle step={3} />
-        <div className="bar"></div>
+        <Circle step={2} state={true} />
+        <Circle step={3} state={true} />
+        <div className="bar bar-step"></div>
       </div>
     );
 }

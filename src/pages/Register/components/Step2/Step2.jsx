@@ -9,15 +9,14 @@ import logo from "../../../../assets/images/logo.png";
 export function Step2({ nextStep, prevStep }) {
   const { setUserData } = useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
-
   const handleChange = (e) => {
     setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { usuario, nombre, apellido } = infoUser;
-    setUserData((data) => ({ ...data, usuario, nombre, apellido }));
+    const { usuario, nombre, apellido, genero } = infoUser;
+    setUserData((data) => ({ ...data, usuario, nombre, apellido, genero }));
     nextStep();
   };
 
@@ -43,6 +42,36 @@ export function Step2({ nextStep, prevStep }) {
       label="Apellido"
       placeholder="Apellido..."
       name="apellido"
+      littleInput={true}
+    />,
+    <Input
+      key={4}
+      type="radio"
+      onChange={handleChange}
+      label="Hombre"
+      value="hombre"
+      checked={infoUser.genero === "hombre"}
+      name="genero"
+      littleInput={true}
+    />,
+    <Input
+      key={5}
+      type="radio"
+      onChange={handleChange}
+      value="mujer"
+      checked={infoUser.genero === "mujer"}
+      label="Mujer"
+      name="genero"
+      littleInput={true}
+    />,
+    <Input
+      key={6}
+      type="radio"
+      onChange={handleChange}
+      value="otro"
+      label="Otro"
+      checked={infoUser.genero === "otro"}
+      name="genero"
       littleInput={true}
     />,
   ];

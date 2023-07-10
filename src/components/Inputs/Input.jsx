@@ -6,7 +6,23 @@ export function Input({
   className,
   label,
   littleInput = false,
+  checked,
+  value,
 }) {
+  if (type === "radio")
+    return (
+      <label className="container-input-radio">
+        <input
+          className="input-radio"
+          type="radio"
+          value={value}
+          checked={checked}
+          onChange={onChange}
+          name={name}
+        />
+        {label}
+      </label>
+    );
   return (
     <div
       className={`${littleInput ? "InputLittle-container" : "Input-container"}`}

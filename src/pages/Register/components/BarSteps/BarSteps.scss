@@ -15,6 +15,10 @@
     border-radius: var(--border);
   }
 
+  .bar-step {
+    background: var(--color-secondary);
+  }
+
   .circle {
     position: relative;
     display: grid;

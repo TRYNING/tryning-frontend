@@ -31,3 +31,24 @@
     margin-top: 10px;
   }
 }
+
+.container-input-radio {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  .input-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--color-secondary);
+    outline: none;
+    cursor: pointer;
+  }
+
+  .input-radio:checked {
+    background: var(--color-secondary);
+  }
+}
