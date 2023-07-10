@@ -3,44 +3,42 @@ import logo from "../../assets/images/logo.png";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { Link } from "react-router-dom";
 
-
 export function Header() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
-function handleLogoClick(){
-  setOpen(!open)
-}
-const { SignOut } = useAuthContext();
-
+  function handleLogoClick() {
+    setOpen(!open);
+  }
+  const { SignOut } = useAuthContext();
 
   return (
     <div className="Header-container">
       <header>
         <div className="container-logo">
-          <img src={logo} alt="logo de tryning" onClick={handleLogoClick}/>
+          <img src={logo} alt="logo de tryning" onClick={handleLogoClick} />
         </div>
-        
       </header>
       <div className={`menu ${open ? "active" : ""}`} id="menu">
-          
-          <ul className="container-link">
-            <li className="link">
-            <Link to="/my-acount">
-              MI CUENTA
-              </Link>
-              </li>
-            <li className="link">
-              <Link to="/about-us">
-              NOSOTROS
-              </Link>
-            </li>
-            <li className="link">CONTACTO</li>
-            <li className="link">ENTRENADORES</li>
-            <li className="link trainer">VOLVERSE ENTRENADOR</li>
-            <li className="link logout" onClick={() => SignOut()}>
-              CERRAR SESION
-            </li>
-          </ul>
+        <ul className="container-link">
+          <li className="link">
+            <Link to="/my-account">MI CUENTA</Link>
+          </li>
+          <li className="link">
+            <Link to="/about-us">NOSOTROS</Link>
+          </li>
+          <li className="link">
+            <Link to="/contact">CONTACTO</Link>
+          </li>
+          <li className="link">
+            <Link to="/trainers">ENTRENADORES</Link>
+          </li>
+          <li className="link trainer">
+            <Link to="/become-trainer">VOLVERSE ENTRENADOR</Link>
+          </li>
+          <li className="link logout" onClick={() => SignOut()}>
+            CERRAR SESION
+          </li>
+        </ul>
       </div>
     </div>
   );
