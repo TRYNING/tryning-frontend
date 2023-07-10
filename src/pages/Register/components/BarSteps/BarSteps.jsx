@@ -1,32 +1,39 @@
 import { Circle } from "./Circle";
 
 export function BarSteps({ step }) {
-  if (step === 1)
-    return (
-      <div className="BarSteps-container">
-        <Circle step={1} state={true} />
-        <Circle step={2} />
-        <Circle step={3} />
-        <div className="bar"></div>
-      </div>
-    );
-  if (step === 2)
-    return (
-      <div className="BarSteps-container">
-        <Circle step={1} state={true} />
-        <Circle step={2} state={true} />
-        <Circle step={3} />
-        <div className="bar"></div>
-      </div>
-    );
+  let children;
+  switch (step) {
+    case 1:
+      children = (
+        <>
+          <Circle step={1} state={true} />
+          <Circle step={2} />
+          <Circle step={3} />
+          <div className="bar"></div>
+        </>
+      );
+      break;
+    case 2:
+      children = (
+        <>
+          <Circle step={1} state={true} />
+          <Circle step={2} state={true} />
+          <Circle step={3} />
+          <div className="bar"></div>
+        </>
+      );
+      break;
+    case 3:
+      children = (
+        <>
+          <Circle step={1} state={true} />
+          <Circle step={2} state={true} />
+          <Circle step={3} state={true} />
+          <div className="bar bar-step"></div>
+        </>
+      );
+      break;
+  }
 
-  if (step === 3)
-    return (
-      <div className="BarSteps-container">
-        <Circle step={1} state={true} />
-        <Circle step={2} state={true} />
-        <Circle step={3} state={true} />
-        <div className="bar bar-step"></div>
-      </div>
-    );
+  return <div className="BarSteps-container">{children}</div>;
 }
