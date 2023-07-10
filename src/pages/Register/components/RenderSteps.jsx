@@ -1,11 +1,8 @@
-import { useState } from "react";
 import { Step1 } from "./Step1/Step1";
 import { Step2 } from "./Step2/Step2";
 import { Step3 } from "./Step3/Step3";
 
-export function RenderSteps() {
-  const [step, setStep] = useState(1);
-
+export function RenderSteps({ step, setStep }) {
   const nextStep = () => {
     setStep((step) => step + 1);
   };

@@ -3,9 +3,7 @@ import { Input } from "../../../../components/Inputs/Input";
 import { Button } from "../../../../components/Button/Button";
 import { Form } from "../../../../components/Form/Form";
 import { useState } from "react";
-import logo from "../../../../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { BarSteps } from "../BarSteps/BarSteps";
 
 export function Step1({ nextStep }) {
   const { registerWithEmail, errorAuth, setErrorAuth, googleSignUp } =
@@ -59,10 +57,6 @@ export function Step1({ nextStep }) {
 
   return (
     <div className="Step1-container">
-      <div className="logo-container">
-        <img src={logo} alt="logo de tryning" />
-        <BarSteps step={1} />
-      </div>
       <Form
         handleSubmit={handleSubmit}
         inputs={inputs}

@@ -3,8 +3,6 @@ import { useAuthContext } from "../../../../hooks/useAuthContext";
 import { Button } from "../../../../components/Button/Button";
 import { Input } from "../../../../components/Inputs/Input";
 import { Form } from "../../../../components/Form/Form";
-import { BarSteps } from "../BarSteps/BarSteps";
-import logo from "../../../../assets/images/logo.png";
 
 export function Step3({ prevStep }) {
   const { setUserData } = useAuthContext();
@@ -28,7 +26,7 @@ export function Step3({ prevStep }) {
       placeholder="Ingrese su telefono..."
       name="telefono"
     />,
-  
+
     <Input
       key={2}
       type="date"
@@ -55,7 +53,6 @@ export function Step3({ prevStep }) {
       name="peso"
       littleInput={true}
     />,
-    
   ];
 
   const buttons = [
@@ -68,10 +65,6 @@ export function Step3({ prevStep }) {
   ];
   return (
     <div className="Step3-container">
-      <div className="logo-container">
-        <img src={logo} alt="logo de tryning" />
-        <BarSteps step={3} />
-      </div>
       <Form handleSubmit={handleSubmit} inputs={inputs} buttons={buttons} />
     </div>
   );

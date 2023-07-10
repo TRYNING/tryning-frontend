@@ -3,8 +3,6 @@ import { useAuthContext } from "../../../../hooks/useAuthContext";
 import { Button } from "../../../../components/Button/Button";
 import { Input } from "../../../../components/Inputs/Input";
 import { Form } from "../../../../components/Form/Form";
-import { BarSteps } from "../BarSteps/BarSteps";
-import logo from "../../../../assets/images/logo.png";
 
 export function Step2({ nextStep, prevStep }) {
   const { setUserData } = useAuthContext();
@@ -87,10 +85,6 @@ export function Step2({ nextStep, prevStep }) {
 
   return (
     <div className="Step2-container">
-      <div className="logo-container">
-        <img src={logo} alt="logo de tryning" />
-        <BarSteps step={2} />
-      </div>
       <Form handleSubmit={handleSubmit} inputs={inputs} buttons={buttons} />
     </div>
   );
