@@ -60,7 +60,6 @@ export function Step3({ prevStep }) {
       Anterior
     </Button>,
   ];
-
   return (
     <div className="Step3-container">
       <div className="logo-container">

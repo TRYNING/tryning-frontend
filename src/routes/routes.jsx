@@ -24,9 +24,9 @@ export default function Rutas() {
         <Route
           path="/home"
           element={
-            // <RequireAuth>
+            <RequireAuth>
               <Home />
-            // </RequireAuth>
+            </RequireAuth>
           }
         />
       </Routes>

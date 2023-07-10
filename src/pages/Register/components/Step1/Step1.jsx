@@ -11,7 +11,6 @@ export function Step1({ nextStep }) {
   const { registerWithEmail, errorAuth, setErrorAuth, googleSignUp } =
     useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
-
   const handleChange = (e) => {
     setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
     setErrorAuth(null);
