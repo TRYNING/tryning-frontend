@@ -1,6 +1,8 @@
 import { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import { Link } from "react-router-dom";
+
 
 export function Header() {
   const [open, setOpen] = useState(false)
@@ -22,8 +24,16 @@ const { SignOut } = useAuthContext();
       <div className={`menu ${open ? "active" : ""}`} id="menu">
           
           <ul className="container-link">
-            <li className="link">MI CUENTA</li>
-            <li className="link">NOSOTROS</li>
+            <li className="link">
+            <Link to="/my-acount">
+              MI CUENTA
+              </Link>
+              </li>
+            <li className="link">
+              <Link to="/about-us">
+              NOSOTROS
+              </Link>
+            </li>
             <li className="link">CONTACTO</li>
             <li className="link">ENTRENADORES</li>
             <li className="link trainer">VOLVERSE ENTRENADOR</li>
