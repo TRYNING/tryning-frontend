@@ -5,18 +5,26 @@
 // componentes
 
 @use "../../components/Header/Header.scss";
+@use "../../components/Nav/Nav.scss";
+@use "../../components/Inputs/input.scss";
+@use "../../components/Button/Buttons.scss";
+@use "../../components/Form/Form.scss";
 
 // pages
 @use "../../pages/Landing/Landing.scss";
 @use "../../pages/Home/Home.scss";
 @use "../../pages/Login/Login.scss";
 @use "../../pages/Register/Register.scss";
+@use "../../pages/Rutine/Rutine.scss";
+@use "../../pages/Profile/Profile.scss";
+
 // pages components
 
-@use "../../pages/Login/components/FormLogin/FormLogin.scss";
-@use "../../pages/Register/components/FormDetails/FormDetails.scss";
-@use "../../pages/Register/components/FormDetailsExtra/FormDetailsExtra.scss";
-@use "../../pages/Register/components/FormRegister/FormRegister.scss";
+@use "../.././/pages/Login/components/FormLogin/FormLogin.scss";
+@use "../../pages/Register/components/Step1/Step1.scss";
+@use "../../pages/Register/components/Step2/Step2.scss";
+@use "../../pages/Register/components/Step3/Step3.scss";
+@use "../../pages/Register/components/BarSteps/BarSteps.scss";
 
 * {
   margin: 0;

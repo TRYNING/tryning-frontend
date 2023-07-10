@@ -1,17 +1,19 @@
 :root {
-  --color-primary: #FF1167;
-  --color-primary-entrenador: #0A84DD;
+  --color-primary: #ff1167;
+  --color-primary-entrenador: #0a84dd;
   --color-gray: #f2f0f0;
   --color-black: #000000;
   --color-transparent-gray: #00000060;
-  --color-secondary: #FF5592;
+  --color-secondary: #ff5592;
   --color-light-gray: #c2c2c2;
   --color-dark-gray: #4a4f46;
   --color-white: #fff;
-  --color-transparent:none;
+  --color-error: #ff3838;
+  --color-transparent: transparent;
   --border-button: 50px;
   --padding-button: 20px;
+  --padding-input: 10px;
   --height-button: 40px;
   --border-input: 5px;
-
+  --border: 5px;
 }
