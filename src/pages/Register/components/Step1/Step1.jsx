@@ -6,8 +6,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function Step1({ nextStep }) {
-  const { registerWithEmail, errorAuth, setErrorAuth, googleSignUp } =
-    useAuthContext();
+  const {
+    registerWithEmail,
+    errorAuth,
+    setErrorAuth,
+    googleSignUp,
+    setUserData,
+  } = useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
   const handleChange = (e) => {
     setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
@@ -17,6 +22,7 @@ export function Step1({ nextStep }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { email, password } = infoUser;
+    setUserData((data) => ({ ...data, email, password }));
     setErrorAuth(null);
     nextStep();
     //registerWithEmail(email, password, nextStep);

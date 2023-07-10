@@ -3,18 +3,26 @@ import { useAuthContext } from "../../../../hooks/useAuthContext";
 import { Button } from "../../../../components/Button/Button";
 import { Input } from "../../../../components/Inputs/Input";
 import { Form } from "../../../../components/Form/Form";
+import { registerRequest } from "../../../../api/auth";
 
 export function Step3({ prevStep }) {
-  const { setUserData } = useAuthContext();
+  const { setUserData, userData } = useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
   const handleChange = (e) => {
     setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { telefono, altura, peso } = infoUser;
-    setUserData((data) => ({ ...data, telefono, altura, peso }));
+    const { telefono, altura, peso, fechaNacimiento } = infoUser;
+    await setUserData((data) => ({
+      ...data,
+      telefono,
+      altura,
+      peso,
+      fechaNacimiento,
+    }));
+    registerRequest({ ...userData, idUsuario: "aaaaaaaaaaaaaaa" });
   };
 
   const inputs = [
@@ -33,7 +41,7 @@ export function Step3({ prevStep }) {
       onChange={handleChange}
       label="Fecha de nacimiento"
       placeholder="Ingrese su fecha de nacimiento..."
-      name="fechanacimiento"
+      name="fechaNacimiento"
     />,
     <Input
       key={3}

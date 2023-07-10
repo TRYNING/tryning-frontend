@@ -39,6 +39,7 @@ export function FormLogin() {
     <Input
       key={2}
       onChange={handleChange}
+      type="password"
       label="Contraseña"
       placeholder="Ingrese su contraseña..."
       name="password"
