@@ -27,29 +27,34 @@ export function Step3({ prevStep }) {
       placeholder="Ingrese su telefono..."
       name="telefono"
     />,
+  
     <Input
       key={2}
+      type="date"
       onChange={handleChange}
+      label="Fecha de nacimiento"
+      placeholder="Ingrese su fecha de nacimiento..."
+      name="fechanacimiento"
+    />,
+    <Input
+      key={3}
+      onChange={handleChange}
+      type="number"
       label="Altura"
       placeholder="Altura..."
       name="altura"
       littleInput={true}
     />,
     <Input
-      key={3}
+      key={4}
       onChange={handleChange}
+      type="number"
       label="Peso"
       placeholder="Peso..."
       name="peso"
       littleInput={true}
     />,
-    <Input
-      key={4}
-      onChange={handleChange}
-      label="Telefono"
-      placeholder="Ingrese su telefono..."
-      name="telefono"
-    />,
+    
   ];
 
   const buttons = [
