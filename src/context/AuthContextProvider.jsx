@@ -22,12 +22,23 @@ export function AuthContextProvider({ children }) {
   const [error, setError] = useState();
 
   const googleSignUp = async (nextStep) => {
-    const provider = new GoogleAuthProvider();
-    await signInWithPopup(auth, provider);
-    nextStep();
+    try {
+      const provider = new GoogleAuthProvider();
+      await signInWithPopup(auth, provider);
+      nextStep();
+    } catch (err) {
+      const errorMessage = err.code;
+      setError(errorMessage);
+      setLoading(false);
+    }
   };
 
   const registerWithEmail = async (email, password, nextStep) => {
+    if (!email || !password) {
+      setError("Ingrese todos los datos");
+      return;
+    }
+
     try {
       setLoading(true);
       const response = await createUserWithEmailAndPassword(
@@ -46,6 +57,11 @@ export function AuthContextProvider({ children }) {
   };
 
   const signWithEmail = async (email, password) => {
+    if (!email || !password) {
+      setError("Ingrese todos los datos");
+      return;
+    }
+
     try {
       setLoading(true);
       const response = await signInWithEmailAndPassword(auth, email, password);

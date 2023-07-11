@@ -2,16 +2,17 @@ import { useAuthContext } from "../../../../hooks/useAuthContext";
 import { Input } from "../../../../components/Inputs/Input";
 import { Button } from "../../../../components/Button/Button";
 import { Form } from "../../../../components/Form/Form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export function Step1({ nextStep }) {
   const {
+    user,
+    SignOut,
     registerWithEmail,
     errorAuth,
     setErrorAuth,
     googleSignUp,
-    setUserData,
   } = useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
   const handleChange = (e) => {
@@ -19,10 +20,15 @@ export function Step1({ nextStep }) {
     setErrorAuth(null);
   };
 
+  useEffect(() => {
+    if (user) {
+      SignOut();
+    }
+  });
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { email, password } = infoUser;
-    setUserData((data) => ({ ...data, email, password }));
     setErrorAuth(null);
     registerWithEmail(email, password, nextStep);
   };
@@ -53,7 +59,7 @@ export function Step1({ nextStep }) {
 
   const buttons = [
     <Button key={1} className="button-type-1" type="submit">
-      Crear cuenta
+      Siguiente
     </Button>,
     <Button key={2} className="button-google" onClick={handleGoogle}>
       <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png" />
@@ -70,7 +76,9 @@ export function Step1({ nextStep }) {
       />
       <div className="container-redirect">
         <p>¿Ya tienes una cuenta?</p>
-        <Link to="/login">Inicia sesion</Link>
+        <Link to="/login" onClick={() => setErrorAuth(null)}>
+          Inicia sesion
+        </Link>
       </div>
     </div>
   );

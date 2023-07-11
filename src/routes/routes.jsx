@@ -5,24 +5,30 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import { RequireAuth, ExistUser } from "../components/ProtectRoutes";
 import Profile from "../pages/Profile";
+import {
+  HOME_ROUTE,
+  LANDING_ROUTE,
+  LOGIN_ROUTE,
+  REGISTER_ROUTE,
+} from "../common/constants/routes";
 
 export default function Rutas() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path={LANDING_ROUTE} element={<Landing />} />
         <Route path="/profile" element={<Profile />} />
         <Route
-          path="/login"
+          path={LOGIN_ROUTE}
           element={
             <ExistUser>
               <Login />
             </ExistUser>
           }
         />
-        <Route path="/register" element={<Register />} />
+        <Route path={REGISTER_ROUTE} element={<Register />} />
         <Route
-          path="/home"
+          path={HOME_ROUTE}
           element={
             <RequireAuth>
               <Home />

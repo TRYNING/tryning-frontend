@@ -7,6 +7,7 @@ import { Form } from "../../../../components/Form/Form";
 export function Step2({ nextStep, prevStep }) {
   const { setUserData } = useAuthContext();
   const [infoUser, setInfoUSer] = useState({});
+
   const handleChange = (e) => {
     setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
   };

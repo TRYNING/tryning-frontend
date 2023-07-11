@@ -68,7 +68,9 @@ export function FormLogin() {
       />
       <div className="container-redirect">
         <p>¿No tienes una cuenta?</p>
-        <Link to="/register">Registrate</Link>
+        <Link to="/register" onClick={() => setErrorAuth(null)}>
+          Registrate
+        </Link>
       </div>
     </div>
   );
