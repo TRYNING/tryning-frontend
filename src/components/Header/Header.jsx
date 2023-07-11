@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { useAuthContext } from "../../hooks/useAuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -20,9 +20,6 @@ export function Header() {
       </header>
       <div className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
-          <li className="link">
-            <Link to="/home">INICIO</Link>
-          </li>
           <li className="link">
             <Link to="/my-account">MI CUENTA</Link>
           </li>

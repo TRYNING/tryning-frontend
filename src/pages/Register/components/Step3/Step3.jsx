@@ -18,6 +18,7 @@ export function Step3({ prevStep }) {
       ...infoUser,
       ...userData,
       idUsuario: user.reloadUserInfo.localId,
+      email: user.email,
     };
     console.log(newUser);
 

@@ -9,12 +9,12 @@
   align-items: center;
   main {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     align-items: center;
     width: 300px;
-    height: 200px;
+    height: 100vh;
     gap: 40px;
     h1 {
       font-size: 30px;
@@ -55,8 +55,7 @@
 }
 
 @media screen and (min-width: 768px) {
-
-  .Home-container{
+  .Home-container {
     background-size: contain;
   }
 }
