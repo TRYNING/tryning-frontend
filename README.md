@@ -2,6 +2,9 @@
 
 Este proyecto es una página web que actúa como mediador entre usuarios y entrenadores, brindando un espacio donde los usuarios pueden contratar a un entrenador para obtener una rutina personalizada. Los entrenadores, por su parte, tienen una plataforma dedicada para crear y gestionar las rutinas de los usuarios, así como hacer un seguimiento de sus cambios y progresos.
 
+![home](https://github.com/JuanPE44/tryning-frontend/assets/89142353/dbb23efb-42c8-456a-bb50-1c8b3a193ae0)
+
+
 ## Características principales
 
 - **Contratación de entrenadores**: Los usuarios pueden explorar perfiles de entrenadores disponibles y seleccionar al que mejor se ajuste a sus necesidades.
@@ -12,9 +15,9 @@ Este proyecto es una página web que actúa como mediador entre usuarios y entre
 
 ## Tecnologías utilizadas
 
-- **Frontend**: HTML, CSS, JavaScript, React.js (u otro framework de frontend)
-- **Backend**: Node.js, Express.js (u otro framework de backend)
-- **Base de datos**: MySQL, MongoDB u otro sistema de gestión de bases de datos
+- **Frontend**: HTML, CSS, JavaScript, React.js
+- **Backend**: Node.js, Express.js
+- **Base de datos**: MySQL
 - **Autenticación y autorización**: Implementación de un sistema de autenticación y autorización para usuarios y entrenadores.
 - **Almacenamiento de datos**: Configuración para almacenar datos de usuarios, entrenadores, rutinas y registros de cambios en la base de datos seleccionada.
 
