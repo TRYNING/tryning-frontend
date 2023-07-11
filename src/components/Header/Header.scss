@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  .menu{
+
+  .menu {
     position: absolute;
     background-color: var(--color-white);
     width: 100%;
@@ -14,7 +14,7 @@
     top: -500px;
     z-index: -1;
     padding-top: 70px;
-    transition: .5s;
+    transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,37 +22,45 @@
     text-align: center;
 
     .container-link {
-      width: 100%;      
-      margin: 25px 0px ;
+      width: 100%;
+      margin: 25px 0px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
       list-style-type: none;
       align-items: center;
-      .link{
+      .link {
+        cursor: pointer;
         color: var(--color-dark-gray);
         font-size: 20px;
         font-weight: bold;
-        padding: 10px;
+        padding:20px;
         width: 100%;
+        &:hover {
+          background-color: #eeeeee;
+          transform: scale(1.1);
+        }
+        
       }
-
-      .logout{
+      a{
+        min-width: 100px;
+      }
+      .logout {
         color: var(--color-error);
       }
-      .trainer{
-        color:var(--color-primary-entrenador);
+      .trainer {
+        color: var(--color-primary-entrenador);
+        &:hover {
+          background-color: #dfdeff;
+          color: #0026ff;
+          transform: scale(1.1);
+        }
       }
     }
-
-   
-
   }
 
-  .active{
+  .active {
     top: 0;
   }
-
 
   header {
     display: flex;
@@ -60,15 +68,18 @@
     align-items: center;
     background: var(--color-white);
     .container-logo {
-      
       img {
+        cursor: pointer;
         width: 100px;
         height: 70px;
+        transition: .1s linear;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
-
   }
-   
 
   nav {
     display: flex;
@@ -88,4 +99,3 @@
     }
   }
 }
-

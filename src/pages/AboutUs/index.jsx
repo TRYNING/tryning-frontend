@@ -2,9 +2,9 @@ import { Header } from "../../components/Header/Header";
 import { Nav } from "../../components/Nav/Nav";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function AboutUs() {
   return (
-    <div className="Home-container">
+    <div className="AboutUs-container">
       <Header />
       <Nav />
       <main>
