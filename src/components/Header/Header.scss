@@ -5,21 +5,78 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
+  .menu {
+    position: absolute;
+    background-color: var(--color-white);
+    width: 100%;
+    height: fit-content;
+    top: -500px;
+    z-index: -1;
+    padding-top: 70px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .container-link {
+      width: 100%;
+      margin: 25px 0px;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      align-items: center;
+      .link {
+        cursor: pointer;
+        color: var(--color-dark-gray);
+        font-size: 20px;
+        font-weight: bold;
+        padding:20px;
+        width: 100%;
+        &:hover {
+          background-color: #eeeeee;
+          transform: scale(1.1);
+        }
+        
+      }
+      a{
+        min-width: 100px;
+      }
+      .logout {
+        color: var(--color-error);
+      }
+      .trainer {
+        color: var(--color-primary-entrenador);
+        &:hover {
+          background-color: #dfdeff;
+          color: #0026ff;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .active {
+    top: 0;
+  }
 
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--color-white);
-    .menu{
-display: none;
-    }
     .container-logo {
-      
       img {
+        cursor: pointer;
         width: 100px;
         height: 70px;
+        transition: .1s linear;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
@@ -41,19 +98,4 @@ display: none;
       border: 1px solid var(--color-white);
     }
   }
-}
-
-.active{
-  .menu{
-    display: flex;
-  }
-  display: flex;
-  position: absolute;
-  header{
-    height: 300px;
-    flex-direction: column;
-    align-items: center;
-
-  }
-  
 }

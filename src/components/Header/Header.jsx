@@ -1,24 +1,46 @@
+import { useState } from "react";
 import logo from "../../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { useAuthContext } from "../../hooks/useAuthContext";
+import { Link, useNavigate } from "react-router-dom";
 
 export function Header() {
+  const [open, setOpen] = useState(false);
+
+  function handleLogoClick() {
+    setOpen(!open);
+  }
+  const { SignOut } = useAuthContext();
+
   return (
     <div className="Header-container">
       <header>
         <div className="container-logo">
-          <img src={logo} alt="logo de tryning" />
-        </div>
-        <div className="menu">
-          <div className="link">
-            <Link to="/login" className="button-login">
-              Iniciar sesion
-            </Link>
-          </div>
-          <div className="link"></div>
-          <div className="link"></div>
-          <div className="link"></div>
+          <img src={logo} alt="logo de tryning" onClick={handleLogoClick} />
         </div>
       </header>
+      <div className={`menu ${open ? "active" : ""}`} id="menu">
+        <ul className="container-link">
+          <li className="link">
+            <Link to="/home">INICIO</Link>
+          </li>
+          <li className="link">
+            <Link to="/my-account">MI CUENTA</Link>
+          </li>
+          <li className="link">
+            <Link to="/about-us">NOSOTROS</Link>
+          </li>
+          <li className="link">
+            <Link to="/contact">CONTACTO</Link>
+          </li>
+
+          <li className="link trainer">
+            <Link to="/become-trainer">VOLVERSE ENTRENADOR</Link>
+          </li>
+          <li className="link logout" onClick={() => SignOut()}>
+            CERRAR SESION
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

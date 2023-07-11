@@ -3,8 +3,14 @@ import Landing from "../pages/Landing";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import { RequireAuth, ExistUser } from "../components/ProtectRoutes";
 import Profile from "../pages/Profile";
+import Account from "../pages/Account";
+import Contact from "../pages/Contact";
+import AboutUs from "../pages/AboutUs";
+import BecomeTrainer from "../pages/BecomeTrainer";
+import Trainers from "../pages/Trainers";
+import { RequireAuth, ExistUser } from "../components/ProtectRoutes";
+
 import {
   HOME_ROUTE,
   LANDING_ROUTE,
@@ -32,6 +38,46 @@ export default function Rutas() {
           element={
             <RequireAuth>
               <Home />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/my-account"
+          element={
+            <RequireAuth>
+              <Account />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/about-us"
+          element={
+            <RequireAuth>
+              <AboutUs />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <RequireAuth>
+              <Contact />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/become-trainer"
+          element={
+            <RequireAuth>
+              <BecomeTrainer />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/trainers"
+          element={
+            <RequireAuth>
+              <Trainers />
             </RequireAuth>
           }
         />
