@@ -42,7 +42,7 @@ export default function Rutas() {
           }
         />
         <Route
-          path="/my-account"
+          path="/account"
           element={
             <RequireAuth>
               <Account />
@@ -68,9 +68,9 @@ export default function Rutas() {
         <Route
           path="/become-trainer"
           element={
-            <RequireAuth>
+            
               <BecomeTrainer />
-            </RequireAuth>
+            
           }
         />
         <Route

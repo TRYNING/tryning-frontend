@@ -21,7 +21,7 @@ export function Header() {
       <div className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
           <li className="link">
-            <Link to="/my-account">MI CUENTA</Link>
+            <Link to="/account">MI CUENTA</Link>
           </li>
           <li className="link">
             <Link to="/about-us">NOSOTROS</Link>
