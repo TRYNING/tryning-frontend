@@ -1,10 +1,23 @@
 .Header-container {
+  position: relative;
   width: 100%;
-  position: fixed;
-  top: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  background: var(--color-white);
+
+  .container-logo {
+    img {
+      cursor: pointer;
+      width: 80px;
+      height: 60px;
+      transition: 0.1s linear;
+      object-fit: contain;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 
   .menu {
     position: absolute;
@@ -59,44 +72,5 @@
 
   .active {
     top: 0;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--color-white);
-    padding: 10px 0;
-    .container-logo {
-      img {
-        cursor: pointer;
-        width: 80px;
-        height: 60px;
-        transition: 0.1s linear;
-        object-fit: contain;
-
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    background: var(--color-primary);
-  }
-
-  .container-img {
-    img {
-      width: 25px;
-      height: 25px;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 1px solid var(--color-white);
-    }
   }
 }

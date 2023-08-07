@@ -12,12 +12,10 @@ export function Header() {
   const { SignOut } = useAuthContext();
 
   return (
-    <div className="Header-container">
-      <header>
-        <div className="container-logo">
-          <img src={logo} alt="logo de tryning" onClick={handleLogoClick} />
-        </div>
-      </header>
+    <header className="Header-container">
+      <div className="container-logo">
+        <img src={logo} alt="logo de tryning" onClick={handleLogoClick} />
+      </div>
       <div className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
           <li className="link">
@@ -38,6 +36,6 @@ export function Header() {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 }

@@ -12,18 +12,21 @@ import Trainers from "../pages/Trainers";
 import { RequireAuth, ExistUser } from "../components/ProtectRoutes";
 
 import {
+  ACCOUNT_ROUTE,
   HOME_ROUTE,
   LANDING_ROUTE,
   LOGIN_ROUTE,
+  PROFILE_ROUTE,
   REGISTER_ROUTE,
+  ROUTINE_ROUTE,
 } from "../common/constants/routes";
+import Routine from "../pages/Routine";
 
 export default function Rutas() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path={LANDING_ROUTE} element={<Landing />} />
-        <Route path="/profile" element={<Profile />} />
         <Route
           path={LOGIN_ROUTE}
           element={
@@ -41,8 +44,11 @@ export default function Rutas() {
             </RequireAuth>
           }
         />
+        <Route path={PROFILE_ROUTE} element={<Profile />} />
+        <Route path={ROUTINE_ROUTE} element={<Routine />} />
+
         <Route
-          path="/account"
+          path={ACCOUNT_ROUTE}
           element={
             <RequireAuth>
               <Account />
@@ -65,14 +71,7 @@ export default function Rutas() {
             </RequireAuth>
           }
         />
-        <Route
-          path="/become-trainer"
-          element={
-            
-              <BecomeTrainer />
-            
-          }
-        />
+        <Route path="/become-trainer" element={<BecomeTrainer />} />
         <Route
           path="/trainers"
           element={
