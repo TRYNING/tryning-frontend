@@ -1,6 +1,6 @@
 import { Circle } from "./Circle";
 
-export function BarSteps({ step }) {
+export function BarSteps({ step, numberSteps }) {
   return (
     <div className="BarSteps-container">
       <div className="circle-container">
