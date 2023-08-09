@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   background: var(--color-white);
+  pointer-events: all;
 
   .container-logo {
     img {

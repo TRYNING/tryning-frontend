@@ -1,13 +1,42 @@
-{
-  "rutina_ID": 1,
-  "mesociclos": [
-    {
-      "Mesociclo_ID": 1347891,
-      "titulo": "Agosto"
-    },
-    {
-      "Mesociclo_ID": 1347892,
-      "titulo": "septiembre"
-    }
-  ]
-}
+[
+  {
+    "rutina_ID": 1,
+    "array": [
+      {
+        "Mesociclo_ID": 1347891,
+        "titulo": "Agosto"
+      },
+      {
+        "Mesociclo_ID": 1347892,
+        "titulo": "septiembre"
+      }
+    ]
+  },
+  {
+    "rutina_ID": 2,
+    "array": [
+      {
+        "Mesociclo_ID": 1347891,
+        "titulo": "Octubre"
+      }
+    ]
+  },
+  {
+    "rutina_ID": 3,
+    "array": [
+      {
+        "Mesociclo_ID": 1347891,
+        "titulo": "Noviembre"
+      }
+    ]
+  },
+  {
+    "rutina_ID": 4,
+    "array": [
+      {
+        "Mesociclo_ID": 1347891,
+        "titulo": "Diciembre"
+      }
+    ]
+  }
+]

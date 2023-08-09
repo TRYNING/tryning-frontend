@@ -1,7 +1,30 @@
 .Routine-container {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
+
+  .routine-header {
+    height: 20vh;
+    padding: 20px;
+    background: var(--color-white);
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+
+    .header-title {
+      color: var(--color-primary);
+      font-size: 34px;
+    }
+
+    .header-date {
+      font-weight: bold;
+      color: var(--color-dark-gray);
+    }
+  }
+
+  .routine-main {
+    text-align: center;
+    padding: 20px;
+  }
 }
