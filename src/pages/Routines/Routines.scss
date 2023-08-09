@@ -1,0 +1,29 @@
+.Routines-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .routines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+
+    .routine {
+      display: flex;
+      gap: 10px;
+      border-radius: var(--border);
+      padding: 20px 50px;
+      background: var(--color-white);
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

@@ -1,13 +1,13 @@
 import { Nav } from "../../components/Nav/Nav";
 import { useParams } from "react-router-dom";
-
-export default function Routine() {
+export default function Mesociclos() {
   const { routineId } = useParams();
   return (
-    <div className="Routine-container">
+    <div className="Mesociclos-container">
+      <Nav />
       <main>
-        <Nav />
-        <h1>rutina {routineId}</h1>
+        <h1>Rutina {routineId}</h1>
+        <h2>mesociclos</h2>
       </main>
     </div>
   );

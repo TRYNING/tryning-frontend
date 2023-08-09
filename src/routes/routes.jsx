@@ -9,6 +9,10 @@ import Contact from "../pages/Contact";
 import AboutUs from "../pages/AboutUs";
 import BecomeTrainer from "../pages/BecomeTrainer";
 import Trainers from "../pages/Trainers";
+import Routine from "../pages/Routine";
+import Routines from "../pages/Routines";
+import Mesociclos from "../pages/Mesociclos";
+import Mesociclo from "../pages/Mesociclo";
 import { RequireAuth, ExistUser } from "../components/ProtectRoutes";
 
 import {
@@ -16,11 +20,11 @@ import {
   HOME_ROUTE,
   LANDING_ROUTE,
   LOGIN_ROUTE,
+  MESOCICLOS_ROUTE,
   PROFILE_ROUTE,
   REGISTER_ROUTE,
-  ROUTINE_ROUTE,
+  ROUTINES_ROUTE,
 } from "../common/constants/routes";
-import Routine from "../pages/Routine";
 
 export default function Rutas() {
   return (
@@ -45,8 +49,16 @@ export default function Rutas() {
           }
         />
         <Route path={PROFILE_ROUTE} element={<Profile />} />
-        <Route path={ROUTINE_ROUTE} element={<Routine />} />
-
+        <Route path={`${ROUTINES_ROUTE}`} element={<Routines />} />
+        <Route path={`${ROUTINES_ROUTE}/:routineId`} element={<Routine />} />
+        <Route
+          path={`${ROUTINES_ROUTE}/:routineId${MESOCICLOS_ROUTE}`}
+          element={<Mesociclos />}
+        />
+        <Route
+          path={`${ROUTINES_ROUTE}/:routineId${MESOCICLOS_ROUTE}/:mesocicloId`}
+          element={<Mesociclo />}
+        />
         <Route
           path={ACCOUNT_ROUTE}
           element={

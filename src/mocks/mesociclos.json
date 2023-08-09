@@ -1,0 +1,13 @@
+{
+  "rutina_ID": 1,
+  "mesociclos": [
+    {
+      "Mesociclo_ID": 1347891,
+      "titulo": "Agosto"
+    },
+    {
+      "Mesociclo_ID": 1347892,
+      "titulo": "septiembre"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "rutina_ID": 1,
+    "entrenador_ID": "had78qy87asdai",
+    "usuario_ID": "jfncvn47kaj23e",
+    "titulo": "Rutina Juanpa",
+    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
+    "fecha_creacion": "08/08/2023"
+  },
+  {
+    "rutina_ID": 2,
+    "entrenador_ID": "had78qy87asdai",
+    "usuario_ID": "jfncvn47kaj23e",
+    "titulo": "Rutina Juanpa",
+    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
+    "fecha_creacion": "08/09/2023"
+  },
+  {
+    "rutina_ID": 3,
+    "entrenador_ID": "had78qy87asdai",
+    "usuario_ID": "jfncvn47kaj23e",
+    "titulo": "Rutina Juanpa",
+    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
+    "fecha_creacion": "08/10/2023"
+  },
+  {
+    "rutina_ID": 4,
+    "entrenador_ID": "had78qy87asdai",
+    "usuario_ID": "jfncvn47kaj23e",
+    "titulo": "Rutina Juanpa",
+    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
+    "fecha_creacion": "08/11/2023"
+  },
+  {
+    "rutina_ID": 5,
+    "entrenador_ID": "had78qy87asdai",
+    "usuario_ID": "jfncvn47kaj23e",
+    "titulo": "Rutina Juanpa",
+    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
+    "fecha_creacion": "08/12/2023"
+  }
+]

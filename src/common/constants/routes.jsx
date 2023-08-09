@@ -4,4 +4,6 @@ export const REGISTER_ROUTE = "/register";
 export const HOME_ROUTE = "/home";
 export const PROFILE_ROUTE = "/profile";
 export const ACCOUNT_ROUTE = "/account";
-export const ROUTINE_ROUTE = "/routine";
+export const ROUTINES_ROUTE = "/routines";
+export const MESOCICLOS_ROUTE = "/mesociclos";
+export const MICROCICLO_ROUTE = "/microciclos";
