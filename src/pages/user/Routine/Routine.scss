@@ -26,5 +26,17 @@
   .routine-main {
     text-align: center;
     padding: 20px;
+
+    .ListOfMesociclos-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .CardMesociclos-container {
+        background: var(--color-white);
+        padding: 10px;
+        border-radius: var(--border);
+        cursor: pointer;
+      }
+    }
   }
 }

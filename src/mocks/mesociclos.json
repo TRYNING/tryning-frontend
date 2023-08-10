@@ -1,0 +1,47 @@
+[
+  {
+    "id": 11,
+    "microciclos": [
+      {
+        "id": 21,
+        "titulo": "semana 1"
+      },
+      {
+        "id": 22,
+        "titulo": "semana 2"
+      },
+      {
+        "id": 23,
+        "titulo": "semana 3"
+      },
+      {
+        "id": 24,
+        "titulo": "semana 4"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "microciclos": [
+      {}
+    ]
+  },
+  {
+    "id": 13,
+    "microciclos": [
+      {}
+    ]
+  },
+  {
+    "id": 14,
+    "microciclos": [
+      {}
+    ]
+  },
+  {
+    "id": 15,
+    "microciclos": [
+      {}
+    ]
+  }
+]
