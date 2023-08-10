@@ -1,17 +1,17 @@
 import { SvgHome } from "../../common/icons/svgIcons";
 import { SvgRoutine } from "../../common/icons/svgIcons";
-import { useAuthContext } from "../../hooks/useAuthContext";
+import { Header } from "../Header/Header";
+import { NAV_ICON_SIZE } from "../../common/constants/components";
+import { ImagePerfil } from "../ImagePerfil/ImagePerfil";
 
 export function Nav() {
-  const { user, SignOut } = useAuthContext();
   return (
     <div className="Nav-container">
-      <nav>
-        <SvgHome size={25} />
-        <SvgRoutine size={25} />
-        <div className="container-img" onClick={() => SignOut()}>
-          {user && <img src={user.photoURL} alt="imagen del usuario" />}
-        </div>
+      <Header />
+      <nav className="footer-nav">
+        <SvgHome size={NAV_ICON_SIZE} />
+        <SvgRoutine size={NAV_ICON_SIZE} />
+        <ImagePerfil />
       </nav>
     </div>
   );

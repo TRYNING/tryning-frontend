@@ -8,6 +8,7 @@ export function Input({
   littleInput = false,
   checked,
   value,
+  required= false,
 }) {
   if (type === "radio")
     return (
@@ -19,6 +20,7 @@ export function Input({
           checked={checked}
           onChange={onChange}
           name={name}
+          required= {required}
         />
         {label}
       </label>
@@ -34,6 +36,7 @@ export function Input({
         onChange={(e) => onChange(e)}
         name={name}
         className={className}
+        required ={required}
       />
     </div>
   );

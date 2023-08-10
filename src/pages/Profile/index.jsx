@@ -1,11 +1,10 @@
-import { Header } from "../../components/Header/Header";
+import { Nav } from "../../components/Nav/Nav";
 
 export default function Profile() {
   return (
     <div className="Profile-container">
-      <main>
-        <Header />
-      </main>
+      <Nav />
+      <main></main>
     </div>
   );
 }

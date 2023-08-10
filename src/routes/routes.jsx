@@ -9,13 +9,21 @@ import Contact from "../pages/Contact";
 import AboutUs from "../pages/AboutUs";
 import BecomeTrainer from "../pages/BecomeTrainer";
 import Trainers from "../pages/Trainers";
+import Routine from "../pages/Routine";
+import Routines from "../pages/Routines";
+import Mesociclos from "../pages/Mesociclos";
+import Mesociclo from "../pages/Mesociclo";
 import { RequireAuth, ExistUser } from "../components/ProtectRoutes";
 
 import {
+  ACCOUNT_ROUTE,
   HOME_ROUTE,
   LANDING_ROUTE,
   LOGIN_ROUTE,
+  MESOCICLOS_ROUTE,
+  PROFILE_ROUTE,
   REGISTER_ROUTE,
+  ROUTINES_ROUTE,
 } from "../common/constants/routes";
 
 export default function Rutas() {
@@ -23,7 +31,6 @@ export default function Rutas() {
     <BrowserRouter>
       <Routes>
         <Route path={LANDING_ROUTE} element={<Landing />} />
-        <Route path="/profile" element={<Profile />} />
         <Route
           path={LOGIN_ROUTE}
           element={
@@ -41,8 +48,19 @@ export default function Rutas() {
             </RequireAuth>
           }
         />
+        <Route path={PROFILE_ROUTE} element={<Profile />} />
+        <Route path={`${ROUTINES_ROUTE}`} element={<Routines />} />
+        <Route path={`${ROUTINES_ROUTE}/:routineId`} element={<Routine />} />
         <Route
-          path="/my-account"
+          path={`${ROUTINES_ROUTE}/:routineId${MESOCICLOS_ROUTE}`}
+          element={<Mesociclos />}
+        />
+        <Route
+          path={`${ROUTINES_ROUTE}/:routineId${MESOCICLOS_ROUTE}/:mesocicloId`}
+          element={<Mesociclo />}
+        />
+        <Route
+          path={ACCOUNT_ROUTE}
           element={
             <RequireAuth>
               <Account />
@@ -65,14 +83,7 @@ export default function Rutas() {
             </RequireAuth>
           }
         />
-        <Route
-          path="/become-trainer"
-          element={
-            <RequireAuth>
-              <BecomeTrainer />
-            </RequireAuth>
-          }
-        />
+        <Route path="/become-trainer" element={<BecomeTrainer />} />
         <Route
           path="/trainers"
           element={
