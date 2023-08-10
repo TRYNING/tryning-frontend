@@ -1,16 +1,11 @@
 import { Nav } from "../../components/Nav/Nav";
 import { useParams } from "react-router-dom";
 import routines from "../../mocks/routines.json";
-import mesociclos from "../../mocks/mesociclos.json";
 
 export default function Routine() {
   const { routineId } = useParams();
-  const [routine] = routines.filter(
-    (routine) => routine.rutina_ID == routineId
-  );
-  const [mesociclo] = mesociclos.filter(
-    (mesociclo) => mesociclo.rutina_ID == routineId
-  );
+  const [routine] = routines.filter((routine) => routine.id == routineId);
+
   return (
     <div className="Routine-container">
       <Nav />
@@ -20,8 +15,9 @@ export default function Routine() {
       </header>
       <main className="routine-main">
         <h1>rutina {routineId}</h1>
-        {mesociclo.array.map((mesociclo) => {
-          return <div key={mesociclo.Mesociclo_ID}>{mesociclo.titulo}</div>;
+        {routine.mesociclos.map((mesociclo) => {
+          const { id, titulo } = mesociclo;
+          return <div key={id}>{titulo}</div>;
         })}
       </main>
     </div>

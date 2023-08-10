@@ -9,8 +9,10 @@
 @use "../../components/Inputs/input.scss";
 @use "../../components/Button/Buttons.scss";
 @use "../../components/Form/Form.scss";
+@use "../../components/ImagePerfil/ImagePerfil.scss";
 
 // pages
+
 @use "../../pages/Landing/Landing.scss";
 @use "../../pages/Home/Home.scss";
 @use "../../pages/Login/Login.scss";
@@ -38,4 +40,15 @@
 body {
   min-height: 100vh;
   background: var(--color-gray);
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--color-gray);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-light-gray);
+    border-radius: 5px;
+  }
 }

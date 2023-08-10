@@ -5,12 +5,12 @@ export function ListOfRoutines() {
   return (
     <div className="routines">
       {routines.map((routine) => {
-        const { rutina_ID, titulo, fecha_creacion } = routine;
+        const { id, entrenador, fecha_creacion } = routine;
         return (
           <Routine
-            key={rutina_ID}
-            id={rutina_ID}
-            title={titulo}
+            key={id}
+            id={id}
+            trainer={entrenador}
             date={fecha_creacion}
           />
         );

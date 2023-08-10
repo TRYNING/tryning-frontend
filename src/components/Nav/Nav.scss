@@ -17,14 +17,4 @@
     background: var(--color-primary);
     pointer-events: all;
   }
-
-  .container-img {
-    img {
-      width: 25px;
-      height: 25px;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 1px solid var(--color-white);
-    }
-  }
 }
