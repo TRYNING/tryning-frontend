@@ -11,7 +11,6 @@ import BecomeTrainer from "../pages/BecomeTrainer";
 import Trainers from "../pages/Trainers";
 import Routine from "../pages/Routine";
 import Routines from "../pages/Routines";
-import Mesociclos from "../pages/Mesociclos";
 import Mesociclo from "../pages/Mesociclo";
 import { RequireAuth, ExistUser } from "../components/ProtectRoutes";
 
@@ -51,10 +50,6 @@ export default function Rutas() {
         <Route path={PROFILE_ROUTE} element={<Profile />} />
         <Route path={`${ROUTINES_ROUTE}`} element={<Routines />} />
         <Route path={`${ROUTINES_ROUTE}/:routineId`} element={<Routine />} />
-        <Route
-          path={`${ROUTINES_ROUTE}/:routineId${MESOCICLOS_ROUTE}`}
-          element={<Mesociclos />}
-        />
         <Route
           path={`${ROUTINES_ROUTE}/:routineId${MESOCICLOS_ROUTE}/:mesocicloId`}
           element={<Mesociclo />}

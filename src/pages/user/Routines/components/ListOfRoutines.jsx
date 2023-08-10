@@ -1,13 +1,12 @@
 import routines from "../../../mocks/routines.json";
-import { Routine } from "./Routine";
-
+import { CardRoutine } from "./CardRoutine";
 export function ListOfRoutines() {
   return (
     <div className="routines">
       {routines.map((routine) => {
         const { id, entrenador, fecha_creacion } = routine;
         return (
-          <Routine
+          <CardRoutine
             key={id}
             id={id}
             trainer={entrenador}
