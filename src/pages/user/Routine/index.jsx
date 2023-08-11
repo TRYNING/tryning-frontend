@@ -1,9 +1,9 @@
-import { Nav } from "../../components/Nav/Nav";
+import { Nav } from "@components/Nav/Nav";
 import { useParams } from "react-router-dom";
-import routines from "../../mocks/routines.json";
+import routines from "../../../mocks/routines.json";
 import { ListOfMesociclos } from "./components/ListOfMesociclos";
 
-export default function Routine() {
+export function PageRoutine() {
   const { routineId } = useParams();
   const [routine] = routines.filter(
     (routine) => routine.id === parseInt(routineId)

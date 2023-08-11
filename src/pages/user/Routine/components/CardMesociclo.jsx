@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  MESOCICLOS_ROUTE,
-  ROUTINES_ROUTE,
-} from "../../../common/constants/routes";
+import { MESOCICLOS_ROUTE, ROUTINES_ROUTE } from "@common/constants/routes";
 
 export function CardMesociclo({ routineId, id, title }) {
   return (

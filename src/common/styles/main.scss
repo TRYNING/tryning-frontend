@@ -11,24 +11,24 @@
 @use "../../components/Form/Form.scss";
 @use "../../components/ImagePerfil/ImagePerfil.scss";
 
-// pages
+// pages user
 
-@use "../../pages/Landing/Landing.scss";
-@use "../../pages/Home/Home.scss";
-@use "../../pages/Login/Login.scss";
-@use "../../pages/Register/Register.scss";
-@use "../../pages/Routine/Routine.scss";
-@use "../../pages/Routines/Routines.scss";
-@use "../../pages/Profile/Profile.scss";
-@use "../../pages/BecomeTrainer/BecomeTrainer.scss";
-@use "../../pages/Mesociclo/Mesociclo.scss";
+@use "../../pages/user/Landing/Landing.scss";
+@use "../../pages/user/Home/Home.scss";
+@use "../../pages/user/Login/Login.scss";
+@use "../../pages/user/Register/Register.scss";
+@use "../../pages/user/Routine/Routine.scss";
+@use "../../pages/user/Routines/Routines.scss";
+@use "../../pages/user/Profile/Profile.scss";
+@use "../../pages/user/BecomeTrainer/BecomeTrainer.scss";
+@use "../../pages/user/Mesociclo/Mesociclo.scss";
 
-// pages components
-@use "../.././/pages/Login/components/FormLogin/FormLogin.scss";
-@use "../../pages/Register/components/Step1/Step1.scss";
-@use "../../pages/Register/components/Step2/Step2.scss";
-@use "../../pages/Register/components/Step3/Step3.scss";
-@use "../../pages/Register/components/BarSteps/BarSteps.scss";
+// pages user components
+@use "../.././/pages/user/Login/components/FormLogin/FormLogin.scss";
+@use "../../pages/user/Register/components/Step1/Step1.scss";
+@use "../../pages/user/Register/components/Step2/Step2.scss";
+@use "../../pages/user/Register/components/Step3/Step3.scss";
+@use "../../pages/user/Register/components/BarSteps/BarSteps.scss";
 
 * {
   margin: 0;

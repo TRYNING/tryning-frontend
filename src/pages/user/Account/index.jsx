@@ -1,6 +1,6 @@
-import { Nav } from "../../components/Nav/Nav";
+import { Nav } from "@components/Nav/Nav";
 
-export default function Account() {
+export function PageAccount() {
   return (
     <div className="Account-container">
       <Nav />

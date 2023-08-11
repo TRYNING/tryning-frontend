@@ -1,9 +1,9 @@
-import { Input } from "../../../../components/Inputs/Input";
-import { Button } from "../../../../components/Button/Button";
-import { Form } from "../../../../components/Form/Form";
-import { useAuthContext } from "../../../../hooks/useAuthContext";
+import { Input } from "@components/Inputs/Input";
+import { Button } from "@components/Button/Button";
+import { Form } from "@components/Form/Form";
+import { useAuthContext } from "@hooks/useAuthContext";
 import { useState } from "react";
-import logo from "../../../../assets/images/logo.png";
+import logo from "@assets/images/logo.png";
 import { Link } from "react-router-dom";
 
 export function FormLogin() {
