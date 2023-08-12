@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useAuthContext } from "../../../../hooks/useAuthContext";
-import { Button } from "../../../../components/Button/Button";
-import { Input } from "../../../../components/Inputs/Input";
-import { Form } from "../../../../components/Form/Form";
+import { useAuthContext } from "@hooks/useAuthContext";
+import { Button } from "@components/Button/Button";
+import { Input } from "@components/Inputs/Input";
+import { Form } from "@components/Form/Form";
 
 export function FormTrainer({ nextStep, prevStep }) {
   const { setUserData } = useAuthContext();
@@ -36,7 +36,6 @@ export function FormTrainer({ nextStep, prevStep }) {
       name="matricula"
       type="number"
       required={true}
-
     />,
     <Input
       key={3}
@@ -45,19 +44,17 @@ export function FormTrainer({ nextStep, prevStep }) {
       placeholder="Licenciado en."
       name="licenciatura"
       required={true}
-
-    />
-  ]
+    />,
+  ];
   const buttons = [
     <Button key={1} className="button-type-1" type="submit">
       Enviar
     </Button>,
-    
   ];
 
   return (
     <div className="FormTrainer-container">
-      <Form handleSubmit={handleSubmit} inputs={inputs} buttons={buttons}  />
+      <Form handleSubmit={handleSubmit} inputs={inputs} buttons={buttons} />
     </div>
   );
 }

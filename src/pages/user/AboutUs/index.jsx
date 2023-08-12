@@ -1,7 +1,7 @@
-import { Nav } from "../../components/Nav/Nav";
+import { Nav } from "@components/Nav/Nav";
 import { Link } from "react-router-dom";
 
-export default function AboutUs() {
+export function PageAboutUs() {
   return (
     <div className="AboutUs-container">
       <Nav />

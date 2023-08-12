@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { HOME_ROUTE, ROUTINES_ROUTE } from "../constants/routes";
+import { PrivateRoutes } from "../constants/routes";
 
 export function SvgHome({ size, color }) {
   return (
-    <Link to={HOME_ROUTE}>
+    <Link to={`/${PrivateRoutes.HOME}`}>
       <svg
         width={size}
         height={size}
@@ -26,7 +26,7 @@ export function SvgHome({ size, color }) {
 
 export function SvgRoutine({ size, color }) {
   return (
-    <Link to={ROUTINES_ROUTE}>
+    <Link to={`/${PrivateRoutes.ROUTINES}`}>
       <svg
         width={size}
         height={size}

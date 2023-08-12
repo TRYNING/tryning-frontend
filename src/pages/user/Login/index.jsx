@@ -1,6 +1,6 @@
 import { FormLogin } from "./components/FormLogin/FormLogin";
 
-export default function Login() {
+export function PageLogin() {
   return (
     <div className="Login-container">
       <FormLogin />

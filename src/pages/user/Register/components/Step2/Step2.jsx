@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useAuthContext } from "../../../../hooks/useAuthContext";
-import { Button } from "../../../../components/Button/Button";
-import { Input } from "../../../../components/Inputs/Input";
-import { Form } from "../../../../components/Form/Form";
+import { useAuthContext } from "@hooks/useAuthContext";
+import { Button } from "@components/Button/Button";
+import { Input } from "@components/Inputs/Input";
+import { Form } from "@components/Form/Form";
 
 export function Step2({ nextStep, prevStep }) {
   const { setUserData } = useAuthContext();

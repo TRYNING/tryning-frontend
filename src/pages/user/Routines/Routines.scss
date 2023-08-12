@@ -3,10 +3,24 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 35px;
+
+  .routines-header {
+    height: 20vh;
+    padding: 20px;
+    background: var(--color-white);
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+
+    .header-title {
+      color: var(--color-primary);
+      font-size: 34px;
+    }
+  }
 
   .routines-main {
-    margin-top: 100px;
+    padding: 0 35px;
+
     .routines-title {
       color: var(--color-primary);
     }
@@ -14,13 +28,14 @@
     .routines {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 7px;
       padding-top: 40px;
 
       .Card-routine {
         max-width: 300px;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         border-radius: var(--border);
         padding: 15px 20px;
         background: var(--color-white);
@@ -48,6 +63,14 @@
         .routine-id {
           font-size: 12px;
           color: var(--color-dark-gray);
+        }
+
+        .circle-current {
+          width: 15px;
+          height: 15px;
+          background-color: rgb(60, 190, 60);
+          border-radius: 50%;
+          margin-right: 10px;
         }
       }
     }

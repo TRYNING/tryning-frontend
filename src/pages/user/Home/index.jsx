@@ -1,7 +1,7 @@
-import { Nav } from "../../components/Nav/Nav";
+import { Nav } from "@components/Nav/Nav";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export function PageHome() {
   return (
     <div className="Home-container">
       <Nav />

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useAuthContext } from "../../../../hooks/useAuthContext";
-import { Button } from "../../../../components/Button/Button";
-import { Input } from "../../../../components/Inputs/Input";
-import { Form } from "../../../../components/Form/Form";
-import { registerRequest } from "../../../../api/auth";
+import { useAuthContext } from "@hooks/useAuthContext";
+import { Button } from "@components/Button/Button";
+import { Input } from "@components/Inputs/Input";
+import { Form } from "@components/Form/Form";
+import { registerRequest } from "../../../../../api/auth";
 
 export function Step3({ prevStep }) {
   const { user, userData } = useAuthContext();

@@ -1,6 +1,6 @@
-import { Nav } from "../../components/Nav/Nav";
+import { Nav } from "@components/Nav/Nav";
 
-export default function Profile() {
+export function PageProfile() {
   return (
     <div className="Profile-container">
       <Nav />

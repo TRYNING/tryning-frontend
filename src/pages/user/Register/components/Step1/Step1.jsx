@@ -1,7 +1,7 @@
-import { useAuthContext } from "../../../../hooks/useAuthContext";
-import { Input } from "../../../../components/Inputs/Input";
-import { Button } from "../../../../components/Button/Button";
-import { Form } from "../../../../components/Form/Form";
+import { useAuthContext } from "@hooks/useAuthContext";
+import { Input } from "@components/Inputs/Input";
+import { Button } from "@components/Button/Button";
+import { Form } from "@components/Form/Form";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
