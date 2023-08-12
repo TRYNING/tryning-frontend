@@ -1,9 +1,16 @@
-export const LANDING_ROUTE = "/";
-export const LOGIN_ROUTE = "/login";
-export const REGISTER_ROUTE = "/register";
-export const HOME_ROUTE = "/home";
-export const PROFILE_ROUTE = "/profile";
-export const ACCOUNT_ROUTE = "/account";
-export const ROUTINES_ROUTE = "/routines";
-export const MESOCICLOS_ROUTE = "/mesociclos";
-export const MICROCICLO_ROUTE = "/microciclos";
+export const PublicRoutes = {
+  LANDING: "",
+  LOGIN: "login",
+  REGISTER: "register",
+};
+
+export const PrivateRoutes = {
+  HOME: "home",
+  ROUTINES: "routines",
+  PROFILE: "profile",
+  MESOCICLOS: "mesociclos",
+  ACCOUNT: "account",
+  TRAINERS: "trainers",
+  BECOME_TRAINER: "become-trainer",
+  ABOUT_US: "about-us",
+};

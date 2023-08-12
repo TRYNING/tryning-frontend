@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { ROUTINES_ROUTE } from "@common/constants/routes";
 import { SvgCheck } from "@common/icons/svgIcons";
+import { PrivateRoutes } from "../../../../common/constants/routes";
 
 export function CardRoutine({ id, trainer, date, current }) {
   console.log(current);
   return (
-    <Link to={`${ROUTINES_ROUTE}/${id}`} className="Card-routine">
+    <Link to={`${PrivateRoutes.ROUTINES}/${id}`} className="Card-routine">
       <section className="routine-section">
         <div className="routine-title">
           {trainer}
