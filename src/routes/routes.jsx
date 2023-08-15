@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { RoutesUser } from "./RoutesUser";
+import { RoutesUser } from "./routesUser";
 import { RoutesTrainer } from "./routesTrainer";
 
 export function PageRoutes() {

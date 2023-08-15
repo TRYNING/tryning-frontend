@@ -35,7 +35,7 @@ export function Step1({ nextStep }) {
 
   const handleGoogle = () => {
     setErrorAuth(null);
-    googleSignUp(nextStep);
+    googleSignUp();
   };
 
   const inputs = [
@@ -59,7 +59,7 @@ export function Step1({ nextStep }) {
 
   const buttons = [
     <Button key={1} className="button-type-1" type="submit">
-      Siguiente
+      Registrarse
     </Button>,
     <Button key={2} className="button-google" onClick={handleGoogle}>
       <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png" />
