@@ -1,4 +1,6 @@
+import { auth } from "../services/firebase.config";
 import { createContext, useEffect, useState } from "react";
+import { INITIAL_USER } from "../common/constants/components";
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -11,21 +13,18 @@ import {
   errorMessageLogin,
   errorMessageRegister,
 } from "../utilities/getAuthErrorMessage";
-import { auth } from "../services/firebase.config";
 
 export const AuthContext = createContext({});
 
 export function AuthContextProvider({ children }) {
-  const [user, setUSer] = useState();
-  const [userData, setUserData] = useState([]);
+  const [user, setUser] = useState(INITIAL_USER);
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
 
-  const googleSignUp = async (nextStep) => {
+  const googleSignUp = async () => {
     try {
       const provider = new GoogleAuthProvider();
       await signInWithPopup(auth, provider);
-      nextStep();
     } catch (err) {
       const errorMessage = err.code;
       setError(errorMessage);
@@ -33,7 +32,7 @@ export function AuthContextProvider({ children }) {
     }
   };
 
-  const registerWithEmail = async (email, password, nextStep) => {
+  const registerWithEmail = async (email, password) => {
     if (!email || !password) {
       setError("Ingrese todos los datos");
       return;
@@ -47,7 +46,6 @@ export function AuthContextProvider({ children }) {
         password
       );
       setLoading(false);
-      nextStep();
       console.log(response);
     } catch (err) {
       const errorMessage = errorMessageRegister(err.code);
@@ -80,7 +78,14 @@ export function AuthContextProvider({ children }) {
 
   useEffect(() => {
     const unsuscribe = onAuthStateChanged(auth, (user) => {
-      setUSer(user);
+      setUser(
+        user && {
+          id: user.providerId,
+          name: user.displayName,
+          email: user.email,
+          urlImage: user.photoURL,
+        }
+      );
     });
     return () => {
       unsuscribe();
@@ -91,8 +96,6 @@ export function AuthContextProvider({ children }) {
     <AuthContext.Provider
       value={{
         user,
-        userData,
-        setUserData,
         googleSignUp,
         SignOut,
         registerWithEmail,
