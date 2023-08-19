@@ -1,28 +1,21 @@
-import { Route, Routes } from "react-router-dom";
-import { PageLanding } from "@pages/user/Landing";
-import { PageLogin } from "@pages/user/Login";
-import { PageRegister } from "@pages/user/Register";
-import { PageHome } from "@pages/user/Home";
-import { PageProfile } from "@pages/user/Profile";
-import { PageRoutines } from "@pages/user/Routines";
-import { PageRoutine } from "@pages/user/Routine";
-import { PageMesociclo } from "@pages/user/Mesociclo";
-import { PageAccount } from "@pages/user/Account";
-import { PageAboutUs } from "@pages/user/AboutUs";
-import { PageBecomeTrainer } from "@pages/user/BecomeTrainer";
-import { PageTrainers } from "@pages/user/Trainers";
-import { PrivateRoutes, PublicRoutes } from "@common/constants/routes";
+import { lazy } from "react";
 import { AuthGuard } from "../guards/auth.guard";
-import { AuthenticatedGuard } from "../guards/authenticated.guard";
+import { Route } from "react-router-dom";
+import { PrivateRoutes } from "@common/constants/routes";
+import { RoutesWithNotFound } from "../utilities/routesWithNotFound";
+
+const PageHome = lazy(() => import("@pages/user/Home"));
+const PageProfile = lazy(() => import("@pages/user/Profile"));
+const PageRoutines = lazy(() => import("@pages/user/Routines"));
+const PageRoutine = lazy(() => import("@pages/user/Routine"));
+const PageMesociclo = lazy(() => import("@pages/user/Mesociclo"));
+const PageAccount = lazy(() => import("@pages/user/Account"));
+const PageBecomeTrainer = lazy(() => import("@pages/user/BecomeTrainer"));
+const PageTrainers = lazy(() => import("@pages/user/Trainers"));
 
 export function RoutesUser() {
   return (
-    <Routes>
-      <Route path={PublicRoutes.LANDING} element={<PageLanding />} />
-      <Route element={<AuthenticatedGuard />}>
-        <Route path={PublicRoutes.LOGIN} element={<PageLogin />} />
-        <Route path={PublicRoutes.REGISTER} element={<PageRegister />} />
-      </Route>
+    <RoutesWithNotFound>
       <Route element={<AuthGuard />}>
         <Route path={PrivateRoutes.HOME} element={<PageHome />} />
         <Route path={PrivateRoutes.PROFILE} element={<PageProfile />} />
@@ -36,13 +29,12 @@ export function RoutesUser() {
           element={<PageMesociclo />}
         />
         <Route path={PrivateRoutes.ACCOUNT} element={<PageAccount />} />
-        <Route path={PrivateRoutes.ABOUT_US} element={<PageAboutUs />} />
         <Route
           path={PrivateRoutes.BECOME_TRAINER}
           element={<PageBecomeTrainer />}
         />
         <Route path={PrivateRoutes.TRAINERS} element={<PageTrainers />} />
       </Route>
-    </Routes>
+    </RoutesWithNotFound>
   );
 }

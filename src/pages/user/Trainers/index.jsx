@@ -1,10 +1,8 @@
-import { Nav } from "@components/Nav/Nav";
 import { Link } from "react-router-dom";
 
-export function PageTrainers() {
+export default function PageTrainers() {
   return (
     <div className="Trainers-container">
-      <Nav />
       <main>
         <h1>Tu entrenador personalizado en línea</h1>
         <p>¡Alcanza tus metas más rápido con un entrenador personal!</p>

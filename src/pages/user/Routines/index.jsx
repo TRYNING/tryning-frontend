@@ -1,10 +1,8 @@
-import { Nav } from "@components/Nav/Nav";
 import { ListOfRoutines } from "./components/ListOfRoutines";
 
-export function PageRoutines() {
+export default function PageRoutines() {
   return (
     <div className="Routines-container">
-      <Nav />
       <header className="routines-header">
         <h1 className="header-title">Mis rutinas</h1>
       </header>

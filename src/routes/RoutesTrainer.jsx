@@ -1,9 +1,10 @@
-import { Route, Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
+import { RoutesWithNotFound } from "../utilities/routesWithNotFound";
 
 export function RoutesTrainer() {
   return (
-    <Routes>
+    <RoutesWithNotFound>
       <Route path="/dashboard" element={<h1>dashboard</h1>} />
-    </Routes>
+    </RoutesWithNotFound>
   );
 }

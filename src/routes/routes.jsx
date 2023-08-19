@@ -1,14 +1,36 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { lazy } from "react";
+import { BrowserRouter, Route, Navigate } from "react-router-dom";
+import { RoutesTrainer } from "./RoutesTrainer";
 import { RoutesUser } from "./routesUser";
-import { RoutesTrainer } from "./routesTrainer";
+import { RoutesWithNotFound } from "../utilities/routesWithNotFound";
+import { AuthenticatedGuard } from "../guards/authenticated.guard";
+import { PrivateRoutes, PublicRoutes } from "@common/constants/routes";
+import { LayoutUser } from "../layouts/LayoutUser";
+
+const PageLanding = lazy(() => import("@pages/Landing"));
+const PageLogin = lazy(() => import("@pages/Login"));
+const PageRegister = lazy(() => import("@pages/Register"));
 
 export function PageRoutes() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/*" element={<RoutesUser />} />
+      <RoutesWithNotFound>
+        <Route index element={<Navigate to={PrivateRoutes.HOME} />} />
+        <Route path={PublicRoutes.LANDING} element={<PageLanding />} />
+        <Route element={<AuthenticatedGuard />}>
+          <Route path={PublicRoutes.LOGIN} element={<PageLogin />} />
+          <Route path={PublicRoutes.REGISTER} element={<PageRegister />} />
+        </Route>
+        <Route
+          path="/*"
+          element={
+            <LayoutUser>
+              <RoutesUser />
+            </LayoutUser>
+          }
+        />
         <Route path="/trainer/*" element={<RoutesTrainer />} />
-      </Routes>
+      </RoutesWithNotFound>
     </BrowserRouter>
   );
 }
