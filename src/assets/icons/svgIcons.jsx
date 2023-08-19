@@ -53,6 +53,47 @@ export function SvgRoutine({ size, color }) {
   );
 }
 
+export function SvgUsers({ size }) {
+  return (
+    <Link to={`/${PrivateRoutes.ROUTINES}`}>
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 32 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 24.1819V22.8182C1 17.5464 5.27365 13.2728 10.5455 13.2728C15.8173 13.2728 20.0909 17.5464 20.0909 22.8182V24.1819"
+          stroke="white"
+          strokeWidth="3"
+          strokeLinecap="round"
+        />
+        <path
+          d="M17.3638 16.0001C17.3638 12.2345 20.4164 9.18188 24.182 9.18188C27.9475 9.18188 31.0001 12.2345 31.0001 16.0001V16.6819"
+          stroke="white"
+          strokeWidth="3"
+          strokeLinecap="round"
+        />
+        <path
+          d="M10.5455 13.2727C13.5579 13.2727 16 10.8305 16 7.81813C16 4.80567 13.5579 2.36359 10.5455 2.36359C7.53302 2.36359 5.09094 4.80567 5.09094 7.81813C5.09094 10.8305 7.53302 13.2727 10.5455 13.2727Z"
+          stroke="white"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M24.1819 9.18182C26.4413 9.18182 28.2728 7.35025 28.2728 5.09091C28.2728 2.83157 26.4413 1 24.1819 1C21.9224 1 20.0909 2.83157 20.0909 5.09091C20.0909 7.35025 21.9224 9.18182 24.1819 9.18182Z"
+          stroke="white"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </Link>
+  );
+}
+
 export function SvgCheck({ size }) {
   return (
     <svg

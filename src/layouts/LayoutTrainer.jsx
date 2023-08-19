@@ -1,10 +1,10 @@
-import { NavBarUser } from "@components/NavBarUser/NavBarUser";
 import { Footer } from "../components/Footer/Footer";
+import { NavbarTrainer } from "../components/NavbarTrainer/NavbarTrainer";
 
 export function LayoutTrainer({ children }) {
   return (
     <>
-      <NavBarUser />
+      <NavbarTrainer />
       {children}
       <Footer />
     </>

@@ -6,6 +6,7 @@ import { RoutesWithNotFound } from "../utilities/routesWithNotFound";
 import { AuthenticatedGuard } from "../guards/authenticated.guard";
 import { PrivateRoutes, PublicRoutes } from "@common/constants/routes";
 import { LayoutUser } from "../layouts/LayoutUser";
+import { LayoutTrainer } from "../layouts/LayoutTrainer";
 
 const PageLanding = lazy(() => import("@pages/Landing"));
 const PageLogin = lazy(() => import("@pages/Login"));
@@ -29,7 +30,14 @@ export function PageRoutes() {
             </LayoutUser>
           }
         />
-        <Route path="/trainer/*" element={<RoutesTrainer />} />
+        <Route
+          path="/trainer/*"
+          element={
+            <LayoutTrainer>
+              <RoutesTrainer />
+            </LayoutTrainer>
+          }
+        />
       </RoutesWithNotFound>
     </BrowserRouter>
   );
