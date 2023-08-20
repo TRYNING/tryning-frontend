@@ -1,11 +1,9 @@
-import { Nav } from "@components/Nav/Nav";
 import { Link } from "react-router-dom";
 
-export function PageHome() {
+export default function PageHome() {
   return (
-    <div className="Home-container">
-      <Nav />
-      <main>
+    <main className="Home-container">
+      <section className="principal">
         <h1>Tu entrenador personalizado en línea</h1>
         <p>¡Alcanza tus metas más rápido con un entrenador personal!</p>
         <div className="buttons-container">
@@ -13,7 +11,7 @@ export function PageHome() {
             Buscar entrenador
           </Link>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

@@ -1,17 +1,16 @@
-import imgNotFound from "@assets/images/userNotFound.png";
+import imgNotFound from "@assets/images/userNotFound.webp";
 import { useState } from "react";
 import { useAuthContext } from "@hooks/useAuthContext";
 
 export function ImagePerfil() {
   const { user, SignOut } = useAuthContext();
   const [imageError, setImageError] = useState(false);
-  console.log(user.urlImage);
   return (
     <div className="Image-perfil" onClick={() => SignOut()}>
-      {user.urlImage && !imageError ? (
+      {user?.urlImage && !imageError ? (
         <img
-          src={user.photoURL}
-          alt="imagen del usuario"
+          src={user.urlImage}
+          alt={`imagen de perfil del usuario ${user.name}`}
           onError={() => setImageError(true)}
         />
       ) : (

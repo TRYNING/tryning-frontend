@@ -1,7 +1,7 @@
 import { useState } from "react";
-import logo from "../../assets/images/logo.png";
-import { useAuthContext } from "../../hooks/useAuthContext";
 import { Link } from "react-router-dom";
+import logo from "@assets/images/tryning.webp";
+import { useAuthContext } from "@hooks/useAuthContext";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -13,10 +13,10 @@ export function Header() {
 
   return (
     <header className="Header-container">
-      <div className="container-logo">
+      <section className="container-logo">
         <img src={logo} alt="logo de tryning" onClick={handleLogoClick} />
-      </div>
-      <div className={`menu ${open ? "active" : ""}`} id="menu">
+      </section>
+      <section className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
           <li className="link">
             <Link to="/account">MI CUENTA</Link>
@@ -35,7 +35,7 @@ export function Header() {
             CERRAR SESION
           </li>
         </ul>
-      </div>
+      </section>
     </header>
   );
 }
