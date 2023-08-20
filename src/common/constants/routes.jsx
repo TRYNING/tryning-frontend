@@ -13,4 +13,11 @@ export const PrivateRoutes = {
   TRAINERS: "trainers",
   BECOME_TRAINER: "become-trainer",
   ABOUT_US: "about-us",
+  TRAINER: "trainer",
+};
+
+export const TrainerRoutes = {
+  DASHBOARD: "dashboard",
+  CREATE_ROUTINE: "create-routine",
+  VIEW_ROUTINE: "view-routine",
 };

@@ -31,7 +31,7 @@ export function PageRoutes() {
           }
         />
         <Route
-          path="/trainer/*"
+          path={`/${PrivateRoutes.TRAINER}/*`}
           element={
             <LayoutTrainer>
               <RoutesTrainer />

@@ -34,6 +34,10 @@
 @use "@pages/Login/components/FormLogin/FormLogin.scss";
 @use "@pages/Register/components/FormRegister/FormRegister.scss";
 
+// pages trainer components
+
+@use "@pages/trainer/CreateRoutine/CreateRoutine.scss";
+
 * {
   margin: 0;
   padding: 0;
