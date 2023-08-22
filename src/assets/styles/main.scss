@@ -11,7 +11,7 @@
 @use "@components/Button/Buttons.scss";
 @use "@components/Form/Form.scss";
 @use "@components/ImagePerfil/ImagePerfil.scss";
-@use "@components/HeaderRoutines/HeaderRoutines.scss";
+@use "@components/HeaderRoutine/HeaderRoutine.scss";
 @use "@components/Spinner/Spinner.scss";
 
 // pages
@@ -33,6 +33,9 @@
 
 @use "@pages/Login/components/FormLogin/FormLogin.scss";
 @use "@pages/Register/components/FormRegister/FormRegister.scss";
+@use "@pages/user/Mesociclo/components/CardWeek/CardWeek.scss";
+@use "@pages/user/Mesociclo/components/ListOfDays/ListOfDays.scss";
+@use "@pages/user/Mesociclo/components/ListOfWeeks/ListOfWeeks.scss";
 
 // pages trainer components
 

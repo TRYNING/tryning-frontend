@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import routines from "../../../mocks/routines.json";
 import { ListOfMesociclos } from "./components/ListOfMesociclos";
+import { HeaderRoutine } from "../../../components/HeaderRoutine/HeaderRoutine";
 
 export default function PageRoutine() {
   const { routineId } = useParams();
@@ -10,10 +11,7 @@ export default function PageRoutine() {
 
   return (
     <div className="Routine-container">
-      <header className="routine-header">
-        <h3 className="header-title">Rutina</h3>
-        <span className="header-date">{routine.fecha_creacion}</span>
-      </header>
+      <HeaderRoutine date={routine.fecha_creacion} id={routineId} />
       <main className="routine-main">
         <h1>Mesociclos</h1>
         <ListOfMesociclos routine={routine} />

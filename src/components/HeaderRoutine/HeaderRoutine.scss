@@ -1,0 +1,18 @@
+.HeaderRoutine-container {
+  height: 20vh;
+  padding: 20px;
+  background: var(--color-white);
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+
+  .header-title {
+    color: var(--color-primary);
+    font-size: 34px;
+  }
+
+  .header-date {
+    font-weight: bold;
+    color: var(--color-dark-gray);
+  }
+}

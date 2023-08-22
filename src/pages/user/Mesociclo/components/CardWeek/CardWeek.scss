@@ -1,0 +1,12 @@
+.CardWeek-container {
+  .header-cardweek {
+    display: flex;
+    align-items: center;
+
+    .cubo {
+      width: var(--size-cubo);
+      height: var(--size-cubo);
+      background: var(--color-primary);
+    }
+  }
+}

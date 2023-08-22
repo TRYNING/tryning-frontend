@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import mesociclos from "../../../mocks/mesociclos.json";
+import { HeaderRoutine } from "@components/HeaderRoutine/HeaderRoutine";
+import { ListOfWeeks } from "./components/ListOfWeeks/ListOfWeeks";
 
 export default function PageMesociclo() {
   const { routineId, mesocicloId } = useParams();
@@ -7,17 +9,12 @@ export default function PageMesociclo() {
     (mesociclo) => mesociclo.id === parseInt(mesocicloId)
   );
   return (
-    <div className="Mesociclo-container">
-      <main>
-        <h1>Rutina {routineId} </h1>
-        <h2>mesociclo {mesocicloId} </h2>
-        <div>
-          {mesociclo.microciclos.map((microciclo) => {
-            const { id, titulo } = microciclo;
-            return <div key={id}>{titulo}</div>;
-          })}
-        </div>
-      </main>
-    </div>
+    <main className="Mesociclo-container">
+      <HeaderRoutine date={"00/00/00"} id={routineId} />
+      <section className="mesociclo-section">
+        <h1>microciclos</h1>
+        <ListOfWeeks mesociclo={mesociclo} />
+      </section>
+    </main>
   );
 }
