@@ -4,19 +4,75 @@
     "microciclos": [
       {
         "id": 21,
-        "titulo": "semana 1"
+        "titulo": "semana 1",
+        "dias": [
+          {
+            "titulo": "dia 1"
+          },
+          {
+            "titulo": "dia 2"
+          },
+          {
+            "titulo": "dia 3"
+          },
+          {
+            "titulo": "dia 4"
+          }
+        ]
       },
       {
         "id": 22,
-        "titulo": "semana 2"
+        "titulo": "semana 2",
+        "dias": [
+          {
+            "titulo": "dia 1"
+          },
+          {
+            "titulo": "dia 2"
+          },
+          {
+            "titulo": "dia 3"
+          },
+          {
+            "titulo": "dia 4"
+          }
+        ]
       },
       {
         "id": 23,
-        "titulo": "semana 3"
+        "titulo": "semana 3",
+        "dias": [
+          {
+            "titulo": "dia 1"
+          },
+          {
+            "titulo": "dia 2"
+          },
+          {
+            "titulo": "dia 3"
+          },
+          {
+            "titulo": "dia 4"
+          }
+        ]
       },
       {
         "id": 24,
-        "titulo": "semana 4"
+        "titulo": "semana 4",
+        "dias": [
+          {
+            "titulo": "dia 1"
+          },
+          {
+            "titulo": "dia 2"
+          },
+          {
+            "titulo": "dia 3"
+          },
+          {
+            "titulo": "dia 4"
+          }
+        ]
       }
     ]
   },

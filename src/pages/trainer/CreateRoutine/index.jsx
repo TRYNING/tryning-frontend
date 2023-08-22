@@ -6,6 +6,7 @@ export default function CreateRoutine() {
     descripcion: "",
     mesociclos: [],
   });
+
   return (
     <div className="CreateRoutine-container">
       <h1>Nueva Rutina</h1>

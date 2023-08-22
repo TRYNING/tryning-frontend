@@ -1,0 +1,16 @@
+.ListOfDays-container {
+  margin-left: calc(var(--size-cubo) / 2);
+  border-left: 3px solid var(--color-primary);
+
+  .day {
+    display: flex;
+    padding: 10px 15px;
+    background: var(--color-white);
+    margin: 10px;
+    .titulo {
+      color: var(--color-light-gray);
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+}

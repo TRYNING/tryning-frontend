@@ -25,7 +25,7 @@ export function RoutesUser() {
           element={<PageRoutine />}
         />
         <Route
-          path={`${PrivateRoutes.ROUTINES}/:routineId${PrivateRoutes.MESOCICLOS}/:mesocicloId`}
+          path={`${PrivateRoutes.ROUTINES}/:routineId/${PrivateRoutes.MESOCICLOS}/:mesocicloId`}
           element={<PageMesociclo />}
         />
         <Route path={PrivateRoutes.ACCOUNT} element={<PageAccount />} />
