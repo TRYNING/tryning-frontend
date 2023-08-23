@@ -41,6 +41,10 @@
 
 @use "@pages/trainer/CreateRoutine/CreateRoutine.scss";
 
+// pages user component 
+
+@use "../../pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
+
 * {
   margin: 0;
   padding: 0;
