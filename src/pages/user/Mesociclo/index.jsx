@@ -12,7 +12,7 @@ export default function PageMesociclo() {
     <main className="Mesociclo-container">
       <HeaderRoutine date={"00/00/00"} id={routineId} />
       <section className="mesociclo-section">
-        <h1>microciclos</h1>
+        <h1 className="titulo-mesociclo">microciclos</h1>
         <ListOfWeeks mesociclo={mesociclo} />
       </section>
     </main>

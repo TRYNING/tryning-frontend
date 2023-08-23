@@ -1,2 +1,5 @@
-.ListOFWeeks-container {
+.ListOfWeeks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
