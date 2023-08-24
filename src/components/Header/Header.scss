@@ -2,24 +2,32 @@
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background: var(--color-white);
   pointer-events: all;
 
   .container-logo {
     img {
       cursor: pointer;
-      width: 110px;
+      width: 90px;
       height: 70px;
-      transition: 0.1s linear;
       object-fit: contain;
-
-      &:hover {
-        transform: scale(1.1);
-      }
     }
   }
-
+  .menu-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.9);
+      transition: 1s;
+    }
+  }
   .menu {
     position: absolute;
     background-color: var(--color-white);
@@ -27,13 +35,14 @@
     height: fit-content;
     top: -500px;
     z-index: -1;
-    padding-top: 70px;
+    padding-top: 50px;
+    padding-left: 10px;
     transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 
     .container-link {
       width: 100%;
@@ -45,13 +54,14 @@
       .link {
         cursor: pointer;
         color: var(--color-dark-gray);
-        font-size: 20px;
+        font-size: 14px;
         font-weight: bold;
-        padding: 20px;
+        padding: 15px 50px;
         width: 100%;
         &:hover {
           background-color: #eeeeee;
-          transform: scale(1.1);
+          transform: translate(15px);
+          transition: 1s;
         }
       }
       a {
@@ -61,11 +71,11 @@
         color: var(--color-error);
       }
       .trainer {
-        color: var(--color-primary-entrenador);
         &:hover {
           background-color: #dfdeff;
           color: #0026ff;
-          transform: scale(1.1);
+          transform: translate(15px);
+          transition: 1s;
         }
       }
     }
