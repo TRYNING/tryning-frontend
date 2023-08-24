@@ -7,15 +7,19 @@
         "titulo": "semana 1",
         "dias": [
           {
+            "id": 111,
             "titulo": "dia 1"
           },
           {
+            "id": 111,
             "titulo": "dia 2"
           },
           {
+            "id": 111,
             "titulo": "dia 3"
           },
           {
+            "id": 111,
             "titulo": "dia 4"
           }
         ]

@@ -13,6 +13,7 @@
 @use "@components/ImagePerfil/ImagePerfil.scss";
 @use "@components/HeaderRoutine/HeaderRoutine.scss";
 @use "@components/Spinner/Spinner.scss";
+@use "@components/CustomCarrusel/CustomCarrusel.scss";
 
 // pages
 
@@ -28,6 +29,7 @@
 @use "@pages/user/Profile/Profile.scss";
 @use "@pages/user/BecomeTrainer/BecomeTrainer.scss";
 @use "@pages/user/Mesociclo/Mesociclo.scss";
+@use "@pages/user/Day/Day.scss";
 
 // pages components
 
@@ -41,7 +43,7 @@
 
 @use "@pages/trainer/CreateRoutine/CreateRoutine.scss";
 
-// pages user component 
+// pages user component
 
 @use "../../pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
 
