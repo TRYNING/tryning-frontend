@@ -1,4 +1,4 @@
-import { ListOfRoutines } from "./components/ListOfRoutines";
+import { ListOfRoutines } from "./components/ListOfRoutines/ListOfRoutines";
 
 export default function PageRoutines() {
   return (

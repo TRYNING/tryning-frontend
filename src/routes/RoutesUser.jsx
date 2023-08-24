@@ -2,7 +2,7 @@ import { lazy } from "react";
 import { AuthGuard } from "../guards/auth.guard";
 import { Route } from "react-router-dom";
 import { PrivateRoutes } from "@common/constants/routes";
-import { RoutesWithNotFound } from "../utilities/routesWithNotFound";
+import { RoutesWithNotFound } from "@utils/routes.utils";
 
 const PageHome = lazy(() => import("@pages/user/Home"));
 const PageProfile = lazy(() => import("@pages/user/Profile"));
@@ -25,7 +25,10 @@ export function RoutesUser() {
           path={`${PrivateRoutes.ROUTINES}/:routineId`}
           element={<PageRoutine />}
         />
-        <Route path={PrivateRoutes.MESOCICLOS} element={<PageMesociclo />} />
+        <Route
+          path={`${PrivateRoutes.ROUTINES}/:routineId/${PrivateRoutes.MESOCICLOS}/:mesocicloId`}
+          element={<PageMesociclo />}
+        />
         <Route
           path={`${PrivateRoutes.ROUTINES}/:routineId/${PrivateRoutes.MESOCICLOS}/:mesocicloId/${PrivateRoutes.DAY}/:dayId`}
           element={<PageDay />}

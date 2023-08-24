@@ -9,10 +9,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import {
-  errorMessageLogin,
-  errorMessageRegister,
-} from "../utilities/getAuthErrorMessage";
+import { errorMessageLogin, errorMessageRegister } from "@utils/errors.utils";
 
 export const AuthContext = createContext({});
 

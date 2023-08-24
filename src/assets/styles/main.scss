@@ -35,17 +35,20 @@
 
 @use "@pages/Login/components/FormLogin/FormLogin.scss";
 @use "@pages/Register/components/FormRegister/FormRegister.scss";
+
+// pages user component
+
 @use "@pages/user/Mesociclo/components/CardWeek/CardWeek.scss";
 @use "@pages/user/Mesociclo/components/ListOfDays/ListOfDays.scss";
 @use "@pages/user/Mesociclo/components/ListOfWeeks/ListOfWeeks.scss";
+@use "@pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
+@use "@pages/user/Mesociclo/components/CardDay/CardDay.scss";
+@use "@pages/user/Routines/components/CardRoutine/CardRoutine.scss";
+@use "@pages/user/Routines/components/ListOfRoutines/ListOfRoutines.scss";
 
 // pages trainer components
 
 @use "@pages/trainer/CreateRoutine/CreateRoutine.scss";
-
-// pages user component
-
-@use "../../pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
 
 * {
   margin: 0;
