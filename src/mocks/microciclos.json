@@ -1,0 +1,92 @@
+[
+  {
+    "id": 2000,
+    "mesocicloId": 1001,
+    "titulo": "semana 1",
+    "dias": [
+      {
+        "id": 111,
+        "titulo": "dia 1",
+        "musculos": [
+          "PECHO",
+          "ESPALDA",
+          "BICEPS",
+          "TRICEPS"
+        ]
+      },
+      {
+        "id": 112,
+        "titulo": "dia 2",
+        "musculos": [
+          "CUADRICEPS",
+          "ISQUIOS",
+          "HOMBROS"
+        ]
+      },
+      {
+        "id": 113,
+        "titulo": "dia 3",
+        "musculos": [
+          "PECHO",
+          "ESPALDA",
+          "BICEPS",
+          "TRICEPS"
+        ]
+      },
+      {
+        "id": 114,
+        "titulo": "dia 4",
+        "musculos": [
+          "CUADRICEPS",
+          "ISQUIOS",
+          "HOMBROS"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "mesocicloId": 1003,
+    "titulo": "semana 1",
+    "dias": [
+      {
+        "id": 115,
+        "titulo": "dia 1",
+        "musculos": [
+          "PECHO",
+          "ESPALDA",
+          "BICEPS",
+          "TRICEPS"
+        ]
+      },
+      {
+        "id": 116,
+        "titulo": "dia 2",
+        "musculos": [
+          "CUADRICEPS",
+          "ISQUIOS",
+          "HOMBROS"
+        ]
+      },
+      {
+        "id": 117,
+        "titulo": "dia 3",
+        "musculos": [
+          "PECHO",
+          "ESPALDA",
+          "BICEPS",
+          "TRICEPS"
+        ]
+      },
+      {
+        "id": 118,
+        "titulo": "dia 4",
+        "musculos": [
+          "CUADRICEPS",
+          "ISQUIOS",
+          "HOMBROS"
+        ]
+      }
+    ]
+  }
+]

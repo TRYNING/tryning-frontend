@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { PrivateRoutes } from "@common/constants/routes";
-export function CardMesociclo({ routineId, id, title }) {
+export function CardMesociclo({ id, title }) {
   return (
     <Link
-      to={`/${PrivateRoutes.ROUTINES}/${routineId}/${PrivateRoutes.MESOCICLOS}/${id}`}
+      to={`${PrivateRoutes.MESOCICLOS}/${id}`}
       className="CardMesociclos-container"
       key={id}
     >
