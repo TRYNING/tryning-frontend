@@ -1,8 +1,11 @@
 import { AuthContextProvider } from "./context/AuthContextProvider";
+import { RoutinesContextProvider } from "./context/RoutinesContextProvider";
 import { PageRoutes } from "./routes/Routes";
 import { Suspense } from "react";
 import { Spinner } from "./components/Spinner/Spinner";
 import "@assets/styles/main.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Toaster } from "sonner";
 
 function App() {
@@ -11,7 +14,9 @@ function App() {
       <Toaster />
       <Suspense fallback={<Spinner />}>
         <AuthContextProvider>
-          <PageRoutes />
+          <RoutinesContextProvider>
+            <PageRoutes />
+          </RoutinesContextProvider>
         </AuthContextProvider>
       </Suspense>
     </div>

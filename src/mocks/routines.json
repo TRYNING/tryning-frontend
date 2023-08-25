@@ -4,64 +4,31 @@
     "entrenador": "Yaco Recroa",
     "usuarioId": "jfncvn47kaj23e",
     "titulo": "Rutina Juanpa",
-    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
-    "fecha_creacion": "08/08/2023",
-    "mesociclos": [
-      {
-        "id": 11,
-        "titulo": "Agosto",
-        "descripcion": ""
-      },
-      {
-        "id": 12,
-        "titulo": "septiembre",
-        "descripcion": ""
-      }
-    ]
+    "descripcion": "",
+    "fecha_creacion": "08/08/2023"
   },
   {
     "id": 2,
     "entrenador": "Yaco Recroa",
     "usuarioId": "jfncvn47kaj23e",
     "titulo": "Rutina Juanpa",
-    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
-    "fecha_creacion": "08/09/2023",
-    "mesociclos": [
-      {
-        "id": 13,
-        "titulo": "Octubre",
-        "descripcion": ""
-      }
-    ]
+    "descripcion": "",
+    "fecha_creacion": "08/09/2023"
   },
   {
     "id": 3,
     "entrenador": "Yaco Recroa",
     "usuarioId": "jfncvn47kaj23e",
     "titulo": "Rutina Juanpa",
-    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
-    "fecha_creacion": "08/10/2023",
-    "mesociclos": [
-      {
-        "id": 14,
-        "titulo": "Noviembre",
-        "descripcion": ""
-      }
-    ]
+    "descripcion": "",
+    "fecha_creacion": "08/6/2023"
   },
   {
     "id": 4,
     "entrenador": "Yaco Recroa",
     "usuarioId": "jfncvn47kaj23e",
     "titulo": "Rutina Juanpa",
-    "descripcion": "Esta rutina esta orientada para la ganancia de fuerza e hipertrofia en pecho, sin dejar de lado los demas musculos",
-    "fecha_creacion": "08/11/2023",
-    "mesociclos": [
-      {
-        "id": 15,
-        "titulo": "Diciembre",
-        "descripcion": ""
-      }
-    ]
+    "descripcion": "",
+    "fecha_creacion": "08/11/2023"
   }
 ]

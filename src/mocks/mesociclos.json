@@ -1,103 +1,22 @@
 [
   {
-    "id": 11,
-    "microciclos": [
-      {
-        "id": 21,
-        "titulo": "semana 1",
-        "dias": [
-          {
-            "titulo": "dia 1"
-          },
-          {
-            "titulo": "dia 2"
-          },
-          {
-            "titulo": "dia 3"
-          },
-          {
-            "titulo": "dia 4"
-          }
-        ]
-      },
-      {
-        "id": 22,
-        "titulo": "semana 2",
-        "dias": [
-          {
-            "titulo": "dia 1"
-          },
-          {
-            "titulo": "dia 2"
-          },
-          {
-            "titulo": "dia 3"
-          },
-          {
-            "titulo": "dia 4"
-          }
-        ]
-      },
-      {
-        "id": 23,
-        "titulo": "semana 3",
-        "dias": [
-          {
-            "titulo": "dia 1"
-          },
-          {
-            "titulo": "dia 2"
-          },
-          {
-            "titulo": "dia 3"
-          },
-          {
-            "titulo": "dia 4"
-          }
-        ]
-      },
-      {
-        "id": 24,
-        "titulo": "semana 4",
-        "dias": [
-          {
-            "titulo": "dia 1"
-          },
-          {
-            "titulo": "dia 2"
-          },
-          {
-            "titulo": "dia 3"
-          },
-          {
-            "titulo": "dia 4"
-          }
-        ]
-      }
-    ]
+    "id": 1001,
+    "rutinaId": 1,
+    "titulo": "Agosto"
   },
   {
-    "id": 12,
-    "microciclos": [
-      {}
-    ]
+    "id": 1003,
+    "rutinaId": 2,
+    "titulo": "Septiembre"
   },
   {
-    "id": 13,
-    "microciclos": [
-      {}
-    ]
+    "id": 1004,
+    "rutinaId": 3,
+    "titulo": "Octubre"
   },
   {
-    "id": 14,
-    "microciclos": [
-      {}
-    ]
-  },
-  {
-    "id": 15,
-    "microciclos": [
-      {}
-    ]
+    "id": 1005,
+    "rutinaId": 4,
+    "titulo": "Noviembre"
   }
 ]

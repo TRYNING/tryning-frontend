@@ -1,0 +1,25 @@
+.CustomCarrousel-container {
+  width: 100%;
+  border-radius: var(--border);
+  overflow: hidden;
+  padding: 0 50px;
+
+  .slick-prev,
+  .slick-next {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2.5rem;
+    z-index: 100;
+
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: var(--color-black);
+    }
+  }
+}

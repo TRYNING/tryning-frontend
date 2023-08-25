@@ -13,6 +13,7 @@
 @use "@components/ImagePerfil/ImagePerfil.scss";
 @use "@components/HeaderRoutine/HeaderRoutine.scss";
 @use "@components/Spinner/Spinner.scss";
+@use "@components/CustomCarrusel/CustomCarrusel.scss";
 
 // pages
 
@@ -28,14 +29,23 @@
 @use "@pages/user/Profile/Profile.scss";
 @use "@pages/user/BecomeTrainer/BecomeTrainer.scss";
 @use "@pages/user/Mesociclo/Mesociclo.scss";
+@use "@pages/user/Day/Day.scss";
+@use "@pages/user/Trainers/Trainers.scss";
 
 // pages components
 
 @use "@pages/Login/components/FormLogin/FormLogin.scss";
 @use "@pages/Register/components/FormRegister/FormRegister.scss";
+
+// pages user component
+
 @use "@pages/user/Mesociclo/components/CardWeek/CardWeek.scss";
 @use "@pages/user/Mesociclo/components/ListOfDays/ListOfDays.scss";
 @use "@pages/user/Mesociclo/components/ListOfWeeks/ListOfWeeks.scss";
+@use "@pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
+@use "@pages/user/Mesociclo/components/CardDay/CardDay.scss";
+@use "@pages/user/Routines/components/CardRoutine/CardRoutine.scss";
+@use "@pages/user/Routines/components/ListOfRoutines/ListOfRoutines.scss";
 
 // pages trainer components
 

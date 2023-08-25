@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "@assets/images/tryning.webp";
+import logo from "@assets/images/tryning-v2.webp";
 import { useAuthContext } from "@hooks/useAuthContext";
+import { SvgMenu } from "@assets/icons/svgIcons";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -14,23 +15,30 @@ export function Header() {
   return (
     <header className="Header-container">
       <section className="container-logo">
-        <img src={logo} alt="logo de tryning" onClick={handleLogoClick} />
+        <Link to="/">
+          <img src={logo} alt="logo de tryning" />
+        </Link>
       </section>
+      <div className="menu-icono" onClick={handleLogoClick}>
+        <SvgMenu size={30} />
+      </div>
       <section className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
-          <li className="link">
-            <Link to="/account">MI CUENTA</Link>
-          </li>
-          <li className="link">
-            <Link to="/about-us">NOSOTROS</Link>
-          </li>
-          <li className="link">
-            <Link to="/contact">CONTACTO</Link>
-          </li>
+          <Link to="/account" className="link">
+            <li>MI CUENTA</li>
+          </Link>
+          <Link to="/about-us" className="link">
+            <li>NOSOTROS</li>
+          </Link>
 
-          <li className="link trainer">
-            <Link to="/become-trainer">VOLVERSE ENTRENADOR</Link>
-          </li>
+          <Link to="/contact" className="link">
+            <li>CONTACTO</li>
+          </Link>
+
+          <Link to="/become-trainer" className="link trainer">
+            <li>VOLVERSE ENTRENADOR</li>
+          </Link>
+
           <li className="link logout" onClick={() => SignOut()}>
             CERRAR SESION
           </li>
