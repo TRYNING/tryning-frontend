@@ -12,113 +12,11 @@
   {
     "id": 1004,
     "rutinaId": 3,
-    "titulo": "Octubre",
-    "mesociclos": [
-      {
-        "id": 1004,
-        "microciclos": [
-          {
-            "id": 23,
-            "titulo": "semana 1",
-            "dias": [
-              {
-                "id": 119,
-                "titulo": "dia 1",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
-              },
-              {
-                "id": 120,
-                "titulo": "dia 2",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
-              },
-              {
-                "id": 121,
-                "titulo": "dia 3",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
-              },
-              {
-                "id": 122,
-                "titulo": "dia 4",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "titulo": "Octubre"
   },
   {
     "id": 1005,
     "rutinaId": 4,
-    "titulo": "Noviembre",
-    "mesociclos": [
-      {
-        "id": 1005,
-        "microciclos": [
-          {
-            "id": 24,
-            "titulo": "semana 1",
-            "dias": [
-              {
-                "id": 123,
-                "titulo": "dia 1",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
-              },
-              {
-                "id": 124,
-                "titulo": "dia 2",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
-              },
-              {
-                "id": 125,
-                "titulo": "dia 3",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
-              },
-              {
-                "id": 126,
-                "titulo": "dia 4",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "titulo": "Noviembre"
   }
 ]
