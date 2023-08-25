@@ -26,40 +26,22 @@
               {
                 "id": 115,
                 "titulo": "dia 1",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
+                "musculos": ["PECHO", "ESPALDA", "BICEPS", "TRICEPS"]
               },
               {
                 "id": 116,
                 "titulo": "dia 2",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
+                "musculos": ["CUADRICEPS", "ISQUIOS", "HOMBROS"]
               },
               {
                 "id": 117,
                 "titulo": "dia 3",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
+                "musculos": ["PECHO", "ESPALDA", "BICEPS", "TRICEPS"]
               },
               {
                 "id": 118,
                 "titulo": "dia 4",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
+                "musculos": ["CUADRICEPS", "ISQUIOS", "HOMBROS"]
               }
             ]
           }
@@ -80,40 +62,22 @@
               {
                 "id": 119,
                 "titulo": "dia 1",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
+                "musculos": ["PECHO", "ESPALDA", "BICEPS", "TRICEPS"]
               },
               {
                 "id": 120,
                 "titulo": "dia 2",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
+                "musculos": ["CUADRICEPS", "ISQUIOS", "HOMBROS"]
               },
               {
                 "id": 121,
                 "titulo": "dia 3",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
+                "musculos": ["PECHO", "ESPALDA", "BICEPS", "TRICEPS"]
               },
               {
                 "id": 122,
                 "titulo": "dia 4",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
+                "musculos": ["CUADRICEPS", "ISQUIOS", "HOMBROS"]
               }
             ]
           }
@@ -134,40 +98,22 @@
               {
                 "id": 123,
                 "titulo": "dia 1",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
+                "musculos": ["PECHO", "ESPALDA", "BICEPS", "TRICEPS"]
               },
               {
                 "id": 124,
                 "titulo": "dia 2",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
+                "musculos": ["CUADRICEPS", "ISQUIOS", "HOMBROS"]
               },
               {
                 "id": 125,
                 "titulo": "dia 3",
-                "musculos": [
-                  "PECHO",
-                  "ESPALDA",
-                  "BICEPS",
-                  "TRICEPS"
-                ]
+                "musculos": ["PECHO", "ESPALDA", "BICEPS", "TRICEPS"]
               },
               {
                 "id": 126,
                 "titulo": "dia 4",
-                "musculos": [
-                  "CUADRICEPS",
-                  "ISQUIOS",
-                  "HOMBROS"
-                ]
+                "musculos": ["CUADRICEPS", "ISQUIOS", "HOMBROS"]
               }
             ]
           }
