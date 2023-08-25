@@ -110,3 +110,20 @@ export function SvgCheck({ size }) {
     </svg>
   );
 }
+
+export function SvgMenu({ size }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+    >
+      <g id="_118_menu-04" data-name="118 menu-04">
+        <rect x="4" y="24" width="16" height="2" />
+        <rect x="4" y="6" width="24" height="2" />
+        <rect x="4" y="15" width="24" height="2" />
+      </g>
+    </svg>
+  );
+}

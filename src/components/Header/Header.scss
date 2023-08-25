@@ -3,29 +3,30 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: var(--color-white);
   pointer-events: all;
+  padding: 15px 0;
 
   .container-logo {
+    margin-left: 15px;
     img {
       cursor: pointer;
-      width: 90px;
-      height: 70px;
+      width: 50px;
+      height: 30px;
       object-fit: contain;
     }
   }
   .menu-icono {
+    margin-right: 15px;
+    transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 100%;
+    transition: 0.5s;
     cursor: pointer;
     &:hover {
       transform: scale(0.9);
-      transition: 1s;
     }
   }
   .menu {
@@ -58,10 +59,9 @@
         font-weight: bold;
         padding: 15px 50px;
         width: 100%;
+        transition: 0.3s;
         &:hover {
           background-color: #eeeeee;
-          transform: translate(15px);
-          transition: 1s;
         }
       }
       a {
@@ -71,11 +71,10 @@
         color: var(--color-error);
       }
       .trainer {
+        transition: 0.3s;
         &:hover {
           background-color: #dfdeff;
-          color: #0026ff;
-          transform: translate(15px);
-          transition: 1s;
+          color: var(--color-primary-trainer);
         }
       }
     }

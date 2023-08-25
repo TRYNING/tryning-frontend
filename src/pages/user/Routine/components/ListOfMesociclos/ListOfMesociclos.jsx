@@ -3,7 +3,7 @@ import { useRoutinesContext } from "@hooks/useRoutinesContext";
 
 export function ListOfMesociclos({ routineId }) {
   const { getMesociclos } = useRoutinesContext();
-  const mesociclos = getMesociclos(routineId);
+  const { mesociclos } = getMesociclos(routineId);
   return (
     <div className="ListOfMesociclos-container">
       {mesociclos?.map((mesociclo) => {
