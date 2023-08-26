@@ -5,7 +5,7 @@ export function ListOfMesociclos({ routineId }) {
   const { getMesociclos } = useRoutinesContext();
   const { mesociclos } = getMesociclos(routineId);
   return (
-    <div className="ListOfMesociclos-container">
+    <div className="ListOfMesociclos">
       {mesociclos?.map((mesociclo) => {
         const { id, titulo } = mesociclo;
         return (

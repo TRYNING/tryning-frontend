@@ -4,7 +4,7 @@ export function CardMesociclo({ id, title }) {
   return (
     <Link
       to={`${PrivateRoutes.MESOCICLOS}/${id}`}
-      className="CardMesociclos-container"
+      className="CardMesociclos"
       key={id}
     >
       {title}

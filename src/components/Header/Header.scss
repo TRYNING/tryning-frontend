@@ -4,12 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  //flex-direction: row-reverse;
   background: var(--color-white);
   pointer-events: all;
   padding: 15px 0;
 
   .container-logo {
-    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 15px;
+
     img {
       cursor: pointer;
       width: 50px;
@@ -17,13 +22,19 @@
       object-fit: contain;
     }
   }
-  .menu-icono {
-    margin-right: 15px;
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .icono-menu {
+    margin: 0 15px;
     transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  .icono-lupa {
+    margin: 0 15px;
+    transition: 0.5s;
+    transform: rotateY(180deg);
     cursor: pointer;
     &:hover {
       transform: scale(0.9);
