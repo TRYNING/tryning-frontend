@@ -2,8 +2,11 @@
 
 Este proyecto es una página web que actúa como mediador entre usuarios y entrenadores, brindando un espacio donde los usuarios pueden contratar a un entrenador para obtener una rutina personalizada. Los entrenadores, por su parte, tienen una plataforma dedicada para crear y gestionar las rutinas de los usuarios, así como hacer un seguimiento de sus cambios y progresos.
 
-![home](https://github.com/JuanPE44/tryning-frontend/assets/89142353/dbb23efb-42c8-456a-bb50-1c8b3a193ae0)
-
+<div>
+  <img src="https://github.com/JuanPE44/tryning-frontend/assets/89142353/0bf3bb5d-bd29-4884-a288-2356d069d9b0" />
+  <img src="https://github.com/JuanPE44/tryning-frontend/assets/89142353/c5fe961c-e6c3-4d98-af9f-f557e7a94914" />
+  <img src="https://github.com/JuanPE44/tryning-frontend/assets/89142353/22fd6bc3-3df3-40a9-a7a3-e1907d5dff73" />
+</div>
 
 ## Características principales
 
