@@ -3,6 +3,7 @@ import { createContext, useState } from "react";
 import r from "@mocks/routines.json";
 import m from "@mocks/mesociclos.json";
 import micro from "@mocks/microciclos.json";
+import d from "@mocks/dias.json";
 
 export const RoutinesContext = createContext({});
 
@@ -28,6 +29,11 @@ export function RoutinesContextProvider({ children }) {
     return { microciclos };
   };
 
+  const getDays = (microcicloId) => {
+    const days = d.filter((dia) => dia.microcicloId === parseInt(microcicloId));
+    return { days };
+  };
+
   return (
     <RoutinesContext.Provider
       value={{
@@ -35,6 +41,7 @@ export function RoutinesContextProvider({ children }) {
         getRoutines,
         getMesociclos,
         getMicrociclos,
+        getDays,
       }}
     >
       {children}

@@ -14,6 +14,7 @@ export const PrivateRoutes = {
   BECOME_TRAINER: "become-trainer",
   ABOUT_US: "about-us",
   TRAINER: "trainer",
+  DAY: "day",
 };
 
 export const TrainerRoutes = {

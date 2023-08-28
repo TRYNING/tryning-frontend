@@ -31,15 +31,6 @@
     }
   }
 
-  .icono-lupa {
-    margin: 0 15px;
-    transition: 0.5s;
-    transform: rotateY(180deg);
-    cursor: pointer;
-    &:hover {
-      transform: scale(0.9);
-    }
-  }
   .menu {
     position: absolute;
     background-color: var(--color-white);

@@ -4,7 +4,7 @@ import { useAuthContext } from "@hooks/useAuthContext";
 import { Link } from "react-router-dom";
 import { PrivateRoutes } from "@common/constants/routes";
 
-export function ImagePerfil() {
+export function ImagePerfil({ size = "30px" }) {
   const { user } = useAuthContext();
   const [imageError, setImageError] = useState(false);
   return (
@@ -14,9 +14,16 @@ export function ImagePerfil() {
           src={user.urlImage}
           alt={`imagen de perfil del usuario ${user.name}`}
           onError={() => setImageError(true)}
+          width={size}
+          height={size}
         />
       ) : (
-        <img src={imgNotFound} alt="usuario no encontrado" />
+        <img
+          src={imgNotFound}
+          alt="usuario no encontrado"
+          width={size}
+          height={size}
+        />
       )}
     </Link>
   );
