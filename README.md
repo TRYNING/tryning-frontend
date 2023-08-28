@@ -13,15 +13,14 @@ Este proyecto es una página web que actúa como mediador entre usuarios y entre
 - **Creación de rutinas personalizadas**: Los entrenadores tienen una interfaz dedicada donde pueden crear rutinas personalizadas para cada usuario, teniendo en cuenta factores como el peso, grasa corporal, estatura, etc.
 - **Seguimiento de cambios y progresos**: Los entrenadores pueden realizar un seguimiento de los cambios y progresos de los usuarios a lo largo del tiempo, registrando datos como el peso, medidas corporales, rendimiento, entre otros.
 - **Gestión de usuarios y entrenadores**: La plataforma permite gestionar perfiles de usuarios y entrenadores, incluyendo información personal, historial de rutinas, estadísticas y más.
-- **Comunicación entre usuarios y entrenadores**: Los usuarios y entrenadores pueden interactuar a través de la plataforma, ya sea mediante mensajes directos, consultas específicas o comentarios en las rutinas.
 
 ## Tecnologías utilizadas
 
 - **Frontend**: HTML, CSS, JavaScript, React.js
 - **Backend**: Node.js, Express.js
 - **Base de datos**: MySQL
-- **Autenticación y autorización**: Implementación de un sistema de autenticación y autorización para usuarios y entrenadores.
-- **Almacenamiento de datos**: Configuración para almacenar datos de usuarios, entrenadores, rutinas y registros de cambios en la base de datos seleccionada.
+- **Autenticación y autorización**: Implementación de un sistema de autenticación y autorización para usuarios y entrenadores con Firebase.
+- **Almacenamiento de datos**: Configuración para almacenar datos de usuarios, entrenadores, rutinas y registros de cambios en la base de datos MySql.
 
 ## Instalación y configuración
 
