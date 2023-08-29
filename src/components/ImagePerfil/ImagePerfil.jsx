@@ -1,21 +1,30 @@
 import imgNotFound from "@assets/images/userNotFound.webp";
 import { useState } from "react";
 import { useAuthContext } from "@hooks/useAuthContext";
+import { Link } from "react-router-dom";
+import { PrivateRoutes } from "@common/constants/routes";
 
-export function ImagePerfil() {
-  const { user, SignOut } = useAuthContext();
+export function ImagePerfil({ size = "30px" }) {
+  const { user } = useAuthContext();
   const [imageError, setImageError] = useState(false);
   return (
-    <div className="Image-perfil" onClick={() => SignOut()}>
+    <Link to={`${PrivateRoutes.PROFILE}`} className="Image-perfil">
       {user?.urlImage && !imageError ? (
         <img
           src={user.urlImage}
           alt={`imagen de perfil del usuario ${user.name}`}
           onError={() => setImageError(true)}
+          width={size}
+          height={size}
         />
       ) : (
-        <img src={imgNotFound} alt="usuario no encontrado" />
+        <img
+          src={imgNotFound}
+          alt="usuario no encontrado"
+          width={size}
+          height={size}
+        />
       )}
-    </div>
+    </Link>
   );
 }

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "@assets/images/tryning.webp";
+import logo from "@assets/images/tryning-pink.webp";
 import { useAuthContext } from "@hooks/useAuthContext";
+import { SvgMenu } from "@assets/icons/svgIcons";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -13,20 +14,15 @@ export function Header() {
 
   return (
     <header className="Header-container">
-      <div className="menu-icono" onClick={handleLogoClick}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-          <g id="_118_menu-04" data-name="118 menu-04">
-            <rect x="4" y="24" width="16" height="2" />
-            <rect x="4" y="6" width="24" height="2" />
-            <rect x="4" y="15" width="24" height="2" />
-          </g>
-        </svg>
+      <div className="icono-menu" onClick={handleLogoClick}>
+        <SvgMenu size={30} />
       </div>
       <section className="container-logo">
         <Link to="/">
           <img src={logo} alt="logo de tryning" />
         </Link>
       </section>
+
       <section className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
           <Link to="/account" className="link">

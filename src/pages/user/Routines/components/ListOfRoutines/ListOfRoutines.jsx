@@ -4,7 +4,7 @@ import { currentMonth } from "@utils/date.utils";
 export function ListOfRoutines() {
   const { routines } = useRoutinesContext();
   return (
-    <div className="routines">
+    <div className="ListOfRoutines">
       {routines?.map((routine) => {
         const { id, entrenador, fecha_creacion } = routine;
         const current = currentMonth(fecha_creacion);

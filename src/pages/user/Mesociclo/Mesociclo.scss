@@ -3,16 +3,5 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
-
-  .mesociclo-section {
-    padding: 30px;
-
-    .titulo-mesociclo {
-      text-align: center;
-      color: var(--color-secondary);
-      text-transform: capitalize;
-      font-size: 30px;
-      margin-bottom: 30px;
-    }
-  }
+  background: var(--color-black);
 }

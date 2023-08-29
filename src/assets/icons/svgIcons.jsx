@@ -110,3 +110,39 @@ export function SvgCheck({ size }) {
     </svg>
   );
 }
+
+export function SvgMenu({ size }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="#111"
+      viewBox="0 0 32 32"
+    >
+      <g id="_118_menu-04" data-name="118 menu-04">
+        <rect x="4" y="24" width="16" height="2" />
+        <rect x="4" y="6" width="24" height="2" />
+        <rect x="4" y="15" width="24" height="2" />
+      </g>
+    </svg>
+  );
+}
+
+export function SvgLupa({ size }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="#111"
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+    >
+      <title />
+
+      <g id="search">
+        <path d="M29.71,28.29l-6.5-6.5-.07,0a12,12,0,1,0-1.39,1.39s0,.05,0,.07l6.5,6.5a1,1,0,0,0,1.42,0A1,1,0,0,0,29.71,28.29ZM14,24A10,10,0,1,1,24,14,10,10,0,0,1,14,24Z" />
+      </g>
+    </svg>
+  );
+}

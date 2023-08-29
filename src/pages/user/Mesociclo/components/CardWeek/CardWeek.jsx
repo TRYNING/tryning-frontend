@@ -1,13 +1,13 @@
 import { ListOfDays } from "../ListOFDays/ListOfDays";
 
-export function CardWeek({ titulo, microciclo }) {
+export function CardWeek({ titulo, microcicloId }) {
   return (
-    <div className="CardWeek-container">
+    <div className="CardWeek">
       <header className="header-cardweek">
         <span className="cubo"></span>
-        <h2>{titulo}</h2>
+        <h2 className="titulo">{titulo}</h2>
       </header>
-      <ListOfDays microciclo={microciclo} />
+      <ListOfDays microcicloId={microcicloId} />
     </div>
   );
 }

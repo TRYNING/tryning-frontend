@@ -14,6 +14,10 @@
 @use "@components/HeaderRoutine/HeaderRoutine.scss";
 @use "@components/Spinner/Spinner.scss";
 @use "@components/CustomCarrusel/CustomCarrusel.scss";
+<<<<<<< HEAD
+=======
+@use "@components/Main/Main.scss";
+>>>>>>> 6cda50292f6dcbc2a79cfc2a50668779ac20c43c
 @use "@components/Footer/Footer.scss";
 
 // pages
@@ -21,6 +25,7 @@
 @use "@pages/Landing/Landing.scss";
 @use "@pages/Login/Login.scss";
 @use "@pages/Register/Register.scss";
+@use "@pages/NotFound/NotFound.scss";
 
 // pages user
 
@@ -31,6 +36,7 @@
 @use "@pages/user/BecomeTrainer/BecomeTrainer.scss";
 @use "@pages/user/Mesociclo/Mesociclo.scss";
 @use "@pages/user/Day/Day.scss";
+@use "@pages/user/Trainers/Trainers.scss";
 
 // pages components
 
@@ -39,13 +45,16 @@
 
 // pages user component
 
+@use "@pages/user/Mesociclo/components/CardDay/CardDay.scss";
 @use "@pages/user/Mesociclo/components/CardWeek/CardWeek.scss";
 @use "@pages/user/Mesociclo/components/ListOfDays/ListOfDays.scss";
+@use "@pages/user/Mesociclo/components/Cubo/Cubo.scss";
 @use "@pages/user/Mesociclo/components/ListOfWeeks/ListOfWeeks.scss";
-@use "@pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
-@use "@pages/user/Mesociclo/components/CardDay/CardDay.scss";
+@use "@pages/user/Routine/components/CardMesociclo/CardMesociclo.scss";
+@use "@pages/user/Routine/components/ListOfMesociclos/ListOfMesociclos.scss";
 @use "@pages/user/Routines/components/CardRoutine/CardRoutine.scss";
 @use "@pages/user/Routines/components/ListOfRoutines/ListOfRoutines.scss";
+@use "@pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
 
 // pages trainer components
 

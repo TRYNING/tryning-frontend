@@ -1,6 +1,72 @@
 [
   {
     "id": "123",
-    "nombre": "Yaco Recroa"
+    "nombre": "Yaco Recroa",
+    "certificacion": "Personal Trainer",
+    "experiencia": "2 Años",
+    "perfilimg": "imagen_yaco.jpg"
+  },
+  {
+    "id": "124",
+    "nombre": "Lena Smith",
+    "certificacion": "Entrenadora de CrossFit",
+    "experiencia": "5 Años",
+    "perfilimg": "imagen_lena.jpg"
+  },
+  {
+    "id": "125",
+    "nombre": "Carlos Gonzalez",
+    "certificacion": "Especialista en Nutrición",
+    "experiencia": "8 Años",
+    "perfilimg": "imagen_carlos.jpg"
+  },
+  {
+    "id": "126",
+    "nombre": "Emma Williams",
+    "certificacion": "Yoga Instructor",
+    "experiencia": "3 Años",
+    "perfilimg": "imagen_emma.jpg"
+  },
+  {
+    "id": "127",
+    "nombre": "Alex Rodriguez",
+    "certificacion": "Entrenador de Levantamiento de Pesas",
+    "experiencia": "6 Años",
+    "perfilimg": "imagen_alex.jpg"
+  },
+  {
+    "id": "128",
+    "nombre": "Laura Martinez",
+    "certificacion": "Coach de Fitness Funcional",
+    "experiencia": "4 Años",
+    "perfilimg": "imagen_laura.jpg"
+  },
+  {
+    "id": "129",
+    "nombre": "Daniel Lee",
+    "certificacion": "Entrenador de Atletismo",
+    "experiencia": "7 Años",
+    "perfilimg": "imagen_daniel.jpg"
+  },
+  {
+    "id": "130",
+    "nombre": "Sophia Nguyen",
+    "certificacion": "Especialista en Entrenamiento HIIT",
+    "experiencia": "3 Años",
+    "perfilimg": "imagen_sophia.jpg"
+  },
+  {
+    "id": "131",
+    "nombre": "Miguel Hernandez",
+    "certificacion": "Entrenador de Natación",
+    "experiencia": "5 Años",
+    "perfilimg": "imagen_miguel.jpg"
+  },
+  {
+    "id": "132",
+    "nombre": "Olivia Taylor",
+    "certificacion": "Instructora de Pilates",
+    "experiencia": "4 Años",
+    "perfilimg": "imagen_olivia.jpg"
   }
 ]

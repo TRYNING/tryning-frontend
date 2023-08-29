@@ -1,13 +1,18 @@
-.CardWeek-container {
+.CardWeek {
   .header-cardweek {
     display: flex;
     align-items: center;
     gap: 10px;
 
+    .titulo {
+      font-size: 15px;
+    }
+
     .cubo {
       width: var(--size-cubo);
       height: var(--size-cubo);
       background: var(--color-primary);
+      border-radius: 3px;
     }
   }
 }

@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
+import { ListOfTrainers } from "./components/ListOfTrainers/ListOfTrainers";
 
 export default function PageTrainers() {
   return (
     <div className="Trainers-container">
       <main>
-        <h1>Tu entrenador personalizado en línea</h1>
-        <p>¡Alcanza tus metas más rápido con un entrenador personal!</p>
-        <div className="buttons-container">
-          <Link to="/trainers" className="button-entrenador">
-            Buscar entrenador
-          </Link>
+      <header className="trainer-header">
+        <h1 className="header-title">Entrenador</h1>
+      </header>
+        <div className="Browser">
+          <input type="text"  placeholder="Buscar Entrenador"/> 
         </div>
+
+        <ListOfTrainers/>
       </main>
     </div>
   );
