@@ -1,3 +1,7 @@
 export function Footer() {
-  return <footer></footer>;
+  return <footer className="Footer-container">
+    <div className="Contactanos-footer">
+      
+    </div>
+  </footer>;
 }
