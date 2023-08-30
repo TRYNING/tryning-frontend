@@ -7,13 +7,14 @@ export function ListOfMesociclos({ routineId }) {
   return (
     <div className="ListOfMesociclos">
       {mesociclos?.map((mesociclo) => {
-        const { id, titulo } = mesociclo;
+        const { id, titulo, descripcion } = mesociclo;
         return (
           <CardMesociclo
             key={id}
             id={id}
             title={titulo}
             routineId={routineId}
+            description={descripcion}
           />
         );
       })}
