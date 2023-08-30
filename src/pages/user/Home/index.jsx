@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
-import { CustomCarrusel } from "../../../components/CustomCarrusel/CustomCarrusel";
 
 export default function PageHome() {
   return (
@@ -37,10 +36,6 @@ export default function PageHome() {
           titulo="SISTEMA DE SEGUIMIENTO UNICO CON POSIBILIDADES DE HACER UN TRACKEO MUY PRECISO"
           parrafo="Contamos con un sistema de seguimiento muy avanzado, que transfiere los datos de tu entrenamiento a informacion muy legible"
         />
-      </section>
-
-      <section className="section-carrousel">
-        <CustomCarrusel />
       </section>
     </main>
   );

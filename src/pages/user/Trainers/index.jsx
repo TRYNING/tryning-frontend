@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import { ListOfTrainers } from "./components/ListOfTrainers/ListOfTrainers";
 
 export default function PageTrainers() {
@@ -8,7 +8,7 @@ export default function PageTrainers() {
       <header className="trainer-header">
         <h1 className="header-title">Entrenador</h1>
       </header>
-        <div className="Browser">
+       <div className="Browser"> 
           <input type="text"  placeholder="Buscar Entrenador"/> 
         </div>
 
