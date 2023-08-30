@@ -1,2 +1,8 @@
-import { InputsSupp } from "./SupportComponent/SuppComp";
+import { Inputs } from "../../components/Inputs/Input";
+
+export default function PageSupport () {
+    return (<main>
+        <Inputs/>
+    </main>)
+}
 

@@ -32,7 +32,7 @@ export function Header() {
             <li>NOSOTROS</li>
           </Link>
 
-          <Link to="/contact" className="link">
+          <Link to=".././pages/Support/index.jsx" className="link">
             <li>CONTACTO</li>
           </Link>
 

@@ -3,6 +3,7 @@ export function InputsSupp() {
     <body>
         <div>
             <input type="text"/>
+            pene
         </div>
     </body>
     )
