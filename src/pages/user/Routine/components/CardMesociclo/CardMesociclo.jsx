@@ -11,7 +11,10 @@ export function CardMesociclo({ id, title, description }) {
         <h2>{title}</h2>
       </header>
       <main>
-        <p>{description}</p>
+        <p>
+          <span>Descripcion: </span>
+          {description}
+        </p>
       </main>
     </Link>
   );

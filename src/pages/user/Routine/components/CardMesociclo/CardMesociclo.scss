@@ -6,17 +6,27 @@
   border-radius: var(--border);
   overflow: hidden;
   cursor: pointer;
+  box-shadow: var(--shadow);
 
   header {
+    h2 {
+      font-size: 20px;
+    }
     flex-grow: 0;
-    padding: 20px 0;
-    background: var(--color-secondary);
+    padding: 15px 10px;
+    background: var(--color-dark-gray);
     color: var(--color-white);
   }
 
   main {
+    padding: 10px;
+    span {
+      color: var(--color-dark-gray);
+    }
     p {
       flex-grow: 1;
+      font-weight: 600;
+      font-size: 17px;
     }
   }
 }
