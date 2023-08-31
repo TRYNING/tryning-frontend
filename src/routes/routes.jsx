@@ -18,9 +18,11 @@ export function PageRoutes() {
       <RoutesWithNotFound>
         <Route index element={<Navigate to={PrivateRoutes.HOME} />} />
         <Route path={PublicRoutes.LANDING} element={<PageLanding />} />
+
         <Route element={<AuthenticatedGuard />}>
           <Route path={PublicRoutes.LOGIN} element={<PageLogin />} />
           <Route path={PublicRoutes.REGISTER} element={<PageRegister />} />
+          <Route path={PublicRoutes.SUPPORT} element={<PageSupport />}>
         </Route>
         <Route
           path="/*"
