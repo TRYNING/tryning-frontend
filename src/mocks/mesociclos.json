@@ -1,22 +1,26 @@
 [
   {
-    "id": 1001,
+    "id": 1000,
     "rutinaId": 1,
-    "titulo": "Agosto"
+    "titulo": "Agosto",
+    "descripcion": "Este mesociclo se enfoca en la preparación inicial para tu rutina de entrenamiento. Incluye ejercicios de acondicionamiento físico y evaluaciones de salud para establecer una base sólida."
+  },
+  {
+    "id": 1001,
+    "rutinaId": 2,
+    "titulo": "Septiembre",
+    "descripcion": "Durante este mesociclo, te centrarás en el desarrollo de la fuerza y la resistencia. Las rutinas se diseñarán para fortalecer los músculos principales y mejorar la capacidad cardiovascular."
+  },
+  {
+    "id": 1002,
+    "rutinaId": 3,
+    "titulo": "Octubre",
+    "descripcion": "En octubre, la atención se desplaza hacia la mejora de la flexibilidad y la movilidad. Los ejercicios incluirán estiramientos y yoga, ayudándote a mantener un cuerpo ágil y reducir el riesgo de lesiones."
   },
   {
     "id": 1003,
-    "rutinaId": 2,
-    "titulo": "Septiembre"
-  },
-  {
-    "id": 1004,
-    "rutinaId": 3,
-    "titulo": "Octubre"
-  },
-  {
-    "id": 1005,
     "rutinaId": 4,
-    "titulo": "Noviembre"
+    "titulo": "Noviembre",
+    "descripcion": "Este mesociclo se dedicará a la optimización del rendimiento. Aumentarás la intensidad de tus entrenamientos y te enfocarás en alcanzar tus objetivos de acondicionamiento físico antes de una posible pausa o cambio en tu rutina."
   }
 ]

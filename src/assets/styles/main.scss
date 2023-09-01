@@ -15,12 +15,14 @@
 @use "@components/Spinner/Spinner.scss";
 @use "@components/CustomCarrusel/CustomCarrusel.scss";
 @use "@components/Main/Main.scss";
+@use "@components/Footer/Footer.scss";
 
 // pages
 
 @use "@pages/Landing/Landing.scss";
 @use "@pages/Login/Login.scss";
 @use "@pages/Register/Register.scss";
+@use "@pages/NotFound/NotFound.scss";
 
 // pages user
 
@@ -43,12 +45,18 @@
 @use "@pages/user/Mesociclo/components/CardDay/CardDay.scss";
 @use "@pages/user/Mesociclo/components/CardWeek/CardWeek.scss";
 @use "@pages/user/Mesociclo/components/ListOfDays/ListOfDays.scss";
+@use "@pages/user/Mesociclo/components/Cubo/Cubo.scss";
 @use "@pages/user/Mesociclo/components/ListOfWeeks/ListOfWeeks.scss";
 @use "@pages/user/Routine/components/CardMesociclo/CardMesociclo.scss";
 @use "@pages/user/Routine/components/ListOfMesociclos/ListOfMesociclos.scss";
 @use "@pages/user/Routines/components/CardRoutine/CardRoutine.scss";
 @use "@pages/user/Routines/components/ListOfRoutines/ListOfRoutines.scss";
 @use "@pages/user/Home/components/EmojisContainer/EmojisContainer.scss";
+@use "@pages/user/Trainers/components/CardTrainer/CardTrainer.scss";
+@use "@pages/user/Trainers/components/ListOfTrainers/ListOfTrainers.scss";
+@use "@pages/user/Profile/components/ListOfImage/ListOfImage.scss";
+@use "@pages/user/Day/components/CardExercise/CardExercise.scss";
+@use "@pages/user/Day/components/ListOfExercises/ListOfExercises.scss";
 
 // pages trainer components
 

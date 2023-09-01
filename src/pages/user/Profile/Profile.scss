@@ -1,7 +1,21 @@
 .Profile-container {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .profile-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .profile-desc{
+      margin: 0px 10px 0px 10px;
+    }
+
+    
+  }
 }

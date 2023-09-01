@@ -1,722 +1,82 @@
 [
   {
     "id": 2000,
-    "mesocicloId": 1001,
-    "titulo": "semana 1",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1000,
+    "titulo": "semana 1"
   },
   {
     "id": 2001,
-    "mesocicloId": 1001,
-    "titulo": "semana 2",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1000,
+    "titulo": "semana 2"
   },
   {
     "id": 2002,
-    "mesocicloId": 1001,
-    "titulo": "semana 3",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1000,
+    "titulo": "semana 3"
   },
   {
     "id": 2003,
-    "mesocicloId": 1001,
-    "titulo": "semana 4",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1000,
+    "titulo": "semana 4"
   },
   {
     "id": 2004,
-    "mesocicloId": 1003,
-    "titulo": "semana 1",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1001,
+    "titulo": "semana 1"
   },
   {
     "id": 2005,
-    "mesocicloId": 1003,
-    "titulo": "semana 2",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1001,
+    "titulo": "semana 2"
   },
   {
     "id": 2006,
-    "mesocicloId": 1003,
-    "titulo": "semana 3",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1001,
+    "titulo": "semana 3"
   },
   {
     "id": 2007,
-    "mesocicloId": 1003,
-    "titulo": "semana 4",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1001,
+    "titulo": "semana 4"
   },
   {
     "id": 2008,
-    "mesocicloId": 1004,
-    "titulo": "semana 1",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1002,
+    "titulo": "semana 1"
   },
   {
     "id": 2009,
-    "mesocicloId": 1004,
-    "titulo": "semana 2",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1002,
+    "titulo": "semana 2"
   },
   {
     "id": 2010,
-    "mesocicloId": 1004,
-    "titulo": "semana 3",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1002,
+    "titulo": "semana 3"
   },
   {
     "id": 2011,
-    "mesocicloId": 1004,
-    "titulo": "semana 4",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1002,
+    "titulo": "semana 4"
   },
   {
     "id": 2012,
-    "mesocicloId": 1005,
-    "titulo": "semana 1",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1003,
+    "titulo": "semana 1"
   },
   {
     "id": 2013,
-    "mesocicloId": 1005,
-    "titulo": "semana 2",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1003,
+    "titulo": "semana 2"
   },
   {
     "id": 2014,
-    "mesocicloId": 1005,
-    "titulo": "semana 3",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "mesocicloId": 1003,
+    "titulo": "semana 3"
   },
   {
-    "id": 2014,
-    "mesocicloId": 1005,
-    "titulo": "semana 4",
-    "dias": [
-      {
-        "id": 111,
-        "titulo": "dia 1",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 112,
-        "titulo": "dia 2",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      },
-      {
-        "id": 113,
-        "titulo": "dia 3",
-        "musculos": [
-          "PECHO",
-          "ESPALDA",
-          "BICEPS",
-          "TRICEPS"
-        ]
-      },
-      {
-        "id": 114,
-        "titulo": "dia 4",
-        "musculos": [
-          "CUADRICEPS",
-          "ISQUIOS",
-          "HOMBROS"
-        ]
-      }
-    ]
+    "id": 2015,
+    "mesocicloId": 1003,
+    "titulo": "semana 4"
   }
 ]

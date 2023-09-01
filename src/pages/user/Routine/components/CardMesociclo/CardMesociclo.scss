@@ -1,10 +1,44 @@
 .CardMesociclos {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   background: var(--color-white);
-  padding: 10px;
   min-height: 100px;
   border-radius: var(--border);
+  overflow: hidden;
   cursor: pointer;
+  box-shadow: var(--shadow);
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 0;
+    padding: 20px;
+    color: var(--color-black);
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 13px solid var(--color-primary);
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+    }
+
+    h2 {
+      font-size: 17px;
+    }
+  }
+
+  main {
+    padding: 0 20px 20px 20px;
+    span {
+      color: var(--color-black);
+    }
+    p {
+      color: var(--color-dark-gray);
+      flex-grow: 1;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
 }

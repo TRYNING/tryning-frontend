@@ -1,8 +1,6 @@
-import { useRoutinesContext } from "@hooks/useRoutinesContext";
 import { CardRoutine } from "../CardRoutine/CardRoutine";
 import { currentMonth } from "@utils/date.utils";
-export function ListOfRoutines() {
-  const { routines } = useRoutinesContext();
+export function ListOfRoutines({ routines }) {
   return (
     <div className="ListOfRoutines">
       {routines?.map((routine) => {

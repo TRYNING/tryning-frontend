@@ -3,7 +3,7 @@ import trainers from "@mocks/trainers.json"
 
 export function ListOfTrainers() {
     return (
-      <div className="trainers">
+      <div className="ListOfTrainers">
         {trainers?.map((trainer) => {
         const {id, nombre, certificacion, experiencia, perfilimg} = trainer
     
@@ -18,7 +18,7 @@ export function ListOfTrainers() {
               />
             );
           })}
-        )
+  git
         
       </div>
     );

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "@assets/images/tryning-pink.png";
+import logo from "@assets/images/tryning-pink.webp";
 import { useAuthContext } from "@hooks/useAuthContext";
 import { SvgMenu } from "@assets/icons/svgIcons";
-import { SvgLupa } from "../../assets/icons/svgIcons";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -23,9 +22,6 @@ export function Header() {
           <img src={logo} alt="logo de tryning" />
         </Link>
       </section>
-      <div className="icono-lupa" onClick={handleLogoClick}>
-        <SvgLupa size={25} />
-      </div>
 
       <section className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
@@ -36,7 +32,7 @@ export function Header() {
             <li>NOSOTROS</li>
           </Link>
 
-          <Link to="/contact" className="link">
+          <Link to=".././pages/Support/index.jsx" className="link">
             <li>CONTACTO</li>
           </Link>
 

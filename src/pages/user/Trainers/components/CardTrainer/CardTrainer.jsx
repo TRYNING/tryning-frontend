@@ -5,14 +5,16 @@ export function CardTrainer({ id, nombre, certificacion, experencia, perfilimg }
       <div className="Card-Trainer">
         <section className="trainer-section">
           <div className="trainer-title">
-            <span>
-              <SvgCheck size={12} />
-            </span>
+          
+              
+            
           </div>
-          <div className="img-trainer">{perfilimg}</div>
-          <div className="name-trainer">Nombre {nombre}</div>
-          <div className="certificade-trainer">Certificado{certificacion}</div>
-          <div className="exp-trainer">Exp {experencia}</div>
+          <img src={perfilimg} alt=""  className="trainer-img"/>
+          <div className="trainer-box">
+              <div className="trainer-name" > {nombre} <SvgCheck size={12} /> </div>
+              <div className="trainer-certificade">Certificado: {certificacion}</div>
+              <div className="trainer-exp">Exp: {experencia}</div>
+          </div>
         </section>
       </div>
     );}
