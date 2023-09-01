@@ -2,20 +2,47 @@
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  .profile-header{
+  .profile-header {
+    position: relative;
+    width: 100%;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
     margin-bottom: 50px;
 
-    .profile-desc{
-      margin: 0px 10px 0px 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #0000001e;
     }
 
-    
+    .header-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .header-img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(50%, 40%);
+      z-index: 100;
+    }
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 40px;
+    margin-bottom: 50px;
   }
 }

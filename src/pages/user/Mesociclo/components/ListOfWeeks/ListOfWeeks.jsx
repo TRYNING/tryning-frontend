@@ -1,4 +1,3 @@
-import { generateId } from "../../../../../utils/generateId.utils";
 import { CardWeek } from "../CardWeek/CardWeek";
 import { useRoutinesContext } from "@hooks/useRoutinesContext";
 
@@ -9,7 +8,7 @@ export function ListOfWeeks({ mesocicloId }) {
     <div className="ListOfWeeks-container">
       {microciclos?.map((microciclo) => {
         const { id, titulo } = microciclo;
-        const key = generateId();
+        const key = crypto.randomUUID();
 
         return <CardWeek key={key} titulo={titulo} microcicloId={id} />;
       })}

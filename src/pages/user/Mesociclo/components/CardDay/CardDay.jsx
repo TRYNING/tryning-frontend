@@ -1,6 +1,5 @@
 import { Cubo } from "../Cubo/Cubo";
 import { Link } from "react-router-dom";
-import { generateId } from "@utils/generateId.utils";
 
 export function CardDay({ id, title, muscles }) {
   return (
@@ -8,7 +7,8 @@ export function CardDay({ id, title, muscles }) {
       <h2 className="titulo">{title}</h2>
       <div className="cubos-container">
         {muscles?.map((muscle) => {
-          const key = generateId();
+          const key = crypto.randomUUID();
+
           return <Cubo key={key} muscle={muscle} />;
         })}
       </div>
