@@ -8,6 +8,7 @@ export function CardMesociclo({ id, title, description }) {
       key={id}
     >
       <header>
+        <span className="triangle"></span>
         <h2>{title}</h2>
       </header>
       <main>

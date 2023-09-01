@@ -9,24 +9,36 @@
   box-shadow: var(--shadow);
 
   header {
-    h2 {
-      font-size: 20px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 10px;
     flex-grow: 0;
-    padding: 15px 10px;
-    background: var(--color-dark-gray);
-    color: var(--color-white);
+    padding: 20px;
+    color: var(--color-black);
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 13px solid var(--color-primary);
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+    }
+
+    h2 {
+      font-size: 17px;
+    }
   }
 
   main {
-    padding: 10px;
+    padding: 0 20px 20px 20px;
     span {
-      color: var(--color-dark-gray);
+      color: var(--color-black);
     }
     p {
+      color: var(--color-dark-gray);
       flex-grow: 1;
       font-weight: 600;
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 }

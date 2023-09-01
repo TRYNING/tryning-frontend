@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "ejercicioDiaId": 4000,
+    "repeticiones": 6,
+    "RIR": 1,
+    "RPE": 9,
+    "intensidad": 1
+  },
+  {
+    "id": 2,
+    "ejercicioDiaId": 4000,
+    "repeticiones": 6,
+    "RIR": 1,
+    "RPE": 9,
+    "intensidad": 1
+  },
+  {
+    "id": 3,
+    "ejercicioDiaId": 4000,
+    "repeticiones": 6,
+    "RIR": 1,
+    "RPE": 9,
+    "intensidad": 1
+  },
+  {
+    "id": 4,
+    "ejercicioDiaId": 4001,
+    "repeticiones": 12,
+    "RIR": 0,
+    "RPE": 10,
+    "intensidad": 1
+  },
+  {
+    "id": 5,
+    "ejercicioDiaId": 4001,
+    "repeticiones": 12,
+    "RIR": 0,
+    "RPE": 10,
+    "intensidad": 1
+  },
+  {
+    "id": 6,
+    "ejercicioDiaId": 4002,
+    "repeticiones": 10,
+    "RIR": 1,
+    "RPE": 10,
+    "intensidad": 1
+  },
+  {
+    "id": 7,
+    "ejercicioDiaId": 4002,
+    "repeticiones": 12,
+    "RIR": 0,
+    "RPE": 10,
+    "intensidad": 1
+  },
+  {
+    "id": 8,
+    "ejercicioDiaId": 4003,
+    "repeticiones": 10,
+    "RIR": 0,
+    "RPE": 10,
+    "intensidad": 1
+  }
+]

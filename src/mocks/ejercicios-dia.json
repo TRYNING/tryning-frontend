@@ -1,0 +1,20 @@
+[
+  {
+    "id": 4000,
+    "diaId": 3000,
+    "ejercicioId": 1000,
+    "observaciones": "Bajar lento y subir rapido"
+  },
+  {
+    "id": 4001,
+    "diaId": 3000,
+    "ejercicioId": 1001,
+    "observaciones": "Bajar lento y subir rapido"
+  },
+  {
+    "id": 4002,
+    "diaId": 3000,
+    "ejercicioId": 1002,
+    "observaciones": "Bajar lento y subir rapido"
+  }
+]

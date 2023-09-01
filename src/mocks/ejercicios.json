@@ -1,10 +1,20 @@
 [
-    {
-      "id": 4000,
-      "titulo": "press plano"
-    },
-    {
-      "id": 4001,
-      "titulo": "press inclinado"
-    }
-  ]
+  {
+    "id": 1000,
+    "nombre": "Press Plano (tempo)",
+    "tipo": "",
+    "grupoMuscular": "PECHO"
+  },
+  {
+    "id": 1001,
+    "nombre": "Jalon (agarre supino)",
+    "tipo": "",
+    "grupoMuscular": "ESPALDA"
+  },
+  {
+    "id": 1002,
+    "nombre": "Curl Alternado",
+    "tipo": "",
+    "grupoMuscular": "BICEPS"
+  }
+]
