@@ -1,27 +1,10 @@
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export function CustomCarrusel({
-  children,
-  slidesToShow = 1,
-  slidesToScroll = 1,
-  dots = false,
-  infinite = false,
-  speed = 500,
-  autoplay = false,
-  autoplaySpeed = 3000,
-}) {
-  const settings = {
-    slidesToShow: slidesToShow,
-    slidesToScroll: slidesToScroll,
-    dots: dots,
-    infinite: infinite,
-    speed: speed,
-    autoplay: autoplay,
-    autoplaySpeed: autoplaySpeed,
-  };
-
+export function CustomCarrusel({ children, settings, className }) {
   return (
-    <Slider {...settings} className="CustomCarrousel-container">
+    <Slider {...settings} className={`CustomCarrousel-container ${className}`}>
       {children}
     </Slider>
   );

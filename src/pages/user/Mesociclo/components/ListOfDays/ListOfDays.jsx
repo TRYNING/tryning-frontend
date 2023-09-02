@@ -9,7 +9,15 @@ export function ListOfDays({ microcicloId }) {
         const { id, titulo, musculos } = dia;
         const key = crypto.randomUUID();
 
-        return <CardDay key={key} id={id} title={titulo} muscles={musculos} />;
+        return (
+          <CardDay
+            key={key}
+            id={id}
+            title={titulo}
+            muscles={musculos}
+            microcicloId={microcicloId}
+          />
+        );
       })}
     </div>
   );

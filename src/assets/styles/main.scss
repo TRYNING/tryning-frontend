@@ -32,7 +32,7 @@
 @use "@pages/user/Profile/Profile.scss";
 @use "@pages/user/BecomeTrainer/BecomeTrainer.scss";
 @use "@pages/user/Mesociclo/Mesociclo.scss";
-@use "@pages/user/Day/Day.scss";
+@use "@pages/user/Days/Days.scss";
 @use "@pages/user/Trainers/Trainers.scss";
 
 // pages components
@@ -55,8 +55,8 @@
 @use "@pages/user/Trainers/components/CardTrainer/CardTrainer.scss";
 @use "@pages/user/Trainers/components/ListOfTrainers/ListOfTrainers.scss";
 @use "@pages/user/Profile/components/ListOfImage/ListOfImage.scss";
-@use "@pages/user/Day/components/CardExercise/CardExercise.scss";
-@use "@pages/user/Day/components/ListOfExercises/ListOfExercises.scss";
+@use "@pages/user/Days/components/CardExercise/CardExercise.scss";
+@use "@pages/user/Days/components/ListOfExercises/ListOfExercises.scss";
 
 // pages trainer components
 

@@ -1,9 +1,10 @@
 import { Cubo } from "../Cubo/Cubo";
 import { Link } from "react-router-dom";
+import { PrivateRoutes } from "@common/constants/routes";
 
-export function CardDay({ id, title, muscles }) {
+export function CardDay({ microcicloId, title, muscles }) {
   return (
-    <Link to={`day/${id}`} className="CardDay">
+    <Link to={`${PrivateRoutes.DAYS}/${microcicloId}`} className="CardDay">
       <h2 className="titulo">{title}</h2>
       <div className="cubos-container">
         {muscles?.map((muscle) => {
