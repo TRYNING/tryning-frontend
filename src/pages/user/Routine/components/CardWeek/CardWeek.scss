@@ -1,5 +1,8 @@
 .CardWeek {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 10px;
   .header-cardweek {
     display: flex;
     align-items: center;
