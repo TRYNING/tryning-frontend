@@ -11,3 +11,13 @@ export const COLORS = {
   error: "#ff3838",
   transparent: "transparent",
 };
+
+export const MUSCLE_COLORS = {
+  PECHO: "#FF2525",
+  ESPALDA: "#00B0F0",
+  TRICEPS: "#FF33CC",
+  BICEPS: "#1A4A5D",
+  CUADRICEPS: "#FFFF00",
+  ISQUIOS: "#CC6600",
+  HOMBROS: "#7030A0",
+};

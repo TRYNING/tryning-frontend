@@ -8,7 +8,6 @@ const PageHome = lazy(() => import("@pages/user/Home"));
 const PageProfile = lazy(() => import("@pages/user/Profile"));
 const PageRoutines = lazy(() => import("@pages/user/Routines"));
 const PageRoutine = lazy(() => import("@pages/user/Routine"));
-const PageMesociclo = lazy(() => import("@pages/user/Mesociclo"));
 const PageDays = lazy(() => import("@pages/user/Days"));
 const PageAccount = lazy(() => import("@pages/user/Account"));
 const PageBecomeTrainer = lazy(() => import("@pages/user/BecomeTrainer"));
@@ -29,11 +28,7 @@ export function RoutesUser() {
           element={<PageRoutine />}
         />
         <Route
-          path={`${PrivateRoutes.ROUTINES}/:routineId/${PrivateRoutes.MESOCICLOS}/:mesocicloId`}
-          element={<PageMesociclo />}
-        />
-        <Route
-          path={`${PrivateRoutes.ROUTINES}/:routineId/${PrivateRoutes.MESOCICLOS}/:mesocicloId/${PrivateRoutes.DAYS}/:microcicloId`}
+          path={`${PrivateRoutes.ROUTINES}/:routineId/${PrivateRoutes.DAYS}/:microcicloId`}
           element={<PageDays />}
         />
         <Route path={PrivateRoutes.ACCOUNT} element={<PageAccount />} />

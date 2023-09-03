@@ -1,6 +1,6 @@
 import ejercicios from "@mocks/ejercicios.json";
 import s from "@mocks/series.json";
-import { MUSCLE_COLORS } from "@common/constants/components";
+import { MUSCLE_COLORS } from "@common/constants/colors";
 
 export function CardExercise({ id, ejercicioId }) {
   const [exercise] = ejercicios.filter(
