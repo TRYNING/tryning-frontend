@@ -19,7 +19,7 @@ export function CardDay({ microcicloId, title, muscles }) {
         {muscles?.map((muscle) => {
           const key = crypto.randomUUID();
 
-          return <Cubo key={key} muscle={muscle} />;
+          return <Cubo key={key} muscle={muscle} size="8px" />;
         })}
       </div>
     </Link>
