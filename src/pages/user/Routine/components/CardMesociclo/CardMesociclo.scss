@@ -22,7 +22,7 @@
     }
 
     h2 {
-      font-size: 17px;
+      font-size: 20px;
     }
   }
 
@@ -35,10 +35,14 @@
       color: var(--color-black);
     }
     p {
+      padding: 10px;
       color: var(--color-dark-gray);
       flex-grow: 1;
-      font-weight: 600;
-      font-size: 15px;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -1px;
+      background: var(--color-white);
+      box-shadow: var(--shadow);
     }
   }
 }
