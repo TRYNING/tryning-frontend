@@ -1,1 +1,4 @@
-export const API_BASE = "http://localhost:7000/api";
+export const API = {
+  BASE: "http://localhost:7000/api",
+  PLANS: "/plans",
+};

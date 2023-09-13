@@ -1,5 +1,4 @@
 .ListOfDays {
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+  flex-direction: column;
 }

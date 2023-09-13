@@ -1,17 +1,20 @@
 import { createContext, useState } from "react";
-//import { useAuthContext } from "../hooks/useAuthContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 import r from "@mocks/routines.json";
 import m from "@mocks/mesociclos.json";
 import micro from "@mocks/microciclos.json";
 import d from "@mocks/dias.json";
+import { fetchPlansUser } from "../services/plans.servises";
 
 export const RoutinesContext = createContext({});
 
 export function RoutinesContextProvider({ children }) {
   const [routines, setRoutines] = useState(r);
-  // const { user } = useAuthContext();
+  const { user } = useAuthContext();
 
-  const getRoutines = () => {
+  const getPlansUser = async () => {
+    const plans = fetchPlansUser({ userId: user.id });
+
     setRoutines("");
   };
 
