@@ -1,62 +1,49 @@
 .Card-Trainer {
-    max-width: 300px;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border);
+  padding: 15px 20px;
+  background: var(--color-white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .trainer-section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: var(--border);
-    padding: 15px 20px;
-    background: var(--color-white);
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
+    flex-direction: row;
+  }
 
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    .trainer-section{
-        display: flex;
-        flex-direction: row; 
-    }
-
-    .trainer-img{
+  .trainer-img {
     width: 50px;
     height: 50px;
+    object-fit: cover;
     border-radius: 50%;
     margin: 0px 15px 0px 5px;
-    }
-      
+  }
 
+  .trainer-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    display: flex;
+    gap: 7px;
+    display: flex;
+    align-items: center;
+  }
 
-    
+  .trainer-certificade {
+    font-size: 12px;
+    color: var(--color-dark-gray);
+  }
 
-    .trainer-name{
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 3px;
-        display: flex;
-        gap: 7px; 
-        display: flex;
-        align-items: center;
-    }
-
-    .trainer-certificade {
-      font-size: 12px;
-      color: var(--color-dark-gray);
-    }
-    
-    .trainer-exp{
-        font-size: 12px;
-        color: var(--color-dark-gray);
-      }
-    
-    
-
-    .circle-current {
-      width: 15px;
-      height: 15px;
-      background-color: rgb(60, 190, 60);
-      border-radius: 50%;
-      margin-right: 10px;
-    }
+  .trainer-exp {
+    font-size: 12px;
+    color: var(--color-dark-gray);
+  }
 }

@@ -18,18 +18,17 @@
     }
   }
 
-
-  .Browser{
+  .Browser {
     padding: 20px;
 
-
-    input{
+    input {
       width: 90%;
       height: 20px;
-      padding: 10px 10px 10px 20px ;
-      background-color: var(--color-light-gray);
+      padding: 10px 10px 10px 20px;
+      background-color: var(--color-white);
       border: none;
       border-radius: 10px;
+      box-shadow: var(--shadow);
     }
   }
 }

@@ -1,4 +1,8 @@
 .CardWeek {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 10px;
   .header-cardweek {
     display: flex;
     align-items: center;
@@ -6,6 +10,7 @@
 
     .titulo {
       font-size: 15px;
+      color: var(--color-dark-gray);
     }
 
     .cubo {

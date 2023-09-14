@@ -1,14 +1,11 @@
 .CardMesociclos {
   display: flex;
   flex-direction: column;
-  background: var(--color-white);
   min-height: 100px;
   border-radius: var(--border);
   overflow: hidden;
-  cursor: pointer;
-  box-shadow: var(--shadow);
 
-  header {
+  .header-mesociclo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -25,20 +22,27 @@
     }
 
     h2 {
-      font-size: 17px;
+      font-size: 20px;
     }
   }
 
-  main {
+  .main-mesociclo {
     padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     span {
       color: var(--color-black);
     }
     p {
+      padding: 10px;
       color: var(--color-dark-gray);
       flex-grow: 1;
-      font-weight: 600;
-      font-size: 15px;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -1px;
+      background: var(--color-white);
+      box-shadow: var(--shadow);
     }
   }
 }

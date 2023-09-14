@@ -31,7 +31,6 @@
 @use "@pages/user/Routines/Routines.scss";
 @use "@pages/user/Profile/Profile.scss";
 @use "@pages/user/BecomeTrainer/BecomeTrainer.scss";
-@use "@pages/user/Mesociclo/Mesociclo.scss";
 @use "@pages/user/Days/Days.scss";
 @use "@pages/user/Trainers/Trainers.scss";
 
@@ -42,13 +41,12 @@
 
 // pages user component
 
-@use "@pages/user/Mesociclo/components/CardDay/CardDay.scss";
-@use "@pages/user/Mesociclo/components/CardWeek/CardWeek.scss";
-@use "@pages/user/Mesociclo/components/ListOfDays/ListOfDays.scss";
-@use "@pages/user/Mesociclo/components/Cubo/Cubo.scss";
-@use "@pages/user/Mesociclo/components/ListOfWeeks/ListOfWeeks.scss";
+@use "@pages/user/Routine/components/CardDay/CardDay.scss";
+@use "@pages/user/Routine/components/CardWeek/CardWeek.scss";
+@use "@pages/user/Routine/components/ListOfDays/ListOfDays.scss";
+@use "@pages/user/Routine/components/Cubo/Cubo.scss";
+@use "@pages/user/Routine/components/ListOfWeeks/ListOfWeeks.scss";
 @use "@pages/user/Routine/components/CardMesociclo/CardMesociclo.scss";
-@use "@pages/user/Routine/components/ListOfMesociclos/ListOfMesociclos.scss";
 @use "@pages/user/Routines/components/CardRoutine/CardRoutine.scss";
 @use "@pages/user/Routines/components/ListOfRoutines/ListOfRoutines.scss";
 @use "@pages/user/Home/components/EmojisContainer/EmojisContainer.scss";

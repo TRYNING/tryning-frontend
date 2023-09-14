@@ -1,6 +1,5 @@
-import { createContext, useState } from "react";
-//import { useAuthContext } from "../hooks/useAuthContext";
-import r from "@mocks/routines.json";
+import { createContext } from "react";
+//import r from "@mocks/routines.json";
 import m from "@mocks/mesociclos.json";
 import micro from "@mocks/microciclos.json";
 import d from "@mocks/dias.json";
@@ -8,13 +7,6 @@ import d from "@mocks/dias.json";
 export const RoutinesContext = createContext({});
 
 export function RoutinesContextProvider({ children }) {
-  const [routines, setRoutines] = useState(r);
-  // const { user } = useAuthContext();
-
-  const getRoutines = () => {
-    setRoutines("");
-  };
-
   const getMesociclos = (routineId) => {
     const mesociclos = m.filter(
       (mesociclo) => mesociclo.rutinaId === parseInt(routineId)
@@ -37,8 +29,6 @@ export function RoutinesContextProvider({ children }) {
   return (
     <RoutinesContext.Provider
       value={{
-        routines,
-        getRoutines,
         getMesociclos,
         getMicrociclos,
         getDays,

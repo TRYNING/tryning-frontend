@@ -6,7 +6,8 @@
     "musculos": [
       "PECHO",
       "ESPALDA",
-      "BICEPS"
+      "BICEPS",
+      "TRICEPS"
     ]
   },
   {
@@ -15,7 +16,8 @@
     "titulo": "dia 2",
     "musculos": [
       "CUADRICEPS",
-      "ISQUIOS"
+      "ISQUIOS",
+      "HOMBROS"
     ]
   },
   {
@@ -23,8 +25,10 @@
     "microcicloId": 2000,
     "titulo": "dia 3",
     "musculos": [
-      "TRICEPS",
-      "HOMBROS"
+      "PECHO",
+      "ESPALDA",
+      "BICEPS",
+      "TRICEPS"
     ]
   },
   {
@@ -32,8 +36,9 @@
     "microcicloId": 2000,
     "titulo": "dia 4",
     "musculos": [
-      "PECHO",
-      "BICEPS"
+      "CUADRICEPS",
+      "ISQUIOS",
+      "HOMBROS"
     ]
   },
   {
