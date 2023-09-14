@@ -2,7 +2,7 @@ import { lazy } from "react";
 import { BrowserRouter, Route, Navigate } from "react-router-dom";
 import { RoutesTrainer } from "./RoutesTrainer";
 import { RoutesUser } from "./RoutesUser";
-import { RoutesWithNotFound } from "@utils/routes.utils";
+import { RoutesWithNotFound } from "@common/utils/routes.utils";
 import { AuthenticatedGuard } from "../guards/authenticated.guard";
 import { PrivateRoutes, PublicRoutes } from "@common/constants/routes";
 import { LayoutUser } from "../layouts/LayoutUser";

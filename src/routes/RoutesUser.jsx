@@ -2,7 +2,7 @@ import { lazy } from "react";
 import { AuthGuard } from "../guards/auth.guard";
 import { Route } from "react-router-dom";
 import { PrivateRoutes } from "@common/constants/routes";
-import { RoutesWithNotFound } from "@utils/routes.utils";
+import { RoutesWithNotFound } from "@common/utils/routes.utils";
 
 const PageHome = lazy(() => import("@pages/user/Home"));
 const PageProfile = lazy(() => import("@pages/user/Profile"));

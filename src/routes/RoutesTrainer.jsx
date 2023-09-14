@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import { Route } from "react-router-dom";
-import { RoutesWithNotFound } from "@utils/routes.utils";
+import { RoutesWithNotFound } from "@common/utils/routes.utils";
 import { TrainerRoutes } from "../common/constants/routes";
 
 const CreateRoutine = lazy(() => import("@pages/trainer/CreateRoutine"));

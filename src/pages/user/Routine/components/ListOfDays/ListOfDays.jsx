@@ -1,22 +1,13 @@
 import { CardDay } from "../CardDay/CardDay";
-import { useRoutinesContext } from "@hooks/useRoutinesContext";
-export function ListOfDays({ microcicloId }) {
-  const { getDays } = useRoutinesContext();
-  const { days } = getDays(microcicloId);
+export function ListOfDays({ days }) {
   return (
     <div className="ListOfDays">
       {days?.map((dia) => {
-        const { id, titulo, musculos } = dia;
+        const { id, numero_dia, musculos } = dia;
         const key = crypto.randomUUID();
 
         return (
-          <CardDay
-            key={key}
-            id={id}
-            title={titulo}
-            muscles={musculos}
-            microcicloId={microcicloId}
-          />
+          <CardDay key={key} id={id} number={numero_dia} muscles={musculos} />
         );
       })}
     </div>

@@ -9,11 +9,6 @@ export default function PageProfile() {
   return (
     <main className="Profile-container">
       <header className="profile-header">
-        <img
-          className="header-background"
-          src="https://e1.pxfuel.com/desktop-wallpaper/696/98/desktop-wallpaper-122-fitness-fitness.jpg"
-          alt=""
-        />
         <div className="header-img">
           <ImagePerfil size="77px" borderColor={COLORS.primary} />
         </div>

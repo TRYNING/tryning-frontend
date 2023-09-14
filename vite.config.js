@@ -27,10 +27,6 @@ export default defineConfig({
         replacement: path.resolve(path.join(__dirname, "/src/pages")),
       },
       {
-        find: "@utils",
-        replacement: path.resolve(path.join(__dirname, "/src/utils")),
-      },
-      {
         find: "@mocks",
         replacement: path.resolve(path.join(__dirname, "/src/mocks")),
       },

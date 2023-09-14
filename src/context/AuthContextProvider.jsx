@@ -9,7 +9,10 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import { errorMessageLogin, errorMessageRegister } from "@utils/errors.utils";
+import {
+  errorMessageLogin,
+  errorMessageRegister,
+} from "@common/utils/errors.utils";
 
 export const AuthContext = createContext({});
 
@@ -80,7 +83,7 @@ export function AuthContextProvider({ children }) {
           id: user.reloadUserInfo.localId,
           name: user.reloadUserInfo.displayName,
           email: user.reloadUserInfo.email,
-          desc: "Me dedico al bodybuilding estoy muy picado",
+          desc: "Me dedico al bodybuilding",
           urlImage: user.photoURL,
           imagesfeed: [],
         }

@@ -1,16 +1,13 @@
+import { separateWeeks } from "@common/utils/separateWeeks";
 import { CardWeek } from "../CardWeek/CardWeek";
-import { useRoutinesContext } from "@hooks/useRoutinesContext";
 
-export function ListOfWeeks({ mesocicloId }) {
-  const { getMicrociclos } = useRoutinesContext();
-  const { microciclos } = getMicrociclos(mesocicloId);
+export function ListOfWeeks({ weeks }) {
+  const filteredWeeks = separateWeeks({ weeks });
   return (
     <div className="ListOfWeeks-container">
-      {microciclos?.map((microciclo) => {
-        const { id, titulo } = microciclo;
+      {filteredWeeks?.map((week, i) => {
         const key = crypto.randomUUID();
-
-        return <CardWeek key={key} titulo={titulo} microcicloId={id} />;
+        return <CardWeek key={key} week={week} number={i} />;
       })}
     </div>
   );

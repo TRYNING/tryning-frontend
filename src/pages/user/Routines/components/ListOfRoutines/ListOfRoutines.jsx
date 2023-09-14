@@ -1,17 +1,18 @@
 import { CardRoutine } from "../CardRoutine/CardRoutine";
-import { currentMonth } from "@utils/date.utils";
+import { currentMonth } from "@common/utils/date.utils";
 export function ListOfRoutines({ routines }) {
   return (
     <div className="ListOfRoutines">
       {routines?.map((routine) => {
-        const { id, entrenador, fecha_creacion } = routine;
-        const current = currentMonth(fecha_creacion);
+        const { id, fecha_inicio } = routine;
+        const entrenador = "Yaco Recroa";
+        const current = currentMonth(fecha_inicio);
         return (
           <CardRoutine
             key={id}
             id={id}
             trainer={entrenador}
-            date={fecha_creacion}
+            date={fecha_inicio}
             current={current}
           />
         );
