@@ -3,40 +3,37 @@ export function Input({
   placeholder,
   type = "text",
   name = "name",
-  className,
   label,
   littleInput = false,
   checked,
   value,
-  required= false,
+  required = false,
 }) {
   if (type === "radio")
     return (
-      <label className="container-input-radio">
+      <label className="flex items-center gap-5 mt-20">
         <input
-          className="input-radio"
+          className="appearance-none w-20 h-20 border-1 border-secondary rounded-full outline-none cursor-pointer"
           type="radio"
           value={value}
           checked={checked}
           onChange={onChange}
           name={name}
-          required= {required}
+          required={required}
         />
         {label}
       </label>
     );
   return (
-    <div
-      className={`${littleInput ? "InputLittle-container" : "Input-container"}`}
-    >
-      <label>{label}</label>
+    <div className={`flex flex-col ${!littleInput ? "flex-1" : "w-1/2"}`}>
+      <label className="text-semibold mb-1 text-md">{label}</label>
       <input
         type={type}
         placeholder={placeholder}
         onChange={(e) => onChange(e)}
         name={name}
-        className={className}
-        required ={required}
+        className="shadow-sm py-3 px-3 bg-white border text-sm focus:border-gray-400 rounded-xl"
+        required={required}
       />
     </div>
   );
