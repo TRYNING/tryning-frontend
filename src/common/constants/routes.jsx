@@ -15,6 +15,7 @@ export const PrivateRoutes = {
   TRAINER: "trainer",
   DAYS: "days",
   SUPPORT: "support",
+  ANALYTICS: "analytics",
 };
 
 export const TrainerRoutes = {

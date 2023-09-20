@@ -47,18 +47,25 @@ export function FormLogin() {
   ];
 
   const buttons = [
-    <Button key={1} className="button-type-1" type="submit">
+    <Button key={1} number={1} type="submit">
       Inicia sesion
     </Button>,
-    <Button key={2} className="button-google" onClick={handleGoogle}>
-      <img src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png" />
+    <Button key={2} number={3} onClick={handleGoogle}>
+      <img
+        className="w-10 aspect-square"
+        src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png"
+      />
     </Button>,
   ];
 
   return (
-    <div className="FormLogin-container">
-      <div className="logo-container">
-        <img src={logo} alt="logo de tryning" />
+    <div className="max-w-xs">
+      <div className="flex justify-center">
+        <img
+          className="w-28 aspect-square object-cover"
+          src={logo}
+          alt="logo de tryning"
+        />
       </div>
       <Form
         handleSubmit={handleSubmit}
@@ -66,9 +73,13 @@ export function FormLogin() {
         buttons={buttons}
         error={errorAuth}
       />
-      <div className="container-redirect">
+      <div className="mt-5 flex justify-center gap-2 text-sm font-medium text-gray-600">
         <p>¿No tienes una cuenta?</p>
-        <Link to="/register" onClick={() => setErrorAuth(null)}>
+        <Link
+          className="text-gray-900"
+          to="/register"
+          onClick={() => setErrorAuth(null)}
+        >
           Registrate
         </Link>
       </div>

@@ -9,7 +9,7 @@ export default function PageRoutine() {
   const { plan } = usePlansById({ planId: routineId });
 
   return (
-    <div className="Routine-container">
+    <div className="flex flex-col bg-black min-h-screen overflow-auto">
       <HeaderRoutine
         subtitle="Mesociclos"
         date={plan ? plan.fecha_inicio : "00/00/00"}

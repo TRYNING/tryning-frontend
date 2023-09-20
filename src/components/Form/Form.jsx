@@ -3,14 +3,19 @@ import { Button } from "../Button/Button";
 
 export function Form({ handleSubmit, inputs, buttons, error }) {
   return (
-    <form className="Form-container" onSubmit={(e) => handleSubmit(e)}>
-      <div className="error-container">{error && <p>{error}</p>}</div>
-      <div className="inputs-container">
+    <form
+      className="flex flex-col justify-between gap-20 "
+      onSubmit={(e) => handleSubmit(e)}
+    >
+      <div className="relative top-6 text-[var(--color-error)]">
+        {error && <p>{error}</p>}
+      </div>
+      <div className="flex flex-wrap justify-between gap-2">
         {inputs.map((input, index) => (
           <Input key={index} {...input.props} />
         ))}
       </div>
-      <div className="buttons-container">
+      <div className="flex flex-col gap-4">
         {buttons.map((button, index) => (
           <Button key={index} {...button.props}>
             {button.props.children}

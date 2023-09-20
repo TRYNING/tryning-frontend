@@ -13,16 +13,22 @@ export function Header() {
   const { SignOut } = useAuthContext();
 
   return (
-    <header className="Header-container">
-      <div className="icono-menu" onClick={handleLogoClick}>
+    <header className="relative w-full flex justify-between items-center bg-white py-15 px-3 z-50 pointer-events-auto">
+      <div
+        className="m-0 15px transition-transform duration-500 cursor-pointer hover:scale-90"
+        onClick={handleLogoClick}
+      >
         <SvgMenu size={30} />
       </div>
-      <section className="container-logo">
+      <section>
         <Link to="/">
-          <img src={logo} alt="logo de tryning" />
+          <img
+            src={logo}
+            alt="logo de tryning"
+            className="cursor-pointer h-8 m-2 object-cover aspect-video"
+          />
         </Link>
       </section>
-
       <section className={`menu ${open ? "active" : ""}`} id="menu">
         <ul className="container-link">
           <Link to="/account" className="link">

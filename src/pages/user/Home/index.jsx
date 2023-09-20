@@ -1,20 +1,30 @@
 import { Link } from "react-router-dom";
+import cbumImage from "@assets/images/cbum.webp";
 import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
 
 export default function PageHome() {
   return (
-    <main className="Home-container">
-      <section className="section-principal">
-        <h1>Tu entrenador personalizado en línea</h1>
-        <p>¡Alcanza tus metas más rápido con un entrenador personal!</p>
-        <div className="buttons-container">
-          <Link to="/trainers" className="button-entrenador">
+    <main className="flex flex-col items-center h-screen bg-[var(--color-gray]">
+      <section className="w-full min-h-screen relative">
+        <img className="absolute w-full h-full object-cover" src={cbumImage} />
+        <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
+        <div className="text-center absolute w-full h-full z-20 flex flex-col justify-center items-center px-10">
+          <h1 className="text-3xl font-bold text-[var(--color-gray)]">
+            Tu entrenador personalizado en línea
+          </h1>
+          <p className="mt-5 text-sm text-[var(--color-light-gray)]">
+            ¡Alcanza tus metas más rápido con un entrenador personal!
+          </p>
+          <Link
+            to="/trainers"
+            className="h-10 mt-32 w-full flex items-center justify-center border border-[var(--color-primary)] bg-[var(--color-gray)] text-[var(--color-primary)] rounded-[var(--border-button)] hover:opacity-90 hover:scale-101"
+          >
             Buscar entrenador
           </Link>
         </div>
       </section>
 
-      <section>
+      <section className="bg-[var(--color-gray)]">
         <EmojisContainer
           imgurl="https://em-content.zobj.net/source/skype/289/person-lifting-weights_1f3cb-fe0f.png"
           titulo="MAS DE 1000 ENTRENADORES CERTIFICADOS"

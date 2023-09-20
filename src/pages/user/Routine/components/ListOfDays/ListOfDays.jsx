@@ -1,7 +1,7 @@
 import { CardDay } from "../CardDay/CardDay";
 export function ListOfDays({ days }) {
   return (
-    <div className="ListOfDays">
+    <div className="flex flex-col gap-2">
       {days?.map((dia) => {
         const { id, numero_dia, musculos } = dia;
         const key = crypto.randomUUID();

@@ -11,7 +11,6 @@ import { LayoutTrainer } from "../layouts/LayoutTrainer";
 const PageLanding = lazy(() => import("@pages/Landing"));
 const PageLogin = lazy(() => import("@pages/Login"));
 const PageRegister = lazy(() => import("@pages/Register"));
-const PageSupport = lazy(() => import("@pages/Support"));
 
 export function PageRoutes() {
   return (
@@ -22,7 +21,6 @@ export function PageRoutes() {
         <Route element={<AuthenticatedGuard />}>
           <Route path={PublicRoutes.LOGIN} element={<PageLogin />} />
           <Route path={PublicRoutes.REGISTER} element={<PageRegister />} />
-          <Route path={PublicRoutes.SUPPORT} element={<PageSupport />} />
         </Route>
         <Route
           path="/*"
