@@ -4,7 +4,7 @@ import { CardWeek } from "../CardWeek/CardWeek";
 export function ListOfWeeks({ weeks }) {
   const filteredWeeks = separateWeeks({ weeks });
   return (
-    <div className="ListOfWeeks-container">
+    <div className="flex flex-col gap-5">
       {filteredWeeks?.map((week, i) => {
         const key = crypto.randomUUID();
         return <CardWeek key={key} week={week} number={i} />;

@@ -16,7 +16,6 @@
 
 // pages user
 
-@use "@pages/user/Routine/Routine.scss";
 @use "@pages/user/Routines/Routines.scss";
 @use "@pages/user/Profile/Profile.scss";
 @use "@pages/user/Days/Days.scss";
@@ -26,12 +25,6 @@
 
 // pages user component
 
-@use "@pages/user/Routine/components/CardDay/CardDay.scss";
-@use "@pages/user/Routine/components/CardWeek/CardWeek.scss";
-@use "@pages/user/Routine/components/ListOfDays/ListOfDays.scss";
-@use "@pages/user/Routine/components/Cubo/Cubo.scss";
-@use "@pages/user/Routine/components/ListOfWeeks/ListOfWeeks.scss";
-@use "@pages/user/Routine/components/CardMesociclo/CardMesociclo.scss";
 @use "@pages/user/Routines/components/CardRoutine/CardRoutine.scss";
 @use "@pages/user/Routines/components/ListOfRoutines/ListOfRoutines.scss";
 @use "@pages/user/Trainers/components/CardTrainer/CardTrainer.scss";

@@ -13,7 +13,7 @@ export function Header() {
   const { SignOut } = useAuthContext();
 
   return (
-    <header className="relative w-full flex justify-between items-center bg-white py-15 px-0 z-50 pointer-events-auto">
+    <header className="relative w-full flex justify-between items-center bg-white py-15 px-3 z-50 pointer-events-auto">
       <div
         className="m-0 15px transition-transform duration-500 cursor-pointer hover:scale-90"
         onClick={handleLogoClick}
