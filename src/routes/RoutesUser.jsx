@@ -13,13 +13,14 @@ const PageAccount = lazy(() => import("@pages/user/Account"));
 const PageBecomeTrainer = lazy(() => import("@pages/user/BecomeTrainer"));
 const PageTrainers = lazy(() => import("@pages/user/Trainers"));
 const PageSupport = lazy(() => import("@pages/Support"));
+const PageAnalytics = lazy(() => import("@pages/user/Analytics"));
 
 export function RoutesUser() {
   return (
     <RoutesWithNotFound>
       <Route element={<AuthGuard />}>
         <Route path={PrivateRoutes.SUPPORT} element={<PageSupport />} />
-
+        <Route path={PrivateRoutes.ANALYTICS} element={<PageAnalytics />} />
         <Route path={PrivateRoutes.HOME} element={<PageHome />} />
         <Route path={PrivateRoutes.PROFILE} element={<PageProfile />} />
         <Route path={PrivateRoutes.ROUTINES} element={<PageRoutines />} />
