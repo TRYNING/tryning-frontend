@@ -9,7 +9,7 @@ export default function PageRoutines() {
   const { user } = useAuthContext();
   const { plans } = usePlans({ userId: user.id });
   return (
-    <main className="Routines-container">
+    <main className="min-h-screen flex flex-col bg-black">
       <HeaderRoutine title="Rutinas" />
       <Main>
         <section>

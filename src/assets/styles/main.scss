@@ -16,7 +16,6 @@
 
 // pages user
 
-@use "@pages/user/Routines/Routines.scss";
 @use "@pages/user/Profile/Profile.scss";
 @use "@pages/user/Days/Days.scss";
 @use "@pages/user/Trainers/Trainers.scss";
@@ -25,8 +24,6 @@
 
 // pages user component
 
-@use "@pages/user/Routines/components/CardRoutine/CardRoutine.scss";
-@use "@pages/user/Routines/components/ListOfRoutines/ListOfRoutines.scss";
 @use "@pages/user/Trainers/components/CardTrainer/CardTrainer.scss";
 @use "@pages/user/Trainers/components/ListOfTrainers/ListOfTrainers.scss";
 @use "@pages/user/Profile/components/ListOfImage/ListOfImage.scss";
