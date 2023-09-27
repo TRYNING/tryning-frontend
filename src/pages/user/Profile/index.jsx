@@ -10,10 +10,11 @@ export default function PageProfile() {
     <main className="Profile-container">
       <header className="profile-header">
         <div className="header-img">
-          <ImagePerfil size="77px" borderColor={COLORS.primary} />
+          <ImagePerfil size="100px" borderColor={COLORS.primary} />
         </div>
       </header>
       <section className="profile-info">
+        
         <h3>{user.name}</h3>
         <p>{user.desc}</p>
       </section>

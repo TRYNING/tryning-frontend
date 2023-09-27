@@ -83,7 +83,7 @@ export function AuthContextProvider({ children }) {
           id: user.reloadUserInfo.localId,
           name: user.reloadUserInfo.displayName,
           email: user.reloadUserInfo.email,
-          desc: "Me dedico al bodybuilding",
+          desc: user.reloadUserInfo.desc,
           urlImage: user.photoURL,
           imagesfeed: [],
         }

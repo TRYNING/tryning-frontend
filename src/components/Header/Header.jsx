@@ -3,19 +3,35 @@ import { Link } from "react-router-dom";
 import logo from "@assets/images/tryning-pink.webp";
 import { useAuthContext } from "@hooks/useAuthContext";
 import { SvgMenu } from "@assets/icons/svgIcons";
+import { ImagePerfil } from "@components/ImagePerfil/ImagePerfil";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const { SignOut } = useAuthContext();
 
   function handleClick() {
     setOpen(!open);
   }
-  const { SignOut } = useAuthContext();
 
+  const handleSignOut = () => {
+    setShowModal(true);
+  };
+
+  const confirmSignOut = () => {
+    SignOut();
+    setShowModal(false);
+  };
+
+  const cancelSignOut = () => {
+    setShowModal(false);
+  };
+
+  
   return (
     <header className="relative inset-x-0 top-0 z-50 bg-white pointer-events-auto">
       <nav
-        className="flex items-center justify-between px-6 py-5 lg:px-8"
+        className="flex items-center justify-between px-6 py-5 lg:px-8 "
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -52,31 +68,37 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           <a
-            href="/products"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            href="/routines"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
           >
-            Products
+            Rutinas
           </a>
           <a
-            href="/features"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            href="/become-trainer"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
           >
-            Features
-          </a>
-          <a
-            href="/company"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Company
+            Volverse entrenador
           </a>
           <a
             href="/contact"
-            className="text-sm font-semibold leading-6 text-gray-900"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
           >
-            Contact
+            Contacto
+          </a>
+          <a
+            href="/account"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
+          >
+            Cuenta
           </a>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center gap-5 ">
+          
+          <div className="text-sm font-semibold leading-6 text-[#f00] hover:underline cursor-pointer" onClick={() =>handleSignOut()}>
+            Cerrar sesion
+          </div>
+        <ImagePerfil/>
+        </div>
       </nav>
       <div
         id="navBar"
@@ -143,17 +165,37 @@ export function Header() {
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="/login"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
+              <div className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#f00] hover:bg-gray-50 cursor-pointer" onClick={() =>handleSignOut()}>
+            Cerrar sesion
+          </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 text-center" >
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-lg font-semibold mb-2">Confirmar cierre de sesión</h2>
+            <p className="text-gray-600 mb-4">¿Seguro que quieres cerrar sesión?</p>
+            <div className="flex justify-center gap-5">
+              <button
+                className="bg-[#f00] text-white px-4 py-2 rounded-lg hover:opacity-80"
+                onClick={() => confirmSignOut()}
+              >
+                Confirmar
+              </button>
+              <button
+                className="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:opacity-80"
+                onClick={() =>cancelSignOut()}
+              >
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
