@@ -5,7 +5,7 @@ export function HeaderRoutine({
   id = "",
 }) {
   return (
-    <header className="HeaderRoutine-container">
+    <header className="relative">
       <section className="header-info">
         <div className="title-container">
           <h3 className="info-title">

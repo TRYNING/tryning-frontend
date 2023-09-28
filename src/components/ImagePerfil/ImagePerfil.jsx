@@ -8,7 +8,10 @@ export function ImagePerfil({ size = "30px", borderColor = "#fff" }) {
   const { user } = useAuthContext();
   const [imageError, setImageError] = useState(false);
   return (
-    <Link to={`${PrivateRoutes.PROFILE}`} className="Image-perfil">
+    <Link
+      to={`${PrivateRoutes.PROFILE}`}
+      className="rounded-full overflow-hidden border-white border-[1px]"
+    >
       {user?.urlImage && !imageError ? (
         <img
           src={user.urlImage}
