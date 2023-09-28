@@ -140,28 +140,28 @@ export function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="/products"
+                  href="/routines"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Products
+                  Rutinas
                 </a>
                 <a
-                  href="/features"
+                  href="/become-trainer"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
-                </a>
-                <a
-                  href="/company"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
+                  Volverse entrenador
                 </a>
                 <a
                   href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Contact
+                  Contacto
+                </a>
+                <a
+                  href="/account"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Cuenta
                 </a>
               </div>
               <div className="py-6">
@@ -175,19 +175,19 @@ export function Header() {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 text-center" >
+        <div className="fixed inset-0 flex items-center justify-center z-50 text-center bg-[#00000099]" >
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-lg font-semibold mb-2">Confirmar cierre de sesión</h2>
-            <p className="text-gray-600 mb-4">¿Seguro que quieres cerrar sesión?</p>
+            <p className="text-[var(--color--dark-gray)] mb-4">¿Seguro que quieres cerrar sesión?</p>
             <div className="flex justify-center gap-5">
               <button
-                className="bg-[#f00] text-white px-4 py-2 rounded-lg hover:opacity-80"
+                className="bg-[var(--color-primary)] text-[var(--color-white)] px-4 py-2 rounded-lg hover:opacity-80"
                 onClick={() => confirmSignOut()}
               >
                 Confirmar
               </button>
               <button
-                className="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:opacity-80"
+                className="bg-[var(--color-gray)] text-[var(--color-dark-gray)] px-4 py-2 rounded-lg hover:opacity-80"
                 onClick={() =>cancelSignOut()}
               >
                 Cancelar
