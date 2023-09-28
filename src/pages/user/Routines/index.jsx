@@ -18,7 +18,10 @@ export default function PageRoutines() {
           {plans && plans.length > 0 ? (
             <ListOfRoutines routines={plans} />
           ) : (
-            <h1>No tienes rutinas</h1>
+            <h1 className="text-lg font-bold">¿No tienes rutinas?<p>
+              ¡Busca un entrenador que la cree!</p>
+            </h1>
+            
           )}
           <a href="/routine" className="text-[#00f] hover:underline">RUTINA</a>
           

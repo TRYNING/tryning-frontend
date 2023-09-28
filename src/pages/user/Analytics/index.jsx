@@ -11,6 +11,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+import { Main } from "@components/Main/Main";
 
 ChartJS.register(
   CategoryScale,
@@ -107,19 +108,17 @@ const labels2 = ['SEMANA 1', 'SEMANA 2', 'SEMANA 3','SEMANA 4' ];
 
 export default function PageAnalytics() {
   return (
-    <div className="h-screen ">
-      <main>
+      <main className="min-h-screen flex flex-col">
         <HeaderRoutine title="Progresiones" />
-   
-      <CarruselAnalytics/>
-       
+      <Main>
+        <CarruselAnalytics/>
 
         <div className="mx-auto mb-20 max-w-3xl" >
         <Line options={options} data={data} />
         <Line options={options2} data={data2} />
         </div>
+        </Main>
       </main>
-    </div>
   );
 }
 
