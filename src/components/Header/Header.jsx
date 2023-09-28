@@ -29,7 +29,7 @@ export function Header() {
   return (
     <header className="relative inset-x-0 top-0 z-50 bg-white pointer-events-auto">
       <nav
-        className="flex items-center justify-between px-6 py-5 lg:px-8 "
+        className="flex items-center justify-between px-6 py-6 lg:px-8 "
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -178,23 +178,24 @@ export function Header() {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center z-50 text-center">
+        <div className="fixed inset-0 flex items-center justify-center z-50 text-center bg-[#00000099]">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-lg font-semibold mb-2">
               Confirmar cierre de sesión
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-[var(--color--dark-gray)] mb-4">
               ¿Seguro que quieres cerrar sesión?
             </p>
+
             <div className="flex justify-center gap-5">
               <button
-                className="bg-[#f00] text-white px-4 py-2 rounded-lg hover:opacity-80"
+                className="bg-[var(--color-primary)] text-[var(--color-white)] px-4 py-2 rounded-lg hover:opacity-80"
                 onClick={() => confirmSignOut()}
               >
                 Confirmar
               </button>
               <button
-                className="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:opacity-80"
+                className="bg-[var(--color-gray)] text-[var(--color-dark-gray)] px-4 py-2 rounded-lg hover:opacity-80"
                 onClick={() => cancelSignOut()}
               >
                 Cancelar
