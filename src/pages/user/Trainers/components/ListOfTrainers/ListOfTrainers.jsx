@@ -3,7 +3,7 @@ import trainers from "@mocks/trainers.json";
 
 export function ListOfTrainers() {
   return (
-    <div className="ListOfTrainers">
+    <div className="flex flex-col gap-3 justify-center m-2">
       {trainers?.map((trainer) => {
         const { id, nombre, certificacion, experiencia, perfilimg } = trainer;
 

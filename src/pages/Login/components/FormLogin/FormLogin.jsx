@@ -52,7 +52,7 @@ export function FormLogin() {
       Inicia sesion
     </Button>,
     <Button key={2} number={3} onClick={handleGoogle}>
-      <img className="w-10 aspect-square" src={google} />
+      <img className="w-7 aspect-square" src={google} />
     </Button>,
   ];
 
