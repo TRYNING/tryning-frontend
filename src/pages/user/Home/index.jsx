@@ -24,7 +24,7 @@ export default function PageHome() {
         </div>
       </section>
 
-      <section className="bg-[var(--color-gray)]">
+      <section className="<bg-[var(--color-gray)]>">
         <EmojisContainer
           imgurl="https://em-content.zobj.net/source/skype/289/person-lifting-weights_1f3cb-fe0f.png"
           titulo="MAS DE 1000 ENTRENADORES CERTIFICADOS"
