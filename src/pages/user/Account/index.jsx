@@ -1,7 +1,3 @@
 export default function PageAccount() {
-  return (
-    <div className="Account-container">
-      <main></main>
-    </div>
-  );
+  return <main className="min-h-screen"></main>;
 }

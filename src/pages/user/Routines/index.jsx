@@ -16,17 +16,16 @@ export default function PageRoutines() {
       <Main>
         <section>
           {plans && plans.length > 0 ? (
-            <ListOfRoutines routines={plans} />
+            <>
+              <ListOfRoutines routines={plans} />
+              <SvgAnalytics size={40} />
+            </>
           ) : (
-            <h1 className="text-lg font-bold">¿No tienes rutinas?<p>
-              ¡Busca un entrenador que la cree!</p>
+            <h1 className="text-lg font-bold">
+              ¿No tienes rutinas?<p>¡Busca un entrenador que la cree!</p>
             </h1>
-            
           )}
-          <a href="/routine" className="text-[#00f] hover:underline">RUTINA</a>
-          
         </section>
-        <div className="flex items-center justify-center hover:bg-slate-300 rounded-xl w-10"><SvgAnalytics size={40}/></div>
       </Main>
     </main>
   );
