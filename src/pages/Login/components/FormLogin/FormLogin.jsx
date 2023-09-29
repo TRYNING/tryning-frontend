@@ -3,8 +3,9 @@ import { Button } from "@components/Button/Button";
 import { Form } from "@components/Form/Form";
 import { useAuthContext } from "@hooks/useAuthContext";
 import { useState } from "react";
-import logo from "@assets/images/tryning.webp";
 import { Link } from "react-router-dom";
+import logo from "@assets/images/tryning.webp";
+import google from "@assets/images/google.webp";
 
 export function FormLogin() {
   const { signWithEmail, errorAuth, setErrorAuth, googleSignUp } =
@@ -51,10 +52,7 @@ export function FormLogin() {
       Inicia sesion
     </Button>,
     <Button key={2} number={3} onClick={handleGoogle}>
-      <img
-        className="w-10 aspect-square"
-        src="https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png"
-      />
+      <img className="w-7 aspect-square" src={google} />
     </Button>,
   ];
 

@@ -4,7 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 export function CustomCarrusel({ children, settings, className }) {
   return (
-    <Slider {...settings} className={`CustomCarrousel-container ${className}`}>
+    <Slider
+      {...settings}
+      className={`w-full rounded-md overflow-hidden} ${className}`}
+    >
       {children}
     </Slider>
   );

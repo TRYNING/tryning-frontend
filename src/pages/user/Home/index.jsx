@@ -17,14 +17,14 @@ export default function PageHome() {
           </p>
           <Link
             to="/trainers"
-            className="h-10 mt-32 w-full flex items-center justify-center border border-[var(--color-primary)] bg-[var(--color-gray)] text-[var(--color-primary)] rounded-[var(--border-button)] hover:opacity-90 hover:scale-101"
+            className="h-10 mt-32 w-full flex items-center justify-center border border-[var(--color-primary)] bg-[#00000099] text-[var(--color-primary)] rounded-[var(--border-button)] opacity-96 hover:opacity-100  hover:bg-[#00000070] transform:[scale(101)] "
           >
             Buscar entrenador
           </Link>
         </div>
       </section>
 
-      <section className="bg-[var(--color-gray)]">
+      <section className="<bg-[var(--color-gray)]>">
         <EmojisContainer
           imgurl="https://em-content.zobj.net/source/skype/289/person-lifting-weights_1f3cb-fe0f.png"
           titulo="MAS DE 1000 ENTRENADORES CERTIFICADOS"

@@ -1,17 +1,18 @@
 import { ListOfTrainers } from "./components/ListOfTrainers/ListOfTrainers";
-
+import { HeaderRoutine } from "@components/HeaderRoutine/HeaderRoutine";
+import { Main } from "@components/Main/Main";
 export default function PageTrainers() {
   return (
-    <div className="Trainers-container">
-      <main>
-        <header className="trainer-header">
-          <h1 className="header-title">Entrenadores</h1>
-        </header>
-        <div className="Browser">
-          <input type="text" placeholder="Buscar Entrenador" />
-        </div>
+    <main className="relative flex flex-col min-h-screen">
+      <HeaderRoutine />
+      <Main>
+        <input
+          type="text"
+          placeholder="Buscar entrenador"
+          className="shadow-sm py-3 px-3 bg-white border text-sm focus:border-gray-400 rounded-xl w-full"
+        />
         <ListOfTrainers />
-      </main>
-    </div>
+      </Main>
+    </main>
   );
 }
