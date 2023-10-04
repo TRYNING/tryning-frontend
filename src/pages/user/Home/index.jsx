@@ -33,8 +33,9 @@ export default function PageHome() {
       </section>
 
       <section>
+        <img src="https://img.freepik.com/foto-gratis/hombre-joven-fitness-estudio_7502-5008.jpg?w=740&t=st=1696371790~exp=1696372390~hmac=a96e93ab38439789df1146d659bad361e1dbd5f60e9d7ba00cf0a960ddd91379" className="w-64" />
         <EmojisContainer
-          imgurl="https://www.emojiall.com/images/60/skype/1f4aa.png"
+          imgurl="https://www.emojiall.com/images/60/skype/1f4aa.pnghttps://img.freepik.com/foto-gratis/hombre-joven-fitness-estudio_7502-5008.jpg?w=740&t=st=1696371790~exp=1696372390~hmac=a96e93ab38439789df1146d659bad361e1dbd5f60e9d7ba00cf0a960ddd91379"
           titulo="ESPECIALISTAS EN FUERZA E HIPERTROFIA"
           parrafo="Entrenadores capacitados para llevar a un proximo nivel tus ganancias de fuerza e hipertrofia"
         />
