@@ -57,7 +57,7 @@ export function  CarruselAnalytics({ejercicios}) {
             </div>
             <div>
             <TablaAnalytics
-            title="SEMANA 3"
+            title="SEMANA 4"
             ejercicios={ejercicios}/>
             </div>
             {/* Agrega más elementos div para más imágenes */}

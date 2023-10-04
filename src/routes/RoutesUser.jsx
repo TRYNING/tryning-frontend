@@ -19,6 +19,7 @@ export function RoutesUser() {
   return (
     <RoutesWithNotFound>
       <Route element={<AuthGuard />}>
+        
         <Route path={PrivateRoutes.SUPPORT} element={<PageSupport />} />
         <Route path={PrivateRoutes.ANALYTICS} element={<PageAnalytics />} />
         <Route path={PrivateRoutes.HOME} element={<PageHome />} />
