@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';1
 
-export function  CarruselAnalytics() {
+export function  CarruselAnalytics({ejercicios}) {
 
 
     const settings = {
@@ -40,23 +40,25 @@ export function  CarruselAnalytics() {
             <div>
               <TablaAnalytics
               title="SEMANA 1"
-              ejercicio1="Sentadilla"
-              ejercicio2="Press Banca"
+            ejercicios={ejercicios}
               
               />
             </div>
             <div>
             <TablaAnalytics
             title="SEMANA 2"
-            ejercicio1="Sentadilla"
-            ejercicio2="Press Banca"/>
+            ejercicios={ejercicios}/>
             
             </div>
             <div>
             <TablaAnalytics
             title="SEMANA 3"
-            ejercicio1="Sentadilla"
-            ejercicio2="Press Banca"/>
+            ejercicios={ejercicios}/>
+            </div>
+            <div>
+            <TablaAnalytics
+            title="SEMANA 3"
+            ejercicios={ejercicios}/>
             </div>
             {/* Agrega más elementos div para más imágenes */}
           </Slider>
