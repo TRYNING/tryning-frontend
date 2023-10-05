@@ -5,6 +5,7 @@ import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
 export default function PageHome() {
   return (
     <main className="flex flex-col items-center h-screen bg-[var(--color-gray]">
+    
       <section className="w-full min-h-screen relative">
         <img className="absolute w-full h-full object-cover" src={barbell} />
         <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
