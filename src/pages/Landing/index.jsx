@@ -1,24 +1,21 @@
 import logo from "@assets/images/tryning.webp";
-import cbumImage from "@assets/images/cbum.webp";
-import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
+import barbell from "@assets/images/barbell.webp";
+import woman from "@assets/images/woman.webp";
+import guy from "@assets/images/guy.webp";
+import muscles from "@assets/images/muscles.webp";
+
 import { Link } from "react-router-dom";
 
 export default function PageLanding() {
   return (
-    <div className="bg-[var(--color-gray)]">
-       <header className="flex justify-between items-center py-4 px-6">
+    <div>
+       <header className="flex justify-between items-center py-4 px-6 ">
         <img src={logo} alt="Logo" className="h-12" />
 
-        <div className="space-x-8 flex items-center">
-          <div className="hidden md:block">
-            <Link to="/login" className="text-[var(--color-black)] hover:text-[var(--color-primary)]">
-              INICIAR SESION
-            </Link>
-          </div>
-
-          <div className="hidden md:block">
-            <Link to="/register" className="text-[var(--color-black)] hover:text-[var(--color-primary)]">
-              REGISTRARSE
+        <div className="flex items-center text-sm">
+          <div className="text-center"> 
+            <Link to="/login" className="text-[var(--color-black)] bg-[var(--color-gray)] py-2 px-3 rounded hover:text-[var(--color-white)] hover:bg-[var(--color-primary)] duration-200 font-bold text-base">
+              Inicia Sesion
             </Link>
           </div>
         </div>
@@ -26,7 +23,7 @@ export default function PageLanding() {
     <main className="flex flex-col items-center h-screen bg-[var(--color-gray]">
       
       <section className="w-full min-h-full relative">
-        <img className="absolute w-full h-full object-cover" src={cbumImage} />
+        <img className="absolute w-full h-full object-cover" src={barbell} />
         <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
         <div className="text-center absolute w-full h-full z-20 flex flex-col justify-center items-center px-10">
           <h1 className="text-4xl font-bold text-[var(--color-gray)]">
@@ -38,9 +35,12 @@ export default function PageLanding() {
           
         </div>
       </section>
-    <div className="flex flex-row space-x-50 w-full">
+    <div className="flex flex-col md:flex-row space-x-50 w-full pb-16">
       
-    <section className="py-12 bg-[var(--color-gray)] w-full">
+    <section className="flex flex-col  bg-[var(--color-gray)] w-full text-center items-center ">
+      <div className="w-100">
+        <img className="p-16" src={woman} alt="" />
+      </div>
     <div className="container mx-auto text-center w-64">
       <h2 className="text-2xl font-bold text-[var(--color-black)]">Beneficios de nuestro servicio</h2>
       <p className="mt-4 mx-3 text-lg text-[var(--color-black)]">
@@ -49,7 +49,10 @@ export default function PageLanding() {
     </div>
   </section>
 
-      <section className="py-12 bg-[var(--color-gray)] w-full">
+      <section className="flex flex-col  bg-[var(--color-gray)] w-full text-center items-center ">
+      <div className="w-100">
+        <img className="p-16" src={muscles} alt="" />
+      </div>
     <div className="container mx-auto text-center w-64">
       <h2 className="text-2xl font-bold text-[var(--color-black)]">Entrenamiento personalizado</h2>
       <p className="mt-4 mx-3 text-lg text-[var(--color-black)]">
@@ -60,14 +63,17 @@ export default function PageLanding() {
 
   
 
-  <section className="py-12 bg-[var(--color-gray)] w-full">
+  <section className="flex flex-col  bg-[var(--color-gray)] w-full text-center items-center ">
+  <div className="w-100">
+        <img className="p-16" src={guy} alt="" />
+      </div>
     <div className="container mx-auto text-center w-64">
       <h2 className="text-2xl font-bold text-[var(--color-black)]">Seguimiento avanzado</h2>
       <p className="mt-4 text-lg text-[var(--color-black)]">
         Utilizamos un sistema de seguimiento avanzado para analizar y mejorar tu progreso.
       </p>
     </div>
-  </section>
+   </section>
     </div>
     </main>
     </div>
