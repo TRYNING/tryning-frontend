@@ -65,12 +65,6 @@ export function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-        <Link
-            to="/home"
-            className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
-          >
-            Inicio
-          </Link>
           <Link
             to="/routines"
             className="text-sm font-semibold leading-6 text-gray-900 hover:underline"

@@ -30,6 +30,10 @@ export default defineConfig({
         find: "@mocks",
         replacement: path.resolve(path.join(__dirname, "/src/mocks")),
       },
+      {
+        find: "@services",
+        replacement: path.resolve(path.join(__dirname, "/src/services")),
+      },
     ],
   },
 });
