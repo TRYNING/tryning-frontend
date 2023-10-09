@@ -9,6 +9,7 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import { MUSCLE_COLORS } from "@common/constants/colors";
 
 ChartJS.register(
   CategoryScale,
@@ -22,7 +23,8 @@ ChartJS.register(
 
 
 
-export function ContainerAnalytics({title, ejercicios}) {
+export function ContainerAnalytics({title, data}) {
+  console.log(data)
   const options = {
     responsive: true,
     plugins: {
@@ -35,25 +37,31 @@ export function ContainerAnalytics({title, ejercicios}) {
       },
     },
   };
+
+  const labels = data.map(semana => {
+    return semana.title
+  })
+
   
-  const labels = ["SEMANA 1", "SEMANA 2", "SEMANA 3", "SEMANA 4"];
-  const data = {
+  const datas = {
     labels,
-    datasets: ejercicios.map(ejercicio => {
+    datasets: data.map(semana => {
+
+      
       return {
-        label: ejercicio.nombre,
-        data: labels.map(() => {
-          return Math.random() * 200;
+        label: "aaa",
+        data: semana.ejercicios.map((ejercicio)=> {
+          return ejercicio.info.peso
         }),
-        borderColor: `rgb(${Math.random() * 200}, ${Math.random() * 200}, ${Math.random() * 200})`,
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
+        borderColor: `rgb(255, ${Math.random() * 200}, 128)`,
+        backgroundColor: `rgb(255, ${Math.random() * 200}, 128)`,
       }
     })
   };
   
   return (
     <div className="mx-auto mb-20 max-w-3xl">
-      <Line options={options} data={data}  />
+      <Line options={options} data={datas}  />
     </div>
   );
 }

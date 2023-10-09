@@ -1,0 +1,131 @@
+[
+    {
+      "title": "SEMANA 1",
+      "ejercicios": [
+        {
+          "nombre": "Pressbanca",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "200",
+            "reps": "10",
+            "peso": "60"
+          }
+        },
+        {
+          "nombre": "Pressbconveranca",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "7000",
+            "reps": "10",
+            "peso": "50"
+          }
+        },
+        {
+          "nombre": "Sentadillas",
+          "muscle": "CUADRICEPS",
+          "info": {
+            "tonelaje": "300",
+            "reps": "12",
+            "peso": "80"
+          }
+        }
+      ]
+    },
+    {
+      "title": "SEMANA 2",
+      "ejercicios": [
+        {
+          "nombre": "Pressbanca",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "200",
+            "reps": "10",
+            "peso": "50"
+          }
+        },
+        {
+          "nombre": "Pressbconveranca",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "200",
+            "reps": "100",
+            "peso": "50"
+          }
+        },
+        {
+          "nombre": "Sentadillas",
+          "muscle": "CUADRICEPS",
+          "info": {
+            "tonelaje": "300",
+            "reps": "12",
+            "peso": "80"
+          }
+        }
+      ]
+    },
+    {
+      "title": "SEMANA 3",
+      "ejercicios": [
+        {
+          "nombre": "Pressbanca",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "300",
+            "reps": "12",
+            "peso": "55"
+          }
+        },
+        {
+          "nombre": "Pressbconveranca",
+          "muscle": "CUADRICEPS",
+          "info": {
+            "tonelaje": "8000",
+            "reps": "12",
+            "peso": "55"
+          }
+        },
+        {
+          "nombre": "Sentadillas",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "300",
+            "reps": "12",
+            "peso": "80"
+          }
+        }
+      ]
+    },
+    {
+      "title": "SEMANA 4",
+      "ejercicios": [
+        {
+          "nombre": "Pressbanca",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "250",
+            "reps": "8",
+            "peso": "65"
+          }
+        },
+        {
+          "nombre": "Press de Hombros",
+          "muscle": "HOMBROS",
+          "info": {
+            "tonelaje": "6000",
+            "reps": "15",
+            "peso": "40"
+          }
+        },
+        {
+          "nombre": "Pressbconveranca",
+          "muscle": "PECHO",
+          "info": {
+            "tonelaje": "9000",
+            "reps": "8",
+            "peso": "65"
+          }
+        }
+      ]
+    }
+  ]
+  
