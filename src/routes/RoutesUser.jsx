@@ -19,11 +19,13 @@ export function RoutesUser() {
   return (
     <RoutesWithNotFound>
       <Route element={<AuthGuard />}>
-        
         <Route path={PrivateRoutes.SUPPORT} element={<PageSupport />} />
         <Route path={PrivateRoutes.ANALYTICS} element={<PageAnalytics />} />
         <Route path={PrivateRoutes.HOME} element={<PageHome />} />
-        <Route path={PrivateRoutes.PROFILE} element={<PageProfile />} />
+        <Route
+          path={`${PrivateRoutes.PROFILE}/:username`}
+          element={<PageProfile />}
+        />
         <Route path={PrivateRoutes.ROUTINES} element={<PageRoutines />} />
         <Route
           path={`${PrivateRoutes.ROUTINES}/:routineId`}
