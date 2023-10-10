@@ -7,19 +7,19 @@ import { Link } from "react-router-dom";
 import logo from "@assets/images/tryning.webp";
 import google from "@assets/images/google.webp";
 
-export function FormLogin() {
+export function FormLogin({ user = true }) {
   const { signWithEmail, errorAuth, setErrorAuth, googleSignUp } =
     useAuthContext();
-  const [infoUser, setInfoUSer] = useState({});
+  const [info, setInfo] = useState({});
 
   const handleChange = (e) => {
-    setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
+    setInfo({ ...info, [e.target.name]: e.target.value });
     setErrorAuth(null);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { email, password } = infoUser;
+    const { email, password } = info;
     setErrorAuth(null);
     signWithEmail(email, password);
   };
@@ -48,10 +48,10 @@ export function FormLogin() {
   ];
 
   const buttons = [
-    <Button key={1} number={1} type="submit">
+    <Button key={1} number={user ? 1 : 4} type="submit">
       Inicia sesion
     </Button>,
-    <Button key={2} number={3} onClick={handleGoogle}>
+    <Button key={2} number={user ? 3 : 5} onClick={handleGoogle}>
       <img className="w-7 aspect-square" src={google} />
     </Button>,
   ];
@@ -72,10 +72,14 @@ export function FormLogin() {
         error={errorAuth}
       />
       <div className="mt-5 flex justify-center gap-2 text-sm font-medium text-gray-600">
-        <p>¿No tienes una cuenta?</p>
+        {user ? (
+          <p>¿No tienes una cuenta?</p>
+        ) : (
+          <p>¿No te registraste como entrenador?</p>
+        )}
         <Link
           className="text-gray-900"
-          to="/register"
+          to={`${user ? "/register-user" : "/register-trainer"}`}
           onClick={() => setErrorAuth(null)}
         >
           Registrate
