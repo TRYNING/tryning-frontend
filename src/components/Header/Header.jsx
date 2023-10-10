@@ -65,7 +65,7 @@ export function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-        <Link
+          <Link
             to="/home"
             className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
           >
@@ -89,12 +89,6 @@ export function Header() {
           >
             Contacto
           </Link>
-          <Link
-            to="/account"
-            className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
-          >
-            Cuenta
-          </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center gap-5 ">
           <div
@@ -103,7 +97,7 @@ export function Header() {
           >
             Cerrar sesion
           </div>
-          <ImagePerfil />
+          <ImagePerfil className="border-[var(--color-primary)]" />
         </div>
       </nav>
       <div

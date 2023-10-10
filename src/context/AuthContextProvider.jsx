@@ -13,6 +13,7 @@ import {
   errorMessageLogin,
   errorMessageRegister,
 } from "@common/utils/errors.utils";
+import { fetchCreateUser } from "../services/user.servises";
 
 export const AuthContext = createContext({});
 
@@ -24,7 +25,15 @@ export function AuthContextProvider({ children }) {
   const googleSignUp = async () => {
     try {
       const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
+      const { user } = await signInWithPopup(auth, provider);
+      console.log(user);
+      const userData = {
+        id: user.reloadUserInfo.localId,
+        name: user.reloadUserInfo.displayName,
+        email: user.reloadUserInfo.email,
+        image: user.reloadUserInfo.photoUrl,
+      };
+      await fetchCreateUser({ userData });
     } catch (err) {
       const errorMessage = err.code;
       setError(errorMessage);
