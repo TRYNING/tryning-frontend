@@ -4,7 +4,7 @@ import { Main } from "@components/Main/Main";
 export default function PageTrainers() {
   return (
     <main className="relative flex flex-col min-h-screen">
-      <HeaderRoutine />
+      <HeaderRoutine title="Entrenadores" />
       <Main>
         <input
           type="text"

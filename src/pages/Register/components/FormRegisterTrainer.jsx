@@ -37,7 +37,7 @@ export function FormRegisterTrainer() {
 
   const handleGoogle = () => {
     setErrorAuth(null);
-    googleSignUp({ userRol: false });
+    googleSignUp();
   };
 
   const inputs = [

@@ -1,6 +1,5 @@
 import { auth } from "../services/firebase.config";
 import { createContext, useEffect, useState } from "react";
-import { INITIAL_USER } from "../common/constants/components";
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -18,21 +17,20 @@ import { fetchCreateUser } from "../services/user.servises";
 export const AuthContext = createContext({});
 
 export function AuthContextProvider({ children }) {
-  const [user, setUser] = useState(INITIAL_USER);
+  const [user, setUser] = useState();
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
 
-  const googleSignUp = async ({ userRol }) => {
+  const googleSignUp = async () => {
     try {
       const provider = new GoogleAuthProvider();
       const { user } = await signInWithPopup(auth, provider);
-      console.log(user);
+      setUser(user);
       const userData = {
         id: user.reloadUserInfo.localId,
         name: user.reloadUserInfo.displayName,
         email: user.reloadUserInfo.email,
         image: user.reloadUserInfo.photoUrl,
-        rol: userRol ? "user" : "trainer",
       };
       await fetchCreateUser({ userData });
     } catch (err) {

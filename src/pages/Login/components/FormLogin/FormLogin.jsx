@@ -26,7 +26,7 @@ export function FormLogin({ user = true }) {
 
   const handleGoogle = () => {
     setErrorAuth(null);
-    googleSignUp({ userRol: user });
+    googleSignUp();
   };
 
   const inputs = [
