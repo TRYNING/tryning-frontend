@@ -1,16 +1,16 @@
-export function Card({ title, text, image }) {
+import "../../../assets/styles/main.css";
+export function Card({ title, image }) {
   return (
-    <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:max-w-xl hover:bg-gray-100 ">
+    <div className="flex flex-col items-center bg-slate-50 border border-slate-100 rounded-lg shadow md:max-w-xs hover:bg-slate-100 p-4 max-h-full">
       <img
-        className="object-cover flex-1 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+        className="object-cover flex-1 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-lg"
         src={image}
         alt=""
       />
-      <div className="flex flex-col justify-between p-4 leading-normal">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+      <div className="flex flex-col justify-between p-4 leading-normal ">
+        <h5 className="text-2xl font-bold tracking-tight text-gray-900 text-center">
           {title}
         </h5>
-        <p className="mb-3 font-normal text-gray-700 ">{text}</p>
       </div>
     </div>
   );

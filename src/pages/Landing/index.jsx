@@ -40,26 +40,51 @@ export default function PageLanding() {
             <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
           </div>
         </section>
-        <section className="flex flex-col md:flex-row space-x-50 gap-5 w-full pb-16 mt-20">
-          <Card
-            image={woman}
-            title="Beneficios de nuestro servicio"
-            text="Nuestro equipo de entrenadores certificados están aquí para
-                ayudarte a alcanzar tus objetivos de forma rápida y efectiva."
-          />
-          <Card
-            image={guy}
-            title="Beneficios de nuestro servicio"
-            text="Nuestro equipo de entrenadores certificados están aquí para
-                ayudarte a alcanzar tus objetivos de forma rápida y efectiva."
-          />
+        <section className="flex flex-col space-x-50 gap-5 w-full pb-16 mt-20 bg-white p-8 rounded justify-center align-center">
+          <h1 className="text-4xl md:text-5xl text-center font-bold tracking-tight text-gray-950 mb-4">
+            Beneficios de nuestro servicio
+          </h1>
+          <div className="flex flex-col md:flex-row gap-16 justify-center">
+            <Card
+              image={woman}
+              title="Profesionales Certificados y Experiencia Comprobada"
+            />
+            <Card image={guy} title="Personalización a Medida" />
 
-          <Card
-            image={muscles}
-            title="Beneficios de nuestro servicio"
-            text="Nuestro equipo de entrenadores certificados están aquí para
-                ayudarte a alcanzar tus objetivos de forma rápida y efectiva."
-          />
+            <Card
+              image={muscles}
+              title="Seguimiento Continuo y Feedback Personalizado"
+            />
+          </div>
+        </section>
+
+        <section className="flex flex-col space-x-50 gap-5 w-full pb-16 mt-20 bg-white p-8 rounded justify-center align-center">
+          <h1 className="text-4xl md:text-5xl text-center font-bold tracking-tight text-gray-950 mb-4">
+            Acerca de nosotros
+          </h1>
+          <div className="flex flex-col md:flex-row gap-4 mx-4">
+            <p>
+              Trabajar con los mejores es esencial para lograr el éxito
+              deportivo. En nuestra plataforma, encontrarás entrenadores
+              altamente calificados y con experiencia en una amplia variedad de
+              disciplinas deportivas. Su conocimiento y expertise te guiarán en
+              cada paso de tu camino.
+            </p>
+            <p>
+              Cada atleta es único, y entendemos la importancia de entrenar de
+              acuerdo a tus objetivos y necesidades específicas. Nuestros
+              entrenadores certificados crean rutinas personalizadas que se
+              adaptan a ti, optimizando tu rendimiento y ayudándote a alcanzar
+              tus metas de manera más efectiva
+            </p>
+            <p>
+              El viaje hacia tus objetivos deportivos no es estático, y es por
+              eso que ofrecemos seguimiento constante y retroalimentación
+              personalizada. A medida que progresas, ajustamos tus rutinas y te
+              brindamos la orientación necesaria para maximizar tus resultados.
+              Tu éxito es nuestra prioridad.
+            </p>
+          </div>
         </section>
       </Main>
     </div>
