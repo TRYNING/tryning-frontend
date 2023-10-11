@@ -8,10 +8,14 @@ export default function PageProfile() {
   const { username } = useParams();
   const { user } = useUser({ username });
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <section>
+    <main className="min-h-screen flex  justify-center">
+      <section className="flex flex-col items-center mt-40">
+        <img
+          src={user && user[0].image}
+          className="rounded-full w-44 h-44 object-cover"
+        />
+        <h2 className="font-bold">@{username}</h2>
         <h3>{user && user[0].name}</h3>
-        <img src={user && user[0].image} />
       </section>
       {/*}
       <section>

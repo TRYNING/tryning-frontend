@@ -9,7 +9,7 @@ export default function PageTrainers() {
         <input
           type="text"
           placeholder="Buscar entrenador"
-          className="shadow-sm py-3 px-3 bg-white border text-sm focus:border-gray-400 rounded-xl w-full"
+          className="shadow-sm py-3 mt-8 px-3 bg-white border text-sm focus:border-gray-400 rounded-xl w-full"
         />
         <ListOfTrainers />
       </Main>
