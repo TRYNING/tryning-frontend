@@ -7,6 +7,7 @@ import { Main } from "@components/Main/Main";
 import { Link } from "react-router-dom";
 import { Card } from "./components/Card";
 import { HeaderLanding } from "./components/HeaderLanding";
+import { FooterLanding } from "./components/FooterLanding";
 
 export default function PageLanding() {
   return (
@@ -40,11 +41,11 @@ export default function PageLanding() {
             <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
           </div>
         </section>
-        <section className="flex flex-col space-x-50 gap-5 w-full pb-16 mt-20 bg-white p-8 rounded justify-center align-center">
-          <h1 className="text-4xl md:text-5xl text-center font-bold tracking-tight text-gray-950 mb-4">
+        <section className="flex flex-col space-x-50 gap-5 w-full pb-16 mt-20 rounded justify-center align-center">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--color-secondary)] mb-10 md:mt-40">
             Beneficios de nuestro servicio
           </h1>
-          <div className="flex flex-col md:flex-row gap-16 justify-center">
+          <div className="flex flex-col md:flex-row gap-16 justify-center mt-10">
             <Card
               image={woman}
               title="Profesionales Certificados y Experiencia Comprobada"
@@ -58,11 +59,11 @@ export default function PageLanding() {
           </div>
         </section>
 
-        <section className="flex flex-col space-x-50 gap-5 w-full pb-16 mt-20 bg-white p-8 rounded justify-center align-center">
-          <h1 className="text-4xl md:text-5xl text-center font-bold tracking-tight text-gray-950 mb-4">
+        <section className="flex flex-col gap-5 w-full pb-16 mt-20  rounded ">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--color-primary)] mb-4 md:mt-40">
             Acerca de nosotros
           </h1>
-          <div className="flex flex-col md:flex-row gap-4 mx-4">
+          <div className="flex flex-col md:flex-row gap-4 ">
             <p>
               Trabajar con los mejores es esencial para lograr el éxito
               deportivo. En nuestra plataforma, encontrarás entrenadores
@@ -87,6 +88,7 @@ export default function PageLanding() {
           </div>
         </section>
       </Main>
+      <FooterLanding />
     </div>
   );
 }

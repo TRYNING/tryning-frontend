@@ -2,7 +2,7 @@
   {
     "id": 3000,
     "microcicloId": 2000,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "PECHO",
       "ESPALDA",
@@ -13,7 +13,7 @@
   {
     "id": 3001,
     "microcicloId": 2000,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "CUADRICEPS",
       "ISQUIOS",
@@ -23,7 +23,7 @@
   {
     "id": 3002,
     "microcicloId": 2000,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "PECHO",
       "ESPALDA",
@@ -34,7 +34,7 @@
   {
     "id": 3003,
     "microcicloId": 2000,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "CUADRICEPS",
       "ISQUIOS",
@@ -44,7 +44,7 @@
   {
     "id": 3004,
     "microcicloId": 2001,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "TRICEPS"
@@ -53,7 +53,7 @@
   {
     "id": 3005,
     "microcicloId": 2001,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "HOMBROS",
       "CUADRICEPS"
@@ -62,7 +62,7 @@
   {
     "id": 3006,
     "microcicloId": 2001,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "ISQUIOS"
@@ -71,7 +71,7 @@
   {
     "id": 3007,
     "microcicloId": 2001,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "PECHO",
       "TRICEPS"
@@ -80,7 +80,7 @@
   {
     "id": 3012,
     "microcicloId": 2002,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "HOMBROS"
@@ -89,7 +89,7 @@
   {
     "id": 3013,
     "microcicloId": 2002,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "BICEPS",
       "CUADRICEPS"
@@ -98,7 +98,7 @@
   {
     "id": 3014,
     "microcicloId": 2002,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "ISQUIOS",
       "PECHO"
@@ -107,7 +107,7 @@
   {
     "id": 3015,
     "microcicloId": 2002,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "HOMBROS"
@@ -116,7 +116,7 @@
   {
     "id": 3016,
     "microcicloId": 2003,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -125,7 +125,7 @@
   {
     "id": 3017,
     "microcicloId": 2003,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -134,7 +134,7 @@
   {
     "id": 3018,
     "microcicloId": 2003,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -143,7 +143,7 @@
   {
     "id": 3019,
     "microcicloId": 2003,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -152,7 +152,7 @@
   {
     "id": 3020,
     "microcicloId": 2004,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -161,7 +161,7 @@
   {
     "id": 3021,
     "microcicloId": 2004,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -170,7 +170,7 @@
   {
     "id": 3022,
     "microcicloId": 2004,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -179,7 +179,7 @@
   {
     "id": 3023,
     "microcicloId": 2004,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -188,7 +188,7 @@
   {
     "id": 3024,
     "microcicloId": 2005,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -197,7 +197,7 @@
   {
     "id": 3025,
     "microcicloId": 2005,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -206,7 +206,7 @@
   {
     "id": 3026,
     "microcicloId": 2005,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -215,7 +215,7 @@
   {
     "id": 3027,
     "microcicloId": 2005,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -224,7 +224,7 @@
   {
     "id": 3028,
     "microcicloId": 2006,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -233,7 +233,7 @@
   {
     "id": 3029,
     "microcicloId": 2006,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -242,7 +242,7 @@
   {
     "id": 3030,
     "microcicloId": 2006,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -251,7 +251,7 @@
   {
     "id": 3031,
     "microcicloId": 2006,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -260,7 +260,7 @@
   {
     "id": 3032,
     "microcicloId": 2007,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -269,7 +269,7 @@
   {
     "id": 3033,
     "microcicloId": 2007,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -278,7 +278,7 @@
   {
     "id": 3034,
     "microcicloId": 2007,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "PECHO"
     ]
@@ -286,7 +286,7 @@
   {
     "id": 3035,
     "microcicloId": 2007,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -295,7 +295,7 @@
   {
     "id": 3036,
     "microcicloId": 2008,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -304,7 +304,7 @@
   {
     "id": 3037,
     "microcicloId": 2008,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -313,7 +313,7 @@
   {
     "id": 3038,
     "microcicloId": 2008,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -322,7 +322,7 @@
   {
     "id": 3039,
     "microcicloId": 2008,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -331,7 +331,7 @@
   {
     "id": 3040,
     "microcicloId": 2009,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -340,7 +340,7 @@
   {
     "id": 3041,
     "microcicloId": 2009,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -349,7 +349,7 @@
   {
     "id": 3042,
     "microcicloId": 2009,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -358,7 +358,7 @@
   {
     "id": 3043,
     "microcicloId": 2009,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -367,7 +367,7 @@
   {
     "id": 3044,
     "microcicloId": 2010,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -376,7 +376,7 @@
   {
     "id": 3045,
     "microcicloId": 2010,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -385,7 +385,7 @@
   {
     "id": 3046,
     "microcicloId": 2010,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -394,7 +394,7 @@
   {
     "id": 3047,
     "microcicloId": 2010,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -403,7 +403,7 @@
   {
     "id": 3048,
     "microcicloId": 2011,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -412,7 +412,7 @@
   {
     "id": 3049,
     "microcicloId": 2011,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -421,7 +421,7 @@
   {
     "id": 3050,
     "microcicloId": 2011,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -430,7 +430,7 @@
   {
     "id": 3051,
     "microcicloId": 2011,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -439,7 +439,7 @@
   {
     "id": 3052,
     "microcicloId": 2012,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -448,7 +448,7 @@
   {
     "id": 3053,
     "microcicloId": 2012,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -457,7 +457,7 @@
   {
     "id": 3054,
     "microcicloId": 2012,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -466,7 +466,7 @@
   {
     "id": 3055,
     "microcicloId": 2012,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -475,7 +475,7 @@
   {
     "id": 3056,
     "microcicloId": 2013,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -484,7 +484,7 @@
   {
     "id": 3057,
     "microcicloId": 2013,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -493,7 +493,7 @@
   {
     "id": 3058,
     "microcicloId": 2013,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -502,7 +502,7 @@
   {
     "id": 3059,
     "microcicloId": 2013,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"
@@ -511,7 +511,7 @@
   {
     "id": 3060,
     "microcicloId": 2014,
-    "titulo": "dia 1",
+    "numero_dia": "1",
     "musculos": [
       "ESPALDA",
       "PECHO"
@@ -520,7 +520,7 @@
   {
     "id": 3061,
     "microcicloId": 2014,
-    "titulo": "dia 2",
+    "numero_dia": "2",
     "musculos": [
       "ISQUIOS",
       "CUADRICEPS"
@@ -529,7 +529,7 @@
   {
     "id": 3062,
     "microcicloId": 2014,
-    "titulo": "dia 3",
+    "numero_dia": "3",
     "musculos": [
       "BICEPS",
       "HOMBROS"
@@ -538,7 +538,7 @@
   {
     "id": 3063,
     "microcicloId": 2014,
-    "titulo": "dia 4",
+    "numero_dia": "4",
     "musculos": [
       "TRICEPS",
       "CUADRICEPS"

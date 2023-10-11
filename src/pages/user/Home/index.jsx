@@ -17,7 +17,7 @@ export default function PageHome() {
           </p>
           <Link
             to="/trainers"
-            className="h-10 w-48 flex items-center justify-center border border-[var(--color-primary-trainer)] bg-[var(--color-primary-trainer)] text-[var(--color-white)] rounded-[var(--border-button)] opacity-96 hover:font-semibold"
+            className="h-10 w-48 flex items-center justify-center border border-[var(--color-primary)] bg-[var(--color-primary)] text-[var(--color-white)] rounded-[var(--border-button)] opacity-96 hover:font-semibold"
           >
             Buscar entrenador
           </Link>

@@ -1,5 +1,6 @@
 import { ListOfWeeks } from "../ListOfWeeks/ListOfWeeks";
 export function CardMesociclo({ id, description, weeks }) {
+  console.log(weeks);
   return (
     <div className="flex flex-col min-w-[100px]" key={id}>
       <header className="flex items-center gap-2 grow-0 px-5 pt-5 pb-0 text-black">
