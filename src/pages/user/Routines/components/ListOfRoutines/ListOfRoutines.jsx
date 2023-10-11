@@ -2,7 +2,7 @@ import { CardRoutine } from "../CardRoutine/CardRoutine";
 import { currentMonth } from "@common/utils/date.utils";
 export function ListOfRoutines({ routines }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 mt-8">
       {routines?.map((routine) => {
         const { id, fecha_inicio } = routine;
         const entrenador = "Yaco Recroa";

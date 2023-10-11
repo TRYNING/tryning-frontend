@@ -1,32 +1,43 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useAuthContext } from "@hooks/useAuthContext";
 import { Input } from "@components/Inputs/Input";
 import { Button } from "@components/Button/Button";
 import { Form } from "@components/Form/Form";
-import { useAuthContext } from "@hooks/useAuthContext";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "@assets/images/tryning.webp";
 import google from "@assets/images/google.webp";
 
-export function FormLogin({ user = true }) {
-  const { signWithEmail, errorAuth, setErrorAuth, googleSignUp } =
-    useAuthContext();
-  const [info, setInfo] = useState({});
-
+export function FormRegisterTrainer() {
+  const {
+    user,
+    SignOut,
+    registerWithEmail,
+    errorAuth,
+    setErrorAuth,
+    googleSignUp,
+  } = useAuthContext();
+  const [infoUser, setInfoUSer] = useState({});
   const handleChange = (e) => {
-    setInfo({ ...info, [e.target.name]: e.target.value });
+    setInfoUSer({ ...infoUser, [e.target.name]: e.target.value });
     setErrorAuth(null);
   };
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    if (user) {
+      SignOut();
+    }
+  });
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { email, password } = info;
+    const { email, password } = infoUser;
     setErrorAuth(null);
-    signWithEmail(email, password);
+    registerWithEmail(email, password);
   };
 
   const handleGoogle = () => {
     setErrorAuth(null);
-    googleSignUp({ userRol: user });
+    googleSignUp({ userRol: false });
   };
 
   const inputs = [
@@ -36,22 +47,23 @@ export function FormLogin({ user = true }) {
       label="Mail"
       placeholder="Ingrese su mail..."
       name="email"
+      type="email"
     />,
     <Input
       key={2}
       onChange={handleChange}
-      type="password"
       label="Contraseña"
       placeholder="Ingrese su contraseña..."
       name="password"
+      type="password"
     />,
   ];
 
   const buttons = [
-    <Button key={1} number={user ? 1 : 4} type="submit">
-      Inicia sesion
+    <Button key={1} number={4} type="submit">
+      Registrate
     </Button>,
-    <Button key={2} number={user ? 3 : 5} onClick={handleGoogle}>
+    <Button key={2} number={5} onClick={handleGoogle}>
       <img className="w-7 aspect-square" src={google} />
     </Button>,
   ];
@@ -72,13 +84,13 @@ export function FormLogin({ user = true }) {
         error={errorAuth}
       />
       <div className="mt-5 flex justify-center gap-2 text-sm font-medium text-gray-600">
-        {user ? <p>¿No tienes una cuenta?</p> : <p>Ser entrenador</p>}
+        <p>¿Ya tenes una cuenta?</p>
         <Link
           className="text-gray-900"
-          to={`${user ? "/register-user" : "/register-trainer"}`}
+          to="/login-trainer"
           onClick={() => setErrorAuth(null)}
         >
-          Registrate
+          Iniciar sesion
         </Link>
       </div>
     </div>

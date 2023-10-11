@@ -22,7 +22,7 @@ export function AuthContextProvider({ children }) {
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
 
-  const googleSignUp = async () => {
+  const googleSignUp = async ({ userRol }) => {
     try {
       const provider = new GoogleAuthProvider();
       const { user } = await signInWithPopup(auth, provider);
@@ -32,6 +32,7 @@ export function AuthContextProvider({ children }) {
         name: user.reloadUserInfo.displayName,
         email: user.reloadUserInfo.email,
         image: user.reloadUserInfo.photoUrl,
+        rol: userRol ? "user" : "trainer",
       };
       await fetchCreateUser({ userData });
     } catch (err) {
@@ -87,16 +88,7 @@ export function AuthContextProvider({ children }) {
 
   useEffect(() => {
     const unsuscribe = onAuthStateChanged(auth, (user) => {
-      setUser(
-        user && {
-          id: user.reloadUserInfo.localId,
-          name: user.reloadUserInfo.displayName,
-          email: user.reloadUserInfo.email,
-          desc: user.reloadUserInfo.desc,
-          urlImage: user.photoURL,
-          imagesfeed: [],
-        }
-      );
+      setUser(user);
     });
     return () => {
       unsuscribe();

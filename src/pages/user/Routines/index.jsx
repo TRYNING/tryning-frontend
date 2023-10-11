@@ -1,15 +1,16 @@
 import { HeaderRoutine } from "@components/HeaderRoutine/HeaderRoutine";
 import { ListOfRoutines } from "./components/ListOfRoutines/ListOfRoutines";
 import { Main } from "@components/Main/Main";
+import plans from "@mocks/routines.json";
 //import { currentMonth } from "@utils/date.utils";
-import { usePlans } from "@hooks/usePlans";
-import { useAuthContext } from "@hooks/useAuthContext";
+//import { usePlans } from "@hooks/usePlans";
+// import { useAuthContext } from "@hooks/useAuthContext";
 import { SvgAnalytics } from "@assets/icons/svgIcons";
-import { NAV_ICON_SIZE } from "@common/constants/components";
 
 export default function PageRoutines() {
-  const { user } = useAuthContext();
-  const { plans } = usePlans({ userId: user.id });
+  //const { user } = useAuthContext();
+  //const { plans } = usePlans({ userId: user.id });
+  console.log(plans);
   return (
     <main className="min-h-screen flex flex-col bg-black">
       <HeaderRoutine title="Rutinas" />
