@@ -12,9 +12,9 @@ export function ImagePerfil({ size = "30px", className }) {
       to={`${PrivateRoutes.PROFILE}`}
       className={`${className} rounded-full overflow-hidden border-[1px]`}
     >
-      {user?.urlImage && !imageError ? (
+      {user?.reloadUserInfo.photoUrl && !imageError ? (
         <img
-          src={user.urlImage}
+          src={user.reloadUserInfo.photoUrl}
           alt={`imagen de perfil del usuario ${user.name}`}
           onError={() => setImageError(true)}
           width={size}

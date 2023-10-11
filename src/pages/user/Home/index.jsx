@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import barbell from "@assets/images/barbell.webp";
 import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
+import { Main } from "@components/Main/Main";
 
 export default function PageHome() {
   return (
-    <main className="flex flex-col items-center h-screen bg-[var(--color-gray]">
+    <main className="flex flex-col items-center min-h-screen bg-[var(--color-gray]">
       <section className="w-full min-h-screen relative">
         <img className="absolute w-full h-full object-cover" src={barbell} />
         <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
@@ -24,13 +25,13 @@ export default function PageHome() {
         </div>
       </section>
 
-      <section>
+      <Main>
         <EmojisContainer
-          imgurl="https://images.emojiterra.com/twitter/v13.1/512px/1f4bb.png"
           titulo="SISTEMA DE SEGUIMIENTO UNICO CON POSIBILIDADES DE HACER UN TRACKEO MUY PRECISO"
           parrafo="Contamos con un sistema de seguimiento muy avanzado, que transfiere los datos de tu entrenamiento a informacion muy legible"
         />
-      </section>
+      </Main>
+      <div className="h-60"></div>
     </main>
   );
 }
