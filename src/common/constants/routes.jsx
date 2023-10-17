@@ -1,7 +1,9 @@
 export const PublicRoutes = {
   LANDING: "landing",
-  LOGIN: "login",
-  REGISTER: "register",
+  LOGIN_USER: "login-user",
+  LOGIN_TRAINER: "login-trainer",
+  REGISTER_USER: "register-user",
+  REGISTER_TRAINER: "register-trainer",
 };
 
 export const PrivateRoutes = {

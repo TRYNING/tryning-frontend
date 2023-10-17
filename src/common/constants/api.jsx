@@ -3,4 +3,5 @@ export const API = {
   PLANS: "/plans",
   TRAINERS: "/trainers",
   USERS: "/users",
+  SEARCH: "/search",
 };

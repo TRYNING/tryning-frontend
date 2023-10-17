@@ -4,22 +4,21 @@ import { useAuthContext } from "@hooks/useAuthContext";
 import { Link } from "react-router-dom";
 import { PrivateRoutes } from "@common/constants/routes";
 
-export function ImagePerfil({ size = "30px", borderColor = "#fff" }) {
+export function ImagePerfil({ size = "30px", className }) {
   const { user } = useAuthContext();
   const [imageError, setImageError] = useState(false);
   return (
     <Link
       to={`${PrivateRoutes.PROFILE}`}
-      className="rounded-full overflow-hidden border-white border-[1px]"
+      className={`${className} rounded-full overflow-hidden border-[1px]`}
     >
-      {user?.urlImage && !imageError ? (
+      {user && !imageError ? (
         <img
-          src={user.urlImage}
+          src={user.photoURL}
           alt={`imagen de perfil del usuario ${user.name}`}
           onError={() => setImageError(true)}
           width={size}
           height={size}
-          style={{ border: `1px solid ${borderColor}` }}
         />
       ) : (
         <img
@@ -27,7 +26,6 @@ export function ImagePerfil({ size = "30px", borderColor = "#fff" }) {
           alt="usuario no encontrado"
           width={size}
           height={size}
-          style={{ border: `1px solid ${borderColor}` }}
         />
       )}
     </Link>

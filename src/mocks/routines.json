@@ -5,7 +5,7 @@
     "usuarioId": "jfncvn47kaj23e",
     "titulo": "Rutina Juanpa",
     "descripcion": "",
-    "fecha_creacion": "08/09/2023"
+    "fecha_inicio": "08/09/2023"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "usuarioId": "jfncvn47kaj23e",
     "titulo": "Rutina Juanpa",
     "descripcion": "",
-    "fecha_creacion": "08/08/2023"
+    "fecha_inicio": "08/08/2023"
   },
   {
     "id": 3,
@@ -21,6 +21,6 @@
     "usuarioId": "jfncvn47kaj23e",
     "titulo": "Rutina Juanpa",
     "descripcion": "",
-    "fecha_creacion": "08/6/2023"
+    "fecha_inicio": "08/6/2023"
   }
 ]

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import barbell from "@assets/images/barbell.webp";
 import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
+import { Main } from "@components/Main/Main";
 
 export default function PageHome() {
   return (
-    <main className="flex flex-col items-center h-screen bg-[var(--color-gray]">
-    
+    <main className="flex flex-col items-center min-h-screen bg-[var(--color-gray]">
       <section className="w-full min-h-screen relative">
         <img className="absolute w-full h-full object-cover" src={barbell} />
         <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
@@ -25,30 +25,13 @@ export default function PageHome() {
         </div>
       </section>
 
-      <section className="<bg-[var(--color-gray)]>">
+      <Main>
         <EmojisContainer
-          imgurl="https://em-content.zobj.net/source/skype/289/person-lifting-weights_1f3cb-fe0f.png"
-          titulo="MAS DE 1000 ENTRENADORES CERTIFICADOS"
-          parrafo="Entrenadores verificados por la empresa con muy buenos resultados"
-        />
-      </section>
-
-      <section>
-        <img src="https://img.freepik.com/foto-gratis/hombre-joven-fitness-estudio_7502-5008.jpg?w=740&t=st=1696371790~exp=1696372390~hmac=a96e93ab38439789df1146d659bad361e1dbd5f60e9d7ba00cf0a960ddd91379" className="w-64" />
-        <EmojisContainer
-          imgurl="https://www.emojiall.com/images/60/skype/1f4aa.pnghttps://img.freepik.com/foto-gratis/hombre-joven-fitness-estudio_7502-5008.jpg?w=740&t=st=1696371790~exp=1696372390~hmac=a96e93ab38439789df1146d659bad361e1dbd5f60e9d7ba00cf0a960ddd91379"
-          titulo="ESPECIALISTAS EN FUERZA E HIPERTROFIA"
-          parrafo="Entrenadores capacitados para llevar a un proximo nivel tus ganancias de fuerza e hipertrofia"
-        />
-      </section>
-
-      <section>
-        <EmojisContainer
-          imgurl="https://images.emojiterra.com/twitter/v13.1/512px/1f4bb.png"
           titulo="SISTEMA DE SEGUIMIENTO UNICO CON POSIBILIDADES DE HACER UN TRACKEO MUY PRECISO"
           parrafo="Contamos con un sistema de seguimiento muy avanzado, que transfiere los datos de tu entrenamiento a informacion muy legible"
         />
-      </section>
+      </Main>
+      <div className="h-60"></div>
     </main>
   );
 }

@@ -34,7 +34,6 @@ export function Header() {
       >
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
             <img className="h-6 w-auto" src={logo} alt="" />
           </Link>
         </div>
@@ -65,7 +64,7 @@ export function Header() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-        <Link
+          <Link
             to="/home"
             className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
           >
@@ -89,12 +88,6 @@ export function Header() {
           >
             Contacto
           </Link>
-          <Link
-            to="/account"
-            className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
-          >
-            Cuenta
-          </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center gap-5 ">
           <div
@@ -103,7 +96,7 @@ export function Header() {
           >
             Cerrar sesion
           </div>
-          <ImagePerfil />
+          <ImagePerfil className="border-[var(--color-primary)]" />
         </div>
       </nav>
       <div
@@ -146,28 +139,10 @@ export function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  to="/products"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Products
-                </Link>
-                <Link
-                  to="/features"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Features
-                </Link>
-                <Link
-                  to="/company"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Company
-                </Link>
-                <Link
                   to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Contact
+                  Contacto
                 </Link>
               </div>
               <div className="py-6">

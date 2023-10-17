@@ -1,6 +1,5 @@
 import { auth } from "../services/firebase.config";
 import { createContext, useEffect, useState } from "react";
-import { INITIAL_USER } from "../common/constants/components";
 import {
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -13,18 +12,27 @@ import {
   errorMessageLogin,
   errorMessageRegister,
 } from "@common/utils/errors.utils";
+import { fetchCreateUser } from "../services/user.servises";
 
 export const AuthContext = createContext({});
 
 export function AuthContextProvider({ children }) {
-  const [user, setUser] = useState(INITIAL_USER);
+  const [user, setUser] = useState();
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
 
   const googleSignUp = async () => {
     try {
       const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
+      const { user } = await signInWithPopup(auth, provider);
+      setUser(user);
+      const userData = {
+        id: user.reloadUserInfo.localId,
+        name: user.reloadUserInfo.displayName,
+        email: user.reloadUserInfo.email,
+        image: user.reloadUserInfo.photoUrl,
+      };
+      await fetchCreateUser({ userData });
     } catch (err) {
       const errorMessage = err.code;
       setError(errorMessage);
@@ -78,16 +86,7 @@ export function AuthContextProvider({ children }) {
 
   useEffect(() => {
     const unsuscribe = onAuthStateChanged(auth, (user) => {
-      setUser(
-        user && {
-          id: user.reloadUserInfo.localId,
-          name: user.reloadUserInfo.displayName,
-          email: user.reloadUserInfo.email,
-          desc: user.reloadUserInfo.desc,
-          urlImage: user.photoURL,
-          imagesfeed: [],
-        }
-      );
+      setUser(user);
     });
     return () => {
       unsuscribe();

@@ -7,7 +7,7 @@ import { Form } from "@components/Form/Form";
 import logo from "@assets/images/tryning.webp";
 import google from "@assets/images/google.webp";
 
-export function FormRegister() {
+export function FormRegisterUser() {
   const {
     user,
     SignOut,
@@ -84,10 +84,10 @@ export function FormRegister() {
         error={errorAuth}
       />
       <div className="mt-5 flex justify-center gap-2 text-sm font-medium text-gray-600">
-        <p>¿No tienes una cuenta?</p>
+        <p>¿Ya tenes una cuenta?</p>
         <Link
           className="text-gray-900"
-          to="/login"
+          to="/login-user"
           onClick={() => setErrorAuth(null)}
         >
           Iniciar sesion
