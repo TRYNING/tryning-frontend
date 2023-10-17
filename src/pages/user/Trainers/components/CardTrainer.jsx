@@ -1,17 +1,18 @@
-import { SvgCheck } from "@assets/icons/svgIcons";
 import { Link } from "react-router-dom";
 import { PrivateRoutes } from "@common/constants/routes";
+import { SvgCheck } from "@assets/icons/svgIcons";
+
 export function CardTrainer({
-  id,
-  name = "yaco",
-  certificacion = "personal trainers",
-  experencia = "2 años",
+  username,
+  name,
+  certificate,
+  experience,
   image,
 }) {
   return (
     <Link
-      to={`/${PrivateRoutes.PROFILE}/${id}`}
-      className="bg-white max-w-sm flex justify-between px-3 py-2 items-center rounded-md font-bold cursor-pointer transition-all hover:scale-105"
+      to={`/${PrivateRoutes.PROFILE}/${username}`}
+      className="bg-white max-wsm flex justify-between px-3 py-2 items-center rounded-md font-bold cursor-pointer transition-all hover:scale-105"
     >
       <section className="flex items-center">
         <div className=""></div>
@@ -26,10 +27,10 @@ export function CardTrainer({
             {name} <SvgCheck size={12} />{" "}
           </div>
           <div className="text-xs text-[var(--color-dark-gray)]">
-            Certificado: {certificacion}
+            Certificado: {certificate}
           </div>
           <div className="text-xs text-[var(--color-dark-gray)]">
-            Exp: {experencia}
+            Exp: {experience}
           </div>
         </div>
       </section>

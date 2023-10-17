@@ -6,7 +6,6 @@ import { useUser } from "@hooks/useUser";
 
 export default function PageProfile() {
   const { username } = useParams();
-  console.log(username);
   const { user } = useUser({ username });
 
   return (
@@ -16,10 +15,7 @@ export default function PageProfile() {
           <ImagePerfil size="100px" borderColor={COLORS.primary} />
         </div>
       </header>
-      <section className="profile-info">
-        <h3>{user.name}</h3>
-        <img src={user.image} />
-      </section>
+      <section className="profile-info"></section>
       <section>
         <ListOfImage />
       </section>
