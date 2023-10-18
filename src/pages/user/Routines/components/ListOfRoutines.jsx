@@ -1,4 +1,4 @@
-import { CardRoutine } from "../CardRoutine/CardRoutine";
+import { CardRoutine } from "./CardRoutine";
 import { currentMonth } from "@common/utils/date.utils";
 export function ListOfRoutines({ routines }) {
   return (

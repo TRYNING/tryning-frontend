@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "@assets/images/tryning-pink.webp";
+import { PublicRoutes } from "@common/constants/routes";
 
 export function HeaderLanding() {
   const [open, setOpen] = useState(false);
@@ -47,14 +48,14 @@ export function HeaderLanding() {
           </button>
         </div>
         <div className="hidden md:flex md:gap-x-2">
-          <Link
-            to="/login-trainer"
+          <a
+            href={`${PublicRoutes.TRAINER}`}
             className={`bg-transparent text-[var(--color-primary-trainer)] px-5 py-3 flex items-center shadow-md border border-[var(--color-primary-trainer)] rounded-full h-10 text-sm font-semibold hover:opacity-90 hover:scale-101`}
           >
             Soy entrenador
-          </Link>
+          </a>
           <Link
-            to="/login-user"
+            to={`/${PublicRoutes.LOGIN}`}
             className={`bg-[var(--color-primary)] text-white px-5 py-3 flex items-center shadow-md border border-[var(--color-primary)] rounded-full h-10 text-sm font-semibold hover:opacity-90 hover:scale-101`}
           >
             Inicia Sesion
@@ -99,16 +100,16 @@ export function HeaderLanding() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Link
-                  to="/login-trainer"
+                <a
+                  href={`${PublicRoutes.TRAINER}`}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[var(--color-primary-trainer)] hover:bg-gray-50"
                 >
                   Soy entrenador
-                </Link>
+                </a>
               </div>
               <div className="py-6 flex flex-col gap-4 items-start">
                 <Link
-                  to="/login-user"
+                  to={`${PublicRoutes.LOGIN}`}
                   className={`bg-[var(--color-primary)] text-white px-5 py-3 flex items-center shadow-md border border-[var(--color-primary)] rounded-full h-10 text-sm font-semibold hover:opacity-90 hover:scale-101`}
                 >
                   Inicia Sesion

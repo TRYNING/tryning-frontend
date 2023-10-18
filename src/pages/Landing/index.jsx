@@ -3,7 +3,7 @@ import woman from "@assets/images/woman.webp";
 import guy from "@assets/images/guy.webp";
 import muscles from "@assets/images/muscles.webp";
 import { Main } from "@components/Main/Main";
-
+import { PublicRoutes } from "@common/constants/routes";
 import { Link } from "react-router-dom";
 import { Card } from "./components/Card";
 import { HeaderLanding } from "./components/HeaderLanding";
@@ -25,7 +25,7 @@ export default function PageLanding() {
               </p>
               <div className="flex items-start gap-3 mt-7">
                 <Link
-                  to="/register-user"
+                  to={`/${PublicRoutes.REGISTER}`}
                   className={`bg-[var(--color-primary)] text-white px-5 py-3 flex items-center shadow-md border border-[var(--color-primary)] rounded-full h-10 text-sm font-semibold hover:opacity-90 hover:scale-101`}
                 >
                   Comienza

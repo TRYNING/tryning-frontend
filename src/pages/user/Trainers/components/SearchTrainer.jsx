@@ -34,7 +34,7 @@ export function FormSearch() {
   return (
     <form
       onSubmit={(e) => handleSubmit(e)}
-      className="mb-8 flex items-center shadow-sm bg-white border rounded-xl w-full pl-2 overflow-hidden"
+      className="mt-8 mb-8 flex items-center shadow-sm bg-white border rounded-xl w-full pl-2 overflow-hidden"
     >
       <SvgSearch className="w-6 h-6 " />
       <input

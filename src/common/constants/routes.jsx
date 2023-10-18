@@ -1,9 +1,8 @@
 export const PublicRoutes = {
   LANDING: "landing",
-  LOGIN_USER: "login-user",
-  LOGIN_TRAINER: "login-trainer",
-  REGISTER_USER: "register-user",
-  REGISTER_TRAINER: "register-trainer",
+  LOGIN: "login",
+  REGISTER: "register",
+  TRAINER: "http://localhost:4000",
 };
 
 export const PrivateRoutes = {
@@ -14,14 +13,7 @@ export const PrivateRoutes = {
   TRAINERS: "trainers",
   BECOME_TRAINER: "become-trainer",
   ABOUT_US: "about-us",
-  TRAINER: "trainer",
   DAYS: "days",
   SUPPORT: "support",
   ANALYTICS: "analytics",
-};
-
-export const TrainerRoutes = {
-  DASHBOARD: "dashboard",
-  CREATE_ROUTINE: "create-routine",
-  VIEW_ROUTINE: "view-routine",
 };
