@@ -83,7 +83,7 @@ export function Header() {
             Volverse entrenador
           </Link>
           <Link
-            to="/contact"
+            to="/support"
             className="text-sm font-semibold leading-6 text-gray-900 hover:underline"
           >
             Contacto

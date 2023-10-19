@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import barbell from "@assets/images/barbell.webp";
+import gym from "@assets/images/gym.mp4"
+import kendra from "@assets/images/kendra.mp4";
+import {ContentPlayer} from "@assets/components/ContentPlayer"
+
 import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
 import { Main } from "@components/Main/Main";
 
@@ -30,7 +34,9 @@ export default function PageHome() {
           titulo="SISTEMA DE SEGUIMIENTO UNICO CON POSIBILIDADES DE HACER UN TRACKEO MUY PRECISO"
           parrafo="Contamos con un sistema de seguimiento muy avanzado, que transfiere los datos de tu entrenamiento a informacion muy legible"
         />
+      <iframe src={gym} frameborder="0" className="aspect-4:6 w-full"></iframe>
       </Main>
+      
       <div className="h-60"></div>
     </main>
   );

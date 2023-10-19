@@ -3,6 +3,7 @@ export const PublicRoutes = {
   LOGIN: "login",
   REGISTER: "register",
   TRAINER: "http://localhost:4000",
+  SUPPORT: "support",
 };
 
 export const PrivateRoutes = {
@@ -14,6 +15,6 @@ export const PrivateRoutes = {
   BECOME_TRAINER: "become-trainer",
   ABOUT_US: "about-us",
   DAYS: "days",
-  SUPPORT: "support",
+  
   ANALYTICS: "analytics",
 };
