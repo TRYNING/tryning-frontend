@@ -2,7 +2,7 @@ import barbell from "@assets/images/barbell.webp";
 import woman from "@assets/images/woman.webp";
 import guy from "@assets/images/guy.webp";
 import muscles from "@assets/images/muscles.webp";
-import { Main } from "@components/Main/Main";
+import { Main } from "@components/Main";
 import { PublicRoutes } from "@common/constants/routes";
 import { Link } from "react-router-dom";
 import { Card } from "./components/Card";

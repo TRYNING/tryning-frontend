@@ -1,13 +1,14 @@
-import { Input } from "@components/Inputs/Input";
-import { Button } from "@components/Button/Button";
-import { Form } from "@components/Form/Form";
 import { useAuthContext } from "@hooks/useAuthContext";
+import { PublicRoutes } from "@common/constants/routes";
 import { useState } from "react";
+import { Input } from "@components/UI/Input";
+import { Button } from "@components/UI/Button";
+import { Form } from "@components/Form";
 import { Link } from "react-router-dom";
 import logo from "@assets/images/tryning.webp";
 import google from "@assets/images/google.webp";
 
-export function FormLogin({ user = true }) {
+export function FormLogin() {
   const { signWithEmail, errorAuth, setErrorAuth, googleSignUp } =
     useAuthContext();
   const [info, setInfo] = useState({});
@@ -48,10 +49,10 @@ export function FormLogin({ user = true }) {
   ];
 
   const buttons = [
-    <Button key={1} number={user ? 1 : 4} type="submit">
+    <Button key={1} type="primary">
       Inicia sesion
     </Button>,
-    <Button key={2} number={user ? 3 : 5} onClick={handleGoogle}>
+    <Button key={2} type="secondary" onClick={handleGoogle}>
       <img className="w-7 aspect-square" src={google} />
     </Button>,
   ];
@@ -72,10 +73,10 @@ export function FormLogin({ user = true }) {
         error={errorAuth}
       />
       <div className="mt-5 flex justify-center gap-2 text-sm font-medium text-gray-600">
-        {user ? <p>¿No tienes una cuenta?</p> : <p>Ser entrenador</p>}
+        <p>Ser entrenador</p>
         <Link
           className="text-gray-900"
-          to={`${user ? "/register-user" : "/register-trainer"}`}
+          to={`/${PublicRoutes.REGISTER}`}
           onClick={() => setErrorAuth(null)}
         >
           Registrate

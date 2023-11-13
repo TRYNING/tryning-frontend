@@ -1,18 +1,32 @@
 import { Link } from "react-router-dom";
 import barbell from "@assets/images/barbell.webp";
-import gym from "@assets/images/gym.mp4"
-import kendra from "@assets/images/kendra.mp4";
-import {ContentPlayer} from "@assets/components/ContentPlayer"
+import { Main } from "@components/Main";
+import videoSentadilla from "../../../assets/videos/press.mp4";
 
-import { EmojisContainer } from "./components/EmojisContainer/EmojisContainer";
-import { Main } from "@components/Main/Main";
+const VideoBackground = () => {
+  return (
+    <div className="absolute w-full h-full z-0 top-0 left-0">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-full h-full object-cover "
+      >
+        <source src={videoSentadilla} type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+  );
+};
 
 export default function PageHome() {
   return (
     <main className="flex flex-col items-center min-h-screen bg-[var(--color-gray]">
       <section className="w-full min-h-screen relative">
-        <img className="absolute w-full h-full object-cover" src={barbell} />
-        <span className="absolute w-full h-full z-10 bg-gradient-to-b from-[rgba(0,0,0,0.7)] to-[rgba(0,0,0,0.7)]"></span>
+        {/*<img className="absolute w-full h-full object-cover" src={barbell} />*/}
+        <VideoBackground />
+        <span className="absolute w-full h-full z-10 bg-gradient-to-br from-[rgba(0,0,0,0.94)] to-[rgba(0,0,0,0.84)]"></span>
         <div className="text-center absolute w-full h-full z-20 flex flex-col justify-center items-center px-10 gap-5">
           <h1 className="text-3xl font-bold text-[var(--color-gray)]">
             Tu entrenador personalizado en línea
@@ -29,15 +43,7 @@ export default function PageHome() {
         </div>
       </section>
 
-      <Main>
-        <EmojisContainer
-          titulo="SISTEMA DE SEGUIMIENTO UNICO CON POSIBILIDADES DE HACER UN TRACKEO MUY PRECISO"
-          parrafo="Contamos con un sistema de seguimiento muy avanzado, que transfiere los datos de tu entrenamiento a informacion muy legible"
-        />
-      <iframe src={gym} frameborder="0" className="aspect-4:6 w-full"></iframe>
-      </Main>
-      
-      <div className="h-60"></div>
+      <Main></Main>
     </main>
   );
 }

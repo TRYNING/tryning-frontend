@@ -1,4 +1,4 @@
-import { NavbarUser } from "@components/NavbarUser/NavbarUser";
+import { NavbarUser } from "@components/NavbarUser";
 
 export function LayoutUser({ children }) {
   return (

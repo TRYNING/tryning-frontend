@@ -1,6 +1,6 @@
-import { HeaderRoutine } from "@components/HeaderRoutine/HeaderRoutine";
+import { HeaderRoutine } from "@components/HeaderRoutine";
 import { FormSearch } from "./components/SearchTrainer";
-import { Main } from "@components/Main/Main";
+import { Main } from "@components/Main";
 import { RenderSearch } from "./components/RenderSearch";
 import { SearchTrainerProvider } from "@context/SearchTrainerContext";
 

@@ -1,7 +1,7 @@
-import { HeaderRoutine } from "../../../components/HeaderRoutine/HeaderRoutine";
+import { HeaderRoutine } from "../../../components/HeaderRoutine";
 import { CarruselAnalytics } from "../Analytics/Componentes/CarruselAnalytics";
 import { ContainerAnalytics } from "./Componentes/ContainerAnalytics";
-import { Main } from "@components/Main/Main";
+import { Main } from "@components/Main";
 import data from "@mocks/analytics";
 
 export default function PageAnalytics() {

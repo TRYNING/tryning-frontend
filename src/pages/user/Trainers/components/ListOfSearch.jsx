@@ -11,13 +11,13 @@ export function ListOfSearch() {
     <div>
       <div className="flex flex-col gap-3">
         {trainerSearched?.map((trainer) => {
-          const { name, certificate, experience, image, username } = trainer;
+          const { name, certificate, experience, image, id_trainer } = trainer;
           const key = crypto.randomUUID();
           return (
             <CardTrainer
               key={key}
-              username={username}
               name={name}
+              id={id_trainer}
               certificate={certificate}
               experience={experience}
               image={image}

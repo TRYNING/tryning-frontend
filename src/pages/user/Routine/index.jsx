@@ -1,8 +1,8 @@
-import { HeaderRoutine } from "@components/HeaderRoutine/HeaderRoutine";
+import { HeaderRoutine } from "@components/HeaderRoutine";
 import { useParams } from "react-router-dom";
-import { Main } from "@components/Main/Main";
+import { Main } from "@components/Main";
 // import { usePlansById } from "@hooks/usePlans";
-import { CardMesociclo } from "./components/CardMesociclo/CardMesociclo";
+import { CardMesociclo } from "./components/CardMesociclo";
 
 import plans from "@mocks/mesociclos.json";
 import weeks from "@mocks/microciclos.json";

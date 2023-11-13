@@ -1,0 +1,120 @@
+[
+  {
+    "dia": 1,
+    "ejercicios": [
+      {
+        "nombre": "Press Plano",
+        "reps": 6,
+        "series": 3,
+        "rir": 2,
+        "grupoM": "PECHO"
+      },
+      {
+        "nombre": "Jalon",
+        "reps": 10,
+        "series": 3,
+        "rir": 2,
+        "grupoM": "ESPALDA"
+      },
+      {
+        "nombre": "Curl alternado",
+        "reps": 10,
+        "series": 2,
+        "rir": 0,
+        "grupoM": "BICEPS"
+      },
+      {
+        "nombre": "Extencion triceps",
+        "reps": 15,
+        "series": 3,
+        "rir": 0,
+        "grupoM": "TRICEPS"
+      }
+    ]
+  },
+  {
+    "dia": 2,
+    "ejercicios": [
+      {
+        "nombre": "Sentadilla pendular",
+        "reps": 12,
+        "series": 3,
+        "rir": 8,
+        "grupoM": "CUADRICEPS"
+      },
+      {
+        "nombre": "Sillon isquios",
+        "reps": 6,
+        "series": 3,
+        "rir": 8,
+        "grupoM": "ISQUIOS"
+      },
+      {
+        "nombre": "Vuelos laterales",
+        "reps": 15,
+        "series": 3,
+        "rir": 0,
+        "grupoM": "HOMBROS"
+      }
+    ]
+  },
+  {
+    "dia": 3,
+    "ejercicios": [
+      {
+        "nombre": "Press Plano",
+        "reps": 6,
+        "series": 3,
+        "rir": 2,
+        "grupoM": "PECHO"
+      },
+      {
+        "nombre": "Jalon",
+        "reps": 10,
+        "series": 3,
+        "rir": 2,
+        "grupoM": "ESPALDA"
+      },
+      {
+        "nombre": "Curl alternado",
+        "reps": 10,
+        "series": 2,
+        "rir": 0,
+        "grupoM": "BICEPS"
+      },
+      {
+        "nombre": "Extencion triceps",
+        "reps": 15,
+        "series": 3,
+        "rir": 0,
+        "grupoM": "TRICEPS"
+      }
+    ]
+  },
+  {
+    "dia": 4,
+    "ejercicios": [
+      {
+        "nombre": "Sentadilla pendular",
+        "reps": 12,
+        "series": 3,
+        "rir": 8,
+        "grupoM": "CUADRICEPS"
+      },
+      {
+        "nombre": "Sillon isquios",
+        "reps": 6,
+        "series": 3,
+        "rir": 8,
+        "grupoM": "ISQUIOS"
+      },
+      {
+        "nombre": "Vuelos laterales",
+        "reps": 15,
+        "series": 3,
+        "rir": 0,
+        "grupoM": "HOMBROS"
+      }
+    ]
+  }
+]

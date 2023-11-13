@@ -1,14 +1,11 @@
-import { HeaderRoutine } from "@components/HeaderRoutine/HeaderRoutine";
-import { useParams } from "react-router-dom";
-import { Main } from "@components/Main/Main";
-import { useRoutinesContext } from "@hooks/useRoutinesContext";
-import { CustomCarrusel } from "@components/CustomCarrusel/CustomCarrusel";
-import { ListOfExercises } from "./components/ListOfExercises/ListOfExercises";
+import { HeaderRoutine } from "@components/HeaderRoutine";
+import { Main } from "@components/Main";
+import { CustomCarrusel } from "@components/CustomCarrusel";
+import { ListOfExercises } from "./components/ListOfExercises";
+import days from "../../../mocks/semanas.json";
 
 export default function PageDays() {
-  const { microcicloId } = useParams();
-  const { getDays } = useRoutinesContext();
-  const { days } = getDays(microcicloId);
+  //const { microcicloId } = useParams();
 
   const settings = {
     infinite: true,
@@ -19,21 +16,19 @@ export default function PageDays() {
   };
 
   return (
-    <main className="Days-container">
-      <HeaderRoutine subtitle={`Dias`} date="28/08/2023" />
+    <main className="min-h-screen">
+      <HeaderRoutine subtitle="Dias" />
       <Main>
-        <h1 className="days-titulo">microciclo {microcicloId}</h1>
         <CustomCarrusel settings={settings}>
           {days?.map((day) => {
             const key = crypto.randomUUID();
             return (
-              <div className="container-card" key={key}>
+              <div className="mt-10" key={key}>
                 <div className="day">
                   <section className="day-exercise__info">
-                    <h1>{day.titulo}</h1>
-                    <p>id: {day.id}</p>
+                    <h1 className="text-2xl font-bold mb-4">Dia {day.dia}</h1>
                   </section>
-                  <ListOfExercises dayId={day.id} />
+                  <ListOfExercises exercises={day.ejercicios} />
                 </div>
               </div>
             );

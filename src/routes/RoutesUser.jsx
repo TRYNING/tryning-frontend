@@ -23,7 +23,7 @@ export function RoutesUser() {
         <Route path={PrivateRoutes.ANALYTICS} element={<PageAnalytics />} />
         <Route path={PrivateRoutes.HOME} element={<PageHome />} />
         <Route
-          path={`${PrivateRoutes.PROFILE}/:username`}
+          path={`${PrivateRoutes.PROFILE}/:idUser`}
           element={<PageProfile />}
         />
         <Route path={PrivateRoutes.ROUTINES} element={<PageRoutines />} />

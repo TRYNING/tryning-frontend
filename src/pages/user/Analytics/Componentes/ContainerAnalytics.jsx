@@ -21,10 +21,8 @@ ChartJS.register(
   Legend
 );
 
-
-
-export function ContainerAnalytics({title, data}) {
-  console.log(data)
+export function ContainerAnalytics({ title, data }) {
+  console.log(data);
   const options = {
     responsive: true,
     plugins: {
@@ -38,30 +36,27 @@ export function ContainerAnalytics({title, data}) {
     },
   };
 
-  const labels = data.map(semana => {
-    return semana.title
-  })
+  const labels = data.map((semana) => {
+    return semana.title;
+  });
 
-  
   const datas = {
     labels,
-    datasets: data.map(semana => {
-
-      
+    datasets: data.map((semana) => {
       return {
-        label: "aaa",
-        data: semana.ejercicios.map((ejercicio)=> {
-          return ejercicio.info.peso
+        label: "",
+        data: semana.ejercicios.map((ejercicio) => {
+          return ejercicio.info.peso;
         }),
         borderColor: `rgb(255, ${Math.random() * 200}, 128)`,
         backgroundColor: `rgb(255, ${Math.random() * 200}, 128)`,
-      }
-    })
+      };
+    }),
   };
-  
+
   return (
     <div className="mx-auto mb-20 max-w-3xl">
-      <Line options={options} data={datas}  />
+      <Line options={options} data={datas} />
     </div>
   );
 }

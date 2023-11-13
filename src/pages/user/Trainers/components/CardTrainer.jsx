@@ -2,16 +2,10 @@ import { Link } from "react-router-dom";
 import { PrivateRoutes } from "@common/constants/routes";
 import { SvgCheck } from "@assets/icons/svgIcons";
 
-export function CardTrainer({
-  username,
-  name,
-  certificate,
-  experience,
-  image,
-}) {
+export function CardTrainer({ id, name, certificate, experience, image }) {
   return (
     <Link
-      to={`/${PrivateRoutes.PROFILE}/${username}`}
+      to={`/${PrivateRoutes.PROFILE}/${id}`}
       className="bg-white max-wsm flex justify-between px-3 py-2 items-center rounded-md font-bold cursor-pointer transition-all hover:scale-105"
     >
       <section className="flex items-center">

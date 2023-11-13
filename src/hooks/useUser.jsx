@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 import { fetchAllByUsername } from "../services/search.servises";
 
-export function useUser({ username }) {
+export function useUser({ idUser }) {
   const [user, setUser] = useState();
   const [error, setError] = useState(false);
   useEffect(() => {
-    fetchAllByUsername({ username })
+    fetchAllByUsername({ idUser })
       .then((data) => setUser(data))
       .catch((err) => {
         setError(true);
         console.error(err);
       });
-  }, [username]);
+  }, [idUser]);
 
   return { user, error };
 }

@@ -1,6 +1,6 @@
-import { HeaderRoutine } from "@components/HeaderRoutine/HeaderRoutine";
+import { HeaderRoutine } from "@components/HeaderRoutine";
 import { ListOfRoutines } from "./components/ListOfRoutines";
-import { Main } from "@components/Main/Main";
+import { Main } from "@components/Main";
 import plans from "@mocks/routines.json";
 //import { currentMonth } from "@utils/date.utils";
 //import { usePlans } from "@hooks/usePlans";
